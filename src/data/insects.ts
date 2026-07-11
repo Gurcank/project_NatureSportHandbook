@@ -362,5 +362,3 @@ export const insects: Animal[] = [
     habitat: 'Homes, fabrics, storage areas'
   },
 ];
-
-export default insects;

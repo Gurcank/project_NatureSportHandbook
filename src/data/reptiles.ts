@@ -482,5 +482,3 @@ export const reptiles: Animal[] = [
     habitat: 'Forests, savannas, wetlands'
   },
 ];
-
-export default reptiles;

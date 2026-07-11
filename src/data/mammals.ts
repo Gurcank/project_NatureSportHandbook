@@ -963,7 +963,4 @@ export const mammalSpreads: Record<string, MammalEntry[][]> = {
   en: organizeSpreads(mammals),
 };
 
-export default mammals;
-
-
 

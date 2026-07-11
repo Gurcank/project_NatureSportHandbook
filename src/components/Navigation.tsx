@@ -120,10 +120,6 @@ export default function Navigation() {
     };
   }, [language]);
 
-  // Keep as constant for fallback
-  const defaultSearchPlaceholder =
-    language === 'tr' ? 'Bitki, hayvan, spor ara...' : 'Search plants, animals, sports...';
-
   const handleSearchSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 

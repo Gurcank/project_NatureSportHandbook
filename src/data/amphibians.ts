@@ -182,5 +182,3 @@ export const amphibians: Animal[] = [
     habitat: 'Lakes, rivers, streams'
   },
 ];
-
-export default amphibians;

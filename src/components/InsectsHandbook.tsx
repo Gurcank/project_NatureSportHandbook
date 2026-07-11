@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useSettings, type Language } from '@/context/SettingsContext';
+import { useSettings } from '@/context/SettingsContext';
 import NotebookSpread from '@/components/NotebookSpread';
 import { insects as allInsects } from '@/data/insects';
 import type { Animal } from '@/types';

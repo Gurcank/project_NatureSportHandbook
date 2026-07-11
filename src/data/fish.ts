@@ -362,5 +362,3 @@ export const fish: Animal[] = [
     habitat: 'Mediterranean and coastal waters'
   },
 ];
-
-export default fish;

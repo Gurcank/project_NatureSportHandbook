@@ -722,5 +722,3 @@ export const birds: Animal[] = [
     habitat: 'Farmlands, ruins, open woodlands'
   },
 ];
-
-export default birds;
