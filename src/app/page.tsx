@@ -5,8 +5,6 @@ import { useSettings } from '@/context/SettingsContext';
 import { Icons, IconWrapper } from '@/lib/icons';
 import NotebookSpread from '@/components/NotebookSpread';
 
-// Grass blades component - curved SVG
-
 export default function HomePage() {
   const { language } = useSettings();
 
