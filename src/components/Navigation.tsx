@@ -108,6 +108,7 @@ export default function Navigation() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
+  const [searchNotFound, setSearchNotFound] = useState(false);
   const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const { language } = useSettings();
   const router = useRouter();
@@ -135,9 +136,17 @@ export default function Navigation() {
     if (match) {
       router.push(match.href);
       setSearchQuery('');
+      setSearchNotFound(false);
       setIsOpen(false);
       setActiveDropdown(null);
+    } else {
+      setSearchNotFound(true);
     }
+  };
+
+  const handleSearchQueryChange = (value: string) => {
+    setSearchQuery(value);
+    setSearchNotFound(false);
   };
 
   const openDropdown = (dropdown: 'nature' | 'sport') => {
@@ -309,7 +318,7 @@ export default function Navigation() {
             <div className="flex items-center gap-3">
               <form
                 onSubmit={handleSearchSubmit}
-                className="hidden md:flex items-center gap-2 rounded-lg border-2 border-[#4ca97f]/40 bg-[#2a6f4a]/50 px-3 py-1.5 backdrop-blur-sm hover:border-[#5eb87f]/60 transition-all duration-300"
+                className="relative hidden md:flex items-center gap-2 rounded-lg border-2 border-[#4ca97f]/40 bg-[#2a6f4a]/50 px-3 py-1.5 backdrop-blur-sm hover:border-[#5eb87f]/60 transition-all duration-300"
               >
                 <svg
                   aria-hidden="true"
@@ -328,11 +337,19 @@ export default function Navigation() {
                 <input
                   type="text"
                   value={searchQuery}
-                  onChange={(event) => setSearchQuery(event.target.value)}
+                  onChange={(event) => handleSearchQueryChange(event.target.value)}
                   placeholder={searchPlaceholder}
                   aria-label={searchPlaceholder}
                   className="w-36 lg:w-48 bg-transparent text-sm text-[#e8f7f1] placeholder:text-[#7ab59a]/70 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-[#5eb87f]"
                 />
+                {searchNotFound && (
+                  <p
+                    role="status"
+                    className="absolute left-0 top-full mt-1 rounded-md bg-[#1a5f3f]/95 px-2.5 py-1 text-xs text-[#e8f7f1] shadow-lg"
+                  >
+                    {language === 'tr' ? 'Sonuç bulunamadı' : 'No results found'}
+                  </p>
+                )}
               </form>
 
               {/* Settings Button */}
@@ -420,12 +437,17 @@ export default function Navigation() {
                   <input
                     type="text"
                     value={searchQuery}
-                    onChange={(event) => setSearchQuery(event.target.value)}
+                    onChange={(event) => handleSearchQueryChange(event.target.value)}
                     placeholder={searchPlaceholder}
                     aria-label={searchPlaceholder}
                     className="min-w-0 flex-1 bg-transparent text-sm text-[#e8f7f1] placeholder:text-[#7ab59a]/70 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-[#5eb87f]"
                   />
                 </div>
+                {searchNotFound && (
+                  <p role="status" className="mt-1.5 px-1 text-xs text-[#e8f7f1]/85">
+                    {language === 'tr' ? 'Sonuç bulunamadı' : 'No results found'}
+                  </p>
+                )}
               </form>
 
               <Link
