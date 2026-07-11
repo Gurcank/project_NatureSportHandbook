@@ -1,0 +1,186 @@
+import type { Animal } from '@/types';
+
+export const amphibians: Animal[] = [
+  {
+    id: 'green-frog',
+    name: 'Yeşil Kurbağa',
+    scientificName: 'Pelophylax',
+    description: 'Göller ve sulak alanlarda yaşayan yaygın kurbağa grubu.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/European_Common_Frog_Rana_temporaria.jpg/1280px-European_Common_Frog_Rana_temporaria.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Insectivore',
+    habitat: 'Ponds, lakes, wetlands'
+  },
+  {
+    id: 'toad',
+    name: 'Kara Kurbağası',
+    scientificName: 'Bufo bufo',
+    description: 'Kuru derili ve daha tıknaz yapılı kara amfibisi.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/18/Common_Toad_Cornwall.jpeg/1280px-Common_Toad_Cornwall.jpeg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Insectivore',
+    habitat: 'Forests, gardens, wetlands'
+  },
+  {
+    id: 'tree-frog',
+    name: 'Ağaç Kurbağası',
+    scientificName: 'Hyla arborea',
+    description: 'Ağaçlarda yaşamaya uyarlanmış, güçlü parmaklı kurbağa.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/0d/Laubfrosch_cropped.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Insectivore',
+    habitat: 'Forests, reeds, wetlands'
+  },
+  {
+    id: 'salamander',
+    name: 'Semender',
+    scientificName: 'Salamandra',
+    description: 'Islak ortamlarda yaşayan, uzun gövdeli amfibi.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/b/b2/SpottedSalamander.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Carnivore',
+    habitat: 'Forests, streams, damp places'
+  },
+  {
+    id: 'axolotl',
+    name: 'Aksolotl',
+    scientificName: 'Ambystoma mexicanum',
+    description: 'Yetişkinliğini larva görünümünde koruyan ünlü amfibi.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Axolotl_ganz.jpg/1280px-Axolotl_ganz.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Carnivore',
+    habitat: 'Lakes, canals, aquariums'
+  },
+  {
+    id: 'poison-dart-frog',
+    name: 'Zehirli Ok Kurbağası',
+    scientificName: 'Dendrobatidae',
+    description: 'Canlı renkleriyle uyarı veren küçük zehirli kurbağa.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/0/0e/Blue-poison.dart.frog.and.Yellow-banded.dart.frog.arp.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Insectivore',
+    habitat: 'Rainforests'
+  },
+  {
+    id: 'bullfrog',
+    name: 'Boğa Kurbağası',
+    scientificName: 'Lithobates catesbeianus',
+    description: 'Büyük boyutu ve gür sesiyle tanınan kurbağa.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/aa/North-American-bullfrog1.jpg/1280px-North-American-bullfrog1.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Carnivore',
+    habitat: 'Ponds, lakes, marshes'
+  },
+  {
+    id: 'newt',
+    name: 'Su Semenderi',
+    scientificName: 'Triturus',
+    description: 'Yaşamının bir kısmını suda geçiren semender türü.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/Uhandre_goimenditarra.jpg/1280px-Uhandre_goimenditarra.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Carnivore',
+    habitat: 'Ponds, slow streams, forests'
+  },
+  {
+    id: 'giant-chinese-salamander',
+    name: 'Dev Çin Semenderi',
+    scientificName: 'Andrias davidianus',
+    description: 'Dünyanın en büyük amfibilerinden biri.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a0/Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg/1280px-Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Carnivore',
+    habitat: 'Cold rivers, mountain streams'
+  },
+  {
+    id: 'caecilian',
+    name: 'Sesilya',
+    scientificName: 'Gymnophiona',
+    description: 'Bacakları olmayan, yer altında yaşayan ilginç amfibi grubu.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a2/Oscaecilia_ochrocephala_%2816983972190%29.jpg/1280px-Oscaecilia_ochrocephala_%2816983972190%29.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Carnivore',
+    habitat: 'Soil, tropical forests'
+  },
+  {
+    id: 'spotted-salamander',
+    name: 'Benekli Semender',
+    scientificName: 'Ambystoma maculatum',
+    description: 'Benekli vücuduyla dikkat çeken gece aktif amfibi.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/84/Spotted_Salamander%2C_Cantley%2C_Quebec.jpg/1280px-Spotted_Salamander%2C_Cantley%2C_Quebec.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Carnivore',
+    habitat: 'Forests, wetlands'
+  },
+  {
+    id: 'fire-salamander',
+    name: 'Ateş Semenderi',
+    scientificName: 'Salamandra salamandra',
+    description: 'Siyah üstüne sarı desenleriyle bilinen zehirli semender.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Salamandra_salamandra_MHNT_1.jpg/1280px-Salamandra_salamandra_MHNT_1.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Carnivore',
+    habitat: 'Forests, damp woodlands'
+  },
+  {
+    id: 'glass-frog',
+    name: 'Cam Kurbağası',
+    scientificName: 'Centrolenidae',
+    description: 'Yarı saydam karın bölgesiyle bilinen tropik kurbağa.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e3/Cochranella_susatamai03.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Insectivore',
+    habitat: 'Tropical forests, streams'
+  },
+  {
+    id: 'african-clawed-frog',
+    name: 'Afrika Pençeli Kurbağası',
+    scientificName: 'Xenopus laevis',
+    description: 'Laboratuvarlarda da çok bilinen pençeli su kurbağası.',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Xenopus_laevis_02.jpg/1280px-Xenopus_laevis_02.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Carnivore',
+    habitat: 'Ponds, slow rivers'
+  },
+  {
+    id: 'mudpuppy',
+    name: 'Çamur Semenderi',
+    scientificName: 'Necturus maculosus',
+    description: 'Hayat boyu solungaç taşıyabilen sucul semender.',
+    image: 'https://commons.wikimedia.org/wiki/Special:FilePath/Mudpuppy.jpg',
+    climate: [],
+    region: [],
+    type: 'Amphibian',
+    diet: 'Carnivore',
+    habitat: 'Lakes, rivers, streams'
+  },
+];
+
+export default amphibians;

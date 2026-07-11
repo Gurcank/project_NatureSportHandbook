@@ -1,0 +1,314 @@
+@import "tailwindcss";
+
+:root {
+  --background: #e8dfcc;
+  --foreground: #312b24;
+  --paper: #f0e5cf;
+  --paper-deep: #dcc89a;
+  --green: #5f7550;
+  --green-deep: #304427;
+  --brown: #8a6542;
+  --brown-deep: #55361f;
+  --pencil: #43362d;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-kalam);
+  --font-mono: var(--font-geist-mono);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #efe1b9;
+    --foreground: #3f372f;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--green) 28%, white);
+  color: var(--pencil);
+}
+
+.font-serif {
+  font-family: var(--font-kalam), cursive;
+}
+
+.font-sans {
+  font-family: var(--font-geist-sans), sans-serif;
+}
+
+@keyframes vineGrowLeft {
+  0% {
+    opacity: 0;
+    transform: rotate(var(--vine-rot, 10deg)) scale(0.35);
+  }
+
+  70% {
+    opacity: 1;
+    transform: rotate(var(--vine-rot, 10deg)) scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(var(--vine-rot, 10deg)) scale(1);
+  }
+}
+
+@keyframes vineSwayLeft {
+  0%,
+  100% {
+    transform: rotate(var(--vine-rot, 10deg));
+  }
+
+  50% {
+    transform: rotate(calc(var(--vine-rot, 10deg) + 2deg));
+  }
+}
+
+@keyframes vineSwayRight {
+  0%,
+  100% {
+    transform: rotate(var(--vine-rot, -12deg));
+  }
+
+  50% {
+    transform: rotate(calc(var(--vine-rot, -12deg) - 2deg));
+  }
+}
+
+@keyframes vineGrowRight {
+  0% {
+    opacity: 0;
+    transform: rotate(var(--vine-rot, -12deg)) scale(0.35);
+  }
+
+  70% {
+    opacity: 1;
+    transform: rotate(var(--vine-rot, -12deg)) scale(1.05);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(var(--vine-rot, -12deg)) scale(1);
+  }
+}
+
+@keyframes leafSprout {
+  0% {
+    opacity: 0;
+    transform: rotate(var(--leaf-rot, 0deg)) scale(0.3);
+  }
+
+  65% {
+    opacity: 1;
+    transform: rotate(var(--leaf-rot, 0deg)) scale(1.12);
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotate(var(--leaf-rot, 0deg)) scale(1);
+  }
+}
+
+@keyframes leafDrift {
+  0%,
+  100% {
+    transform: rotate(var(--leaf-rot, 0deg)) translateY(0);
+  }
+
+  50% {
+    transform: rotate(calc(var(--leaf-rot, 0deg) + 4deg)) translateY(-1px);
+  }
+}
+
+@keyframes tendrilPulse {
+  0%,
+  100% {
+    opacity: 0.6;
+    transform: scale(1);
+  }
+
+  50% {
+    opacity: 1;
+    transform: scale(1.12);
+  }
+}
+
+.vine-curve-left {
+  transform-origin: left top;
+  animation: vineGrowLeft 1.2s ease-out both, vineSwayLeft 6.5s ease-in-out 1.2s infinite;
+}
+
+.vine-curve-left-secondary {
+  transform-origin: left top;
+  animation: vineGrowLeft 1.05s ease-out var(--vine-delay, 180ms) both, vineSwayLeft 6.8s ease-in-out 1.35s infinite;
+}
+
+.vine-curve-right {
+  transform-origin: right bottom;
+  animation: vineGrowRight 1.2s ease-out 90ms both, vineSwayRight 6.7s ease-in-out 1.3s infinite;
+}
+
+.vine-curve-right-secondary {
+  transform-origin: right bottom;
+  animation: vineGrowRight 1.05s ease-out var(--vine-delay, 210ms) both, vineSwayRight 7s ease-in-out 1.45s infinite;
+}
+
+.vine-leaf {
+  opacity: 0;
+  animation:
+    leafSprout 0.46s ease-out var(--leaf-delay, 0ms) both,
+    leafDrift 4.8s ease-in-out calc(var(--leaf-delay, 0ms) + 580ms) infinite;
+}
+
+.vine-tendril {
+  opacity: 0;
+  animation:
+    leafSprout 0.42s ease-out var(--leaf-delay, 0ms) both,
+    tendrilPulse 3.4s ease-in-out calc(var(--leaf-delay, 0ms) + 560ms) infinite;
+}
+
+/* Water wave animation */
+@keyframes waterWave {
+  0%,
+  100% {
+    d: path('M0,40 Q10,30 20,40 T40,40 T60,40 T80,40 T100,40 T120,40 T140,40 T160,40');
+  }
+  50% {
+    d: path('M0,40 Q10,50 20,40 T40,40 T60,40 T80,40 T100,40 T120,40 T140,40 T160,40');
+  }
+}
+
+@keyframes waterFlow {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(160px);
+  }
+}
+
+@keyframes fallingLeaf {
+  0% {
+    opacity: 0;
+    transform: translateY(var(--fall-start, -100px)) translateX(0) rotate(0deg) scale(0);
+  }
+  10% {
+    opacity: 1;
+    transform: translateY(var(--fall-start, -100px)) translateX(0) rotate(0deg) scale(1);
+  }
+  90% {
+    opacity: 1;
+    transform: translateY(var(--fall-end, 200px)) translateX(var(--fall-x, 30px)) rotate(360deg) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(var(--fall-end, 200px)) translateX(var(--fall-x, 30px)) rotate(720deg) scale(0);
+  }
+}
+
+@keyframes fireflySpark {
+  0%,
+  100% {
+    opacity: 0.2;
+    transform: translate(0, 0) scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: translate(var(--spark-x, 0), var(--spark-y, 0)) scale(1.2);
+  }
+}
+
+@keyframes deerSilhouette {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: translateX(0) scaleX(1);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateX(8px) scaleX(1);
+  }
+}
+
+@keyframes birdFly {
+  0% {
+    opacity: 0;
+    transform: translateX(var(--bird-start, -50px)) translateY(var(--bird-y, 0)) scaleX(-1);
+  }
+  10% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(var(--bird-end, 300px)) translateY(var(--bird-y, 0)) scaleX(-1);
+  }
+}
+
+@keyframes grassSway {
+  0%,
+  100% {
+    transform: scaleY(1) rotate(0deg);
+  }
+  50% {
+    transform: scaleY(0.98) rotate(2deg);
+  }
+}
+
+/* Animation classes */
+.water-wave {
+  animation: waterFlow 8s linear infinite;
+}
+
+.falling-leaf {
+  animation: fallingLeaf var(--fall-duration, 6s) ease-in var(--fall-delay, 0s) infinite;
+}
+
+.pen-ink-ring {
+  border-style: solid;
+  box-shadow:
+    0 0 0 0.35px rgba(28, 74, 148, 0.55),
+    0 0 1.4px rgba(41, 92, 174, 0.24),
+    inset 0 0 1px rgba(130, 177, 255, 0.22);
+}
+
+.pen-ink-ring-secondary {
+  border-style: solid;
+  box-shadow:
+    0 0 0 0.25px rgba(28, 74, 148, 0.42),
+    0 0 1px rgba(36, 84, 165, 0.2),
+    inset 0 0 1px rgba(145, 188, 255, 0.15);
+}
+
+.group\/link:hover .pen-ink-ring,
+.group\/link:hover .pen-ink-ring-secondary {
+  animation: none;
+}
+
+.firefly {
+  animation: fireflySpark var(--spark-duration, 2.5s) ease-in-out var(--spark-delay, 0s) infinite;
+}
+
+.deer-silhouette {
+  animation: deerSilhouette 4s ease-in-out var(--deer-delay, 0s) infinite;
+}
+
+.bird-fly {
+  animation: birdFly var(--bird-duration, 8s) linear var(--bird-delay, 0s) infinite;
+}
+
+.grass-sway {
+  animation: grassSway 3s ease-in-out var(--grass-delay, 0s) infinite;
+  transform-origin: bottom center;
+}
