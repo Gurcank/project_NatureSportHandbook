@@ -1,6 +1,6 @@
 ﻿'use client';
 
-import { createContext, useContext, useState, type ReactNode } from 'react';
+import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
 
 export type Language = 'en' | 'tr';
 export type Theme = 'light' | 'dark';
@@ -54,6 +54,10 @@ export function SettingsProvider({ children }: { children: ReactNode }) {
     setThemeState(newTheme);
     writeStoredSetting('theme', newTheme);
   };
+
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
 
   return (
     <SettingsContext.Provider value={{ language, setLanguage, theme, setTheme }}>

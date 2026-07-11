@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Canoe | Nature & Sport Handbook',
+  description: 'Field-ready notes for canoeing.',
+};
+
 export default function CanoePage() {
   return (
     <div className="flex-1 mx-auto w-full max-w-5xl px-4 py-16">

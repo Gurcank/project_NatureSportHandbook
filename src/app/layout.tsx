@@ -21,9 +21,26 @@ const kalam = Kalam({
   weight: ['300', '400', '700'],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
+
 export const metadata: Metadata = {
-  title: 'Nature & Sport Handbook',
+  metadataBase: new URL(siteUrl),
+  title: {
+    default: 'Nature & Sport Handbook',
+    template: '%s',
+  },
   description: 'Field-ready notes for nature and sport explorers',
+  openGraph: {
+    title: 'Nature & Sport Handbook',
+    description: 'Field-ready notes for nature and sport explorers',
+    type: 'website',
+    siteName: 'Nature & Sport Handbook',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'Nature & Sport Handbook',
+    description: 'Field-ready notes for nature and sport explorers',
+  },
 };
 
 export default function RootLayout({

@@ -65,7 +65,7 @@ export default function BackgroundProvider({ children }: { children: ReactNode }
   }, []);
 
   return (
-    <div
+    <main
       className="min-h-screen flex flex-col"
       style={
         backgroundUrl
@@ -88,6 +88,6 @@ export default function BackgroundProvider({ children }: { children: ReactNode }
 
       {/* Content */}
       <div className="relative z-10">{children}</div>
-    </div>
+    </main>
   );
 }

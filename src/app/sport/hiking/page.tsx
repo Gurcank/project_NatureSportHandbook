@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Hiking | Nature & Sport Handbook',
+  description: 'Field-ready notes for hiking on land.',
+};
+
 export default function HikingPage() {
   return (
     <div className="flex-1 mx-auto w-full max-w-5xl px-4 py-16">

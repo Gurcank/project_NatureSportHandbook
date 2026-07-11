@@ -1,6 +1,9 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { animals } from '@/data/animals';
 import { Animal } from '@/types';
+
+type PageParams = { category: string; slug: string };
 
 function slugify(text: string) {
   return text
@@ -20,12 +23,25 @@ function titleFromSlug(slug: string) {
     .join(' ');
 }
 
-export default function AnimalDetailPage({
+export async function generateMetadata({
   params,
 }: {
-  params: { category: string; slug: string };
-}) {
-  const { slug } = params;
+  params: Promise<PageParams>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const byId = animals.find((a) => a.id === slug);
+  const byName = animals.find((a) => slugify(a.name) === slug);
+  const animal = byId ?? byName;
+  const title = animal?.name ?? titleFromSlug(slug);
+
+  return {
+    title: `${title} | Nature & Sport Handbook`,
+    description: animal?.description ?? `Field notes on ${title}.`,
+  };
+}
+
+export default async function AnimalDetailPage({ params }: { params: Promise<PageParams> }) {
+  const { slug, category } = await params;
 
   const byId = animals.find((a) => a.id === slug);
   const byName = animals.find((a) => slugify(a.name) === slug);
@@ -42,7 +58,7 @@ export default function AnimalDetailPage({
           </p>
           <div className="flex gap-3">
             <Link
-              href={`/nature/animals/${params.category}`}
+              href={`/nature/animals/${category}`}
               className="rounded-lg border border-amber-200/60 bg-amber-100/10 px-4 py-2 font-medium text-amber-100"
             >
               Kategoriye dön
@@ -98,7 +114,7 @@ export default function AnimalDetailPage({
 
             <div className="mt-6 flex gap-3">
               <Link
-                href={`/nature/animals/${params.category}`}
+                href={`/nature/animals/${category}`}
                 className="rounded-lg border border-sky-200/60 bg-sky-100/10 px-4 py-2 font-medium text-sky-100"
               >
                 Kategoriye dön

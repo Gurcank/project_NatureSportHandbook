@@ -161,12 +161,12 @@ export default function AnimalSubCategoryPage() {
               </span>
             </div>
 
-            <h2
+            <h1
               className="mb-4 text-5xl font-serif text-[#5a5a5a] sm:text-6xl"
               style={{ fontFamily: 'var(--font-kalam), "Segoe Print", "Bradley Hand", cursive' }}
             >
               {language === 'tr' ? 'Memeliler' : 'Mammals'}
-            </h2>
+            </h1>
 
             <p
               className="mb-6 max-w-xl text-base leading-7 text-[#5a5a5a]"
@@ -287,14 +287,14 @@ export default function AnimalSubCategoryPage() {
                     </span>
                   </div>
 
-                  <h2
+                  <h1
                     className="mb-4 text-5xl font-serif text-[#5a5a5a] sm:text-6xl"
                     style={{
                       fontFamily: 'var(--font-kalam), "Segoe Print", "Bradley Hand", cursive',
                     }}
                   >
                     {firstMammal.name}
-                  </h2>
+                  </h1>
 
                   <p className="mb-2 text-sm italic text-[#5a5a5a]/80">
                     {firstMammal.scientificName}
@@ -386,14 +386,14 @@ export default function AnimalSubCategoryPage() {
                     </span>
                   </div>
 
-                  <h2
+                  <h1
                     className="mb-4 text-5xl font-serif text-[#5a5a5a] sm:text-6xl"
                     style={{
                       fontFamily: 'var(--font-kalam), "Segoe Print", "Bradley Hand", cursive',
                     }}
                   >
                     {secondMammal.name}
-                  </h2>
+                  </h1>
 
                   <p className="mb-2 text-sm italic text-[#5a5a5a]/80">
                     {secondMammal.scientificName}

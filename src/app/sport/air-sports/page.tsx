@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Air Sports | Nature & Sport Handbook',
+  description: 'Field-ready notes for air sports and flight adventures.',
+};
+
 export default function AirSportsPage() {
   return (
     <div className="flex-1 mx-auto w-full max-w-5xl px-4 py-16">

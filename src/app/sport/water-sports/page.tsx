@@ -1,3 +1,10 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: 'Water Sports | Nature & Sport Handbook',
+  description: 'Field-ready notes for water sports and aquatic adventures.',
+};
+
 export default function WaterSportsPage() {
   return (
     <div className="flex-1 mx-auto w-full max-w-5xl px-4 py-16">

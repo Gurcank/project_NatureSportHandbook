@@ -1,6 +1,9 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
 import { plants } from '@/data/plants';
 import { Plant } from '@/types';
+
+type PageParams = { category: string; slug: string };
 
 function slugify(text: string) {
   return text
@@ -20,12 +23,25 @@ function titleFromSlug(slug: string) {
     .join(' ');
 }
 
-export default function PlantDetailPage({
+export async function generateMetadata({
   params,
 }: {
-  params: { category: string; slug: string };
-}) {
-  const { slug } = params;
+  params: Promise<PageParams>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const byId = plants.find((p) => p.id === slug);
+  const byName = plants.find((p) => slugify(p.name) === slug);
+  const plant = byId ?? byName;
+  const title = plant?.name ?? titleFromSlug(slug);
+
+  return {
+    title: `${title} | Nature & Sport Handbook`,
+    description: plant?.description ?? `Field notes on ${title}.`,
+  };
+}
+
+export default async function PlantDetailPage({ params }: { params: Promise<PageParams> }) {
+  const { slug, category } = await params;
   const byId = plants.find((p) => p.id === slug);
   const byName = plants.find((p) => slugify(p.name) === slug);
   const plant: Plant | undefined = byId ?? byName;
@@ -41,7 +57,7 @@ export default function PlantDetailPage({
           </p>
           <div className="flex gap-3">
             <Link
-              href={`/nature/plants/${params.category}`}
+              href={`/nature/plants/${category}`}
               className="rounded-lg border border-green-200/60 bg-green-100/10 px-4 py-2 font-medium text-green-100"
             >
               Kategoriye dön
@@ -97,7 +113,7 @@ export default function PlantDetailPage({
 
             <div className="mt-6 flex gap-3">
               <Link
-                href={`/nature/plants/${params.category}`}
+                href={`/nature/plants/${category}`}
                 className="rounded-lg border border-emerald-200/60 bg-emerald-100/10 px-4 py-2 font-medium text-emerald-100"
               >
                 Kategoriye dön

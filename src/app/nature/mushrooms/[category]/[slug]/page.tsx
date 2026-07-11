@@ -1,4 +1,7 @@
+import type { Metadata } from 'next';
 import Link from 'next/link';
+
+type PageParams = { category: string; slug: string };
 
 function titleFromSlug(slug: string) {
   return slug
@@ -7,12 +10,21 @@ function titleFromSlug(slug: string) {
     .join(' ');
 }
 
-export default function MushroomDetailPage({
+export async function generateMetadata({
   params,
 }: {
-  params: { category: string; slug: string };
-}) {
-  const { slug } = params;
+  params: Promise<PageParams>;
+}): Promise<Metadata> {
+  const { slug } = await params;
+  const title = titleFromSlug(slug);
+  return {
+    title: `${title} | Nature & Sport Handbook`,
+    description: `Field notes on ${title}.`,
+  };
+}
+
+export default async function MushroomDetailPage({ params }: { params: Promise<PageParams> }) {
+  const { slug, category } = await params;
   const title = titleFromSlug(slug);
 
   return (
@@ -25,7 +37,7 @@ export default function MushroomDetailPage({
         </p>
         <div className="flex gap-3">
           <Link
-            href={`/nature/mushrooms/${params.category}`}
+            href={`/nature/mushrooms/${category}`}
             className="rounded-lg border border-amber-200/60 bg-amber-100/10 px-4 py-2 font-medium text-amber-100"
           >
             Kategoriye dön
