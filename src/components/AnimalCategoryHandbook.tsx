@@ -1,26 +1,26 @@
 'use client';
 
 import { useEffect, useState } from 'react';
-import { useSettings, type Language } from '@/context/SettingsContext';
+import { useSettings } from '@/context/SettingsContext';
 import NotebookSpread from '@/components/NotebookSpread';
-import { mammalSpreads, type MammalEntry } from '@/data/mammals';
+import type { Animal } from '@/types';
 
 type TurnDirection = 'next' | 'prev';
 
-function MammalCard({ animal, language }: { animal: MammalEntry; language: Language }) {
+function AnimalCard({ animal }: { animal: Animal }) {
   return (
     <article className="flex gap-3.5 rounded-[1.4rem] px-1 py-1">
       <figure className="flex h-[13.2rem] w-[8.7rem] shrink-0 flex-col overflow-hidden rounded-[1.15rem] border border-[#dcdcdc] bg-white p-1.5 shadow-[0_10px_24px_rgba(57,36,15,0.12),0_0_0_1px_rgba(255,255,255,0.72),inset_0_1px_0_rgba(255,255,255,0.7)]">
         <img
           src={animal.image}
-          alt={animal.name[language]}
+          alt={animal.name}
           className="h-[10rem] w-full rounded-[0.8rem] object-cover"
         />
         <figcaption
           className="mt-1.5 truncate text-center text-[0.84rem] font-semibold leading-tight text-[#4f4f4f]"
           style={{ fontFamily: 'var(--font-kalam), "Segoe Print", "Bradley Hand", cursive' }}
         >
-          {animal.name[language]}
+          {animal.name}
         </figcaption>
       </figure>
 
@@ -39,7 +39,7 @@ function MammalCard({ animal, language }: { animal: MammalEntry; language: Langu
           • Habitat : {animal.habitat}
         </p>
         <p className="mt-2.5 text-[0.9rem] leading-6.5 text-inherit opacity-90">
-          • {animal.description[language]}
+          • {animal.description}
         </p>
       </div>
     </article>
@@ -78,31 +78,27 @@ function PageArrow({
   );
 }
 
-export default function MammalsHandbook() {
+export default function AnimalCategoryHandbook({ items }: { items: Animal[] }) {
   const { language } = useSettings();
-  const spreads = mammalSpreads[language];
+  const spreads: Animal[][] = [];
+  for (let i = 0; i < items.length; i += 6) spreads.push(items.slice(i, i + 6));
+
   const [pageIndex, setPageIndex] = useState(0);
   const [turning, setTurning] = useState(false);
   const [direction, setDirection] = useState<TurnDirection>('next');
 
   useEffect(() => {
-    if (!turning) {
-      return;
-    }
-
-    const timer = window.setTimeout(() => {
-      setPageIndex((current) =>
-        direction === 'next'
-          ? (current + 1) % spreads.length
-          : (current - 1 + spreads.length) % spreads.length,
+    if (!turning) return;
+    const t = window.setTimeout(() => {
+      setPageIndex((c) =>
+        direction === 'next' ? (c + 1) % spreads.length : (c - 1 + spreads.length) % spreads.length,
       );
       setTurning(false);
     }, 420);
-
-    return () => window.clearTimeout(timer);
+    return () => clearTimeout(t);
   }, [direction, spreads.length, turning]);
 
-  const currentSpread = spreads[pageIndex];
+  const currentSpread = spreads[pageIndex] || [];
   const canGoPrev = pageIndex > 0;
   const canGoNext = pageIndex < spreads.length - 1;
 
@@ -118,15 +114,15 @@ export default function MammalsHandbook() {
         showHomeSticky={false}
         leftContent={
           <div className="space-y-3 pr-4 md:pr-8">
-            {currentSpread.slice(0, 3).map((animal) => (
-              <MammalCard key={animal.id} animal={animal} language={language} />
+            {currentSpread.slice(0, 3).map((a) => (
+              <AnimalCard key={a.id} animal={a} />
             ))}
           </div>
         }
         rightContent={
           <div className="space-y-3 pl-4 md:pl-8">
-            {currentSpread.slice(3).map((animal) => (
-              <MammalCard key={animal.id} animal={animal} language={language} />
+            {currentSpread.slice(3).map((a) => (
+              <AnimalCard key={a.id} animal={a} />
             ))}
           </div>
         }

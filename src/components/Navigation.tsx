@@ -91,7 +91,12 @@ function MenuLink({ href, icon, label }: { href: string; icon: React.ReactNode; 
       className="flex h-12 min-w-full items-center justify-center overflow-hidden rounded-xl border-2 border-[#4ca97f]/35 bg-gradient-to-br from-[#3d9d6f]/60 to-[#2a6f4a]/50 px-3 text-[#e8f7f1] transition-all duration-300 hover:scale-105 hover:border-[#5eb87f]/60 hover:to-[#3d9d6f]/70 hover:text-white hover:shadow-lg hover:shadow-[#3d9d6f]/30 group"
     >
       <span className="flex w-full min-w-0 items-center justify-center gap-2">
-        <IconWrapper icon={icon} size={22} color="#a8d5ba" className="group-hover:scale-110 transition-transform duration-300" />
+        <IconWrapper
+          icon={icon}
+          size={22}
+          color="#a8d5ba"
+          className="group-hover:scale-110 transition-transform duration-300"
+        />
         <span className="whitespace-nowrap text-sm font-semibold leading-none">{label}</span>
       </span>
     </Link>
@@ -103,22 +108,21 @@ export default function Navigation() {
   const [activeDropdown, setActiveDropdown] = useState<string | null>(null);
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState('');
-  const [brandTitle, setBrandTitle] = useState('Nature & Sport Handbook');
-  const [searchPlaceholder, setSearchPlaceholder] = useState('Search plants, animals, sports...');
   const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const { language } = useSettings();
   const router = useRouter();
   const translate = (key: keyof typeof translations.en) => t(key, language);
+  const brandTitle = language === 'tr' ? 'Doğa ve Spor El Kitabı' : 'Nature & Sport Handbook';
+  const searchPlaceholder =
+    language === 'tr' ? 'Bitki, hayvan, spor ara...' : 'Search plants, animals, sports...';
 
   useEffect(() => {
-    setBrandTitle(language === 'tr' ? 'Doğa ve Spor El Kitabı' : 'Nature & Sport Handbook');
-    setSearchPlaceholder(language === 'tr' ? 'Bitki, hayvan, spor ara...' : 'Search plants, animals, sports...');
     return () => {
       if (closeTimerRef.current) {
         clearTimeout(closeTimerRef.current);
       }
     };
-  }, [language]);
+  }, []);
 
   const handleSearchSubmit = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -159,7 +163,7 @@ export default function Navigation() {
       <nav className="fixed left-0 top-0 z-50 w-full">
         {/* Background with nature-inspired gradient */}
         <div className="absolute inset-0 border-b bg-gradient-to-r from-[#1a5f3f]/98 via-[#2d7a52]/96 to-[#1a5f3f]/98 border-[#3d9d6f]/30 backdrop-blur-md" />
-        
+
         {/* Nature-inspired overlay pattern */}
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-b from-[#4ca97f]/5 via-transparent to-[#1a5f3f]/8" />
 
@@ -196,7 +200,12 @@ export default function Navigation() {
                 onMouseLeave={scheduleDropdownClose}
               >
                 <button className="px-4 py-2 text-[#c9f0e0] hover:text-white font-semibold transition-all duration-300 flex items-center gap-2 relative group/btn rounded-lg hover:bg-[#3d9d6f]/20">
-                  <IconWrapper icon={Icons.nature} size={18} color="#a8d5ba" className="transition-transform duration-500 group-hover/btn:-translate-y-0.5 group-hover/btn:rotate-12" />
+                  <IconWrapper
+                    icon={Icons.nature}
+                    size={18}
+                    color="#a8d5ba"
+                    className="transition-transform duration-500 group-hover/btn:-translate-y-0.5 group-hover/btn:rotate-12"
+                  />
                   <span>{translate('nature')}</span>
                   <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-[#5eb87f] to-[#3d9d6f] group-hover/btn:w-full transition-all duration-300 rounded-full" />
                 </button>
@@ -218,7 +227,12 @@ export default function Navigation() {
                     </div>
                     <div className="relative grid grid-cols-2 gap-3 p-4">
                       {natureMenuItems.map((item) => (
-                        <MenuLink key={item.href} href={item.href} icon={item.icon} label={translate(item.labelKey)} />
+                        <MenuLink
+                          key={item.href}
+                          href={item.href}
+                          icon={item.icon}
+                          label={translate(item.labelKey)}
+                        />
                       ))}
                     </div>
                   </div>
@@ -232,7 +246,12 @@ export default function Navigation() {
                 onMouseLeave={scheduleDropdownClose}
               >
                 <button className="px-4 py-2 text-[#c9f0e0] hover:text-white font-semibold transition-all duration-300 flex items-center gap-2 relative group/btn rounded-lg hover:bg-[#3d9d6f]/20">
-                  <IconWrapper icon={Icons.person} size={18} color="#a8d5ba" className="transition-transform duration-500 group-hover/btn:rotate-90" />
+                  <IconWrapper
+                    icon={Icons.person}
+                    size={18}
+                    color="#a8d5ba"
+                    className="transition-transform duration-500 group-hover/btn:rotate-90"
+                  />
                   <span>{translate('sport')}</span>
                   <div className="absolute bottom-0 left-0 w-0 h-1 bg-gradient-to-r from-[#5eb87f] to-[#3d9d6f] group-hover/btn:w-full transition-all duration-300 rounded-full" />
                 </button>
@@ -251,7 +270,12 @@ export default function Navigation() {
                     <div className="absolute inset-0 bg-gradient-to-br from-[#5eb87f]/5 via-transparent to-[#1a5f3f]/10 pointer-events-none" />
                     <div className="relative p-4 grid grid-cols-1 gap-3">
                       {sportMenuItems.map((item) => (
-                        <MenuLink key={item.href} href={item.href} icon={item.icon} label={translate(item.labelKey)} />
+                        <MenuLink
+                          key={item.href}
+                          href={item.href}
+                          icon={item.icon}
+                          label={translate(item.labelKey)}
+                        />
                       ))}
                     </div>
                   </div>
@@ -292,12 +316,7 @@ export default function Navigation() {
                 onClick={() => setIsSettingsOpen(true)}
                 className="p-2.5 rounded-lg text-[#c9f0e0] hover:text-white border-2 border-[#4ca97f]/40 hover:border-[#5eb87f]/70 hover:bg-[#3d9d6f]/30 transition-all duration-300 group"
               >
-                <svg
-                  className="w-5 h-5"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -318,12 +337,7 @@ export default function Navigation() {
                 onClick={() => setIsOpen(!isOpen)}
                 className="md:hidden p-2.5 rounded-lg text-[#c9f0e0] hover:text-white border-2 border-[#4ca97f]/40 hover:border-[#5eb87f]/70 hover:bg-[#3d9d6f]/30 transition-all duration-300"
               >
-                <svg
-                  className="w-6 h-6"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
+                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"

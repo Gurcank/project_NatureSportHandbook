@@ -20,11 +20,13 @@ export const translations = {
     // HomePage
     natureEncyclopedia: 'Nature Encyclopedia',
     exploreWonders: 'Explore the wonders of nature and outdoor adventures',
-    discoverFascinating: 'Discover fascinating information about plants, animals, minerals, and exciting outdoor activities.',
+    discoverFascinating:
+      'Discover fascinating information about plants, animals, minerals, and exciting outdoor activities.',
     comprehensiveDatabase: 'Comprehensive Database',
-    extensiveInformation: 'Extensive information on plants, animals, and minerals from around the world.',
+    extensiveInformation:
+      'Extensive information on plants, animals, and minerals from around the world.',
     advancedSearch: 'Advanced Search',
-    findExactly: 'Find exactly what you\'re looking for with filters and search functionality.',
+    findExactly: "Find exactly what you're looking for with filters and search functionality.",
     interactiveMaps: 'Interactive Maps',
     exploreRoutesWithMaps: 'Explore hiking and trekking routes with interactive maps and guides.',
 
@@ -61,12 +63,14 @@ export const translations = {
     beginnerTips: 'Beginner Tips',
     essentialGear: 'Essential Gear',
     popularHikingRoutes: 'Popular Hiking Routes',
-    moreHikingRoutes: 'More hiking routes coming soon! Check back later for detailed guides and maps.',
+    moreHikingRoutes:
+      'More hiking routes coming soon! Check back later for detailed guides and maps.',
 
     // Trekking Page
     trekkingAdventures: 'Trekking Adventures',
     trekkingVsHiking: 'Trekking vs Hiking',
-    trekkingDescription: 'Trekking involves longer journeys through remote areas, typically over multiple days, with minimal infrastructure and higher terrain difficulty.',
+    trekkingDescription:
+      'Trekking involves longer journeys through remote areas, typically over multiple days, with minimal infrastructure and higher terrain difficulty.',
     advancedGear: 'Advanced Gear',
     featuredTrekRoutes: 'Featured Trek Routes',
     detailedTrekking: 'Detailed trekking routes and multi-day expedition guides coming soon!',
@@ -101,13 +105,16 @@ export const translations = {
     // HomePage
     natureEncyclopedia: 'Doğa Ansiklopedisi',
     exploreWonders: 'Doğanın harikalarını ve açık hava maceralarını keşfedin',
-    discoverFascinating: 'Bitkiler, hayvanlar, mineraller ve heyecan verici açık hava etkinlikleri hakkında ilginç bilgiler keşfedin.',
+    discoverFascinating:
+      'Bitkiler, hayvanlar, mineraller ve heyecan verici açık hava etkinlikleri hakkında ilginç bilgiler keşfedin.',
     comprehensiveDatabase: 'Kapsamlı Veritabanı',
-    extensiveInformation: 'Dünyanın her yerinden bitkiler, hayvanlar ve mineraller hakkında kapsamlı bilgiler.',
+    extensiveInformation:
+      'Dünyanın her yerinden bitkiler, hayvanlar ve mineraller hakkında kapsamlı bilgiler.',
     advancedSearch: 'Gelişmiş Arama',
     findExactly: 'Filtreler ve arama işlevleriyle tam olarak aradığınız şeyi bulun.',
     interactiveMaps: 'İnteraktif Haritalar',
-    exploreRoutesWithMaps: 'İnteraktif haritalar ve rehberlerle yürüyüş ve trekking rotalarını keşfedin.',
+    exploreRoutesWithMaps:
+      'İnteraktif haritalar ve rehberlerle yürüyüş ve trekking rotalarını keşfedin.',
 
     // Plants Page
     plantsEncyclopedia: 'Bitkiler Ansiklopedisi',
@@ -142,12 +149,14 @@ export const translations = {
     beginnerTips: 'Başlangıç İpuçları',
     essentialGear: 'Gerekli Ekipman',
     popularHikingRoutes: 'Popüler Yürüyüş Rotaları',
-    moreHikingRoutes: 'Daha fazla yürüyüş rotası yakında! Daha sonra ayrıntılı rehberler ve haritalar için tekrar kontrol edin.',
+    moreHikingRoutes:
+      'Daha fazla yürüyüş rotası yakında! Daha sonra ayrıntılı rehberler ve haritalar için tekrar kontrol edin.',
 
     // Trekking Page
     trekkingAdventures: 'Trekking Maceraları',
     trekkingVsHiking: 'Trekking vs Yürüyüş',
-    trekkingDescription: 'Trekking, tipik olarak birden fazla gün boyunca uzak alanlardan geçen, minimal altyapısı ve daha yüksek arazi zorluk derecesi olan daha uzun yolculuklardır.',
+    trekkingDescription:
+      'Trekking, tipik olarak birden fazla gün boyunca uzak alanlardan geçen, minimal altyapısı ve daha yüksek arazi zorluk derecesi olan daha uzun yolculuklardır.',
     advancedGear: 'İleri Ekipman',
     featuredTrekRoutes: 'Öne Çıkan Trek Rotaları',
     detailedTrekking: 'Ayrıntılı trekking rotaları ve çok günlü keşif rehberleri yakında gelecek!',

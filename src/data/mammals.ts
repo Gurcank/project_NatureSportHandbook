@@ -957,10 +957,13 @@ function organizeSpreads(animalList: MammalEntry[]): MammalEntry[][] {
   return spreads;
 }
 
-// Export spreads organized by language
+// Mammal order (and therefore spreads) is language-independent; only the
+// per-item name/description text varies by language.
+const mammalSpreadsByOrder = organizeSpreads(mammals);
+
 export const mammalSpreads: Record<string, MammalEntry[][]> = {
-  tr: organizeSpreads(mammals),
-  en: organizeSpreads(mammals),
+  tr: mammalSpreadsByOrder,
+  en: mammalSpreadsByOrder,
 };
 
 

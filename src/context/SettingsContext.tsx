@@ -14,7 +14,11 @@ interface SettingsContextType {
 
 const SettingsContext = createContext<SettingsContextType | undefined>(undefined);
 
-function readStoredSetting<T extends string>(key: string, fallback: T, allowedValues: readonly T[]): T {
+function readStoredSetting<T extends string>(
+  key: string,
+  fallback: T,
+  allowedValues: readonly T[],
+): T {
   if (typeof window === 'undefined') return fallback;
 
   try {
@@ -34,8 +38,12 @@ function writeStoredSetting(key: string, value: string) {
 }
 
 export function SettingsProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>(() => readStoredSetting('language', 'en', ['en', 'tr']));
-  const [theme, setThemeState] = useState<Theme>(() => readStoredSetting('theme', 'light', ['light', 'dark']));
+  const [language, setLanguageState] = useState<Language>(() =>
+    readStoredSetting('language', 'en', ['en', 'tr']),
+  );
+  const [theme, setThemeState] = useState<Theme>(() =>
+    readStoredSetting('theme', 'light', ['light', 'dark']),
+  );
 
   const setLanguage = (newLanguage: Language) => {
     setLanguageState(newLanguage);

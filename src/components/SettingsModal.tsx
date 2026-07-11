@@ -17,23 +17,15 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
 
   return (
     <div className="fixed inset-0 z-50 flex items-end sm:items-center justify-center">
-      <div
-        className="absolute inset-0 bg-black/60 backdrop-blur-sm"
-        onClick={onClose}
-      />
+      <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={onClose} />
 
       <div className="relative max-h-screen w-full max-w-md overflow-y-auto rounded-t-2xl border border-[#7b5c35]/35 bg-[linear-gradient(180deg,rgba(244,235,214,0.98)_0%,rgba(229,213,178,0.98)_100%)] shadow-2xl sm:w-96 sm:rounded-2xl">
         <div className="sticky top-0 flex items-center justify-between border-b border-[#7b5c35]/18 bg-[linear-gradient(90deg,rgba(96,119,81,0.94)_0%,rgba(64,84,47,0.94)_100%)] px-6 py-6">
           <div className="flex items-center space-x-3">
             <span className="text-2xl">⚙️</span>
-            <h2 className="text-2xl font-bold text-[#f2ecdf]">
-              {t('settings')}
-            </h2>
+            <h2 className="text-2xl font-bold text-[#f2ecdf]">{t('settings')}</h2>
           </div>
-          <button
-            onClick={onClose}
-            className="rounded-lg p-2 transition-colors hover:bg-black/10"
-          >
+          <button onClick={onClose} className="rounded-lg p-2 transition-colors hover:bg-black/10">
             <svg
               className="h-6 w-6 text-[#f2ecdf]"
               fill="none"
@@ -69,13 +61,9 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">
                     <span className="text-xl">🇺🇸</span>
-                    <span className="font-semibold text-[#3f372f]">
-                      English (US)
-                    </span>
+                    <span className="font-semibold text-[#3f372f]">English (US)</span>
                   </div>
-                  {language === 'en' && (
-                    <span className="font-bold text-[#5f7550]">✓</span>
-                  )}
+                  {language === 'en' && <span className="font-bold text-[#5f7550]">✓</span>}
                 </div>
               </button>
 
@@ -90,13 +78,9 @@ export default function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
                 <div className="flex items-center justify-between">
                   <div className="flex items-center space-x-2">
                     <span className="text-xl">🇹🇷</span>
-                    <span className="font-semibold text-[#3f372f]">
-                      Türkçe
-                    </span>
+                    <span className="font-semibold text-[#3f372f]">Türkçe</span>
                   </div>
-                  {language === 'tr' && (
-                    <span className="font-bold text-[#5f7550]">✓</span>
-                  )}
+                  {language === 'tr' && <span className="font-bold text-[#5f7550]">✓</span>}
                 </div>
               </button>
             </div>

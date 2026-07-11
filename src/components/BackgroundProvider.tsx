@@ -53,11 +53,7 @@ const NATURE_BACKGROUNDS = [
   },
 ];
 
-export default function BackgroundProvider({
-  children,
-}: {
-  children: ReactNode;
-}) {
+export default function BackgroundProvider({ children }: { children: ReactNode }) {
   const [backgroundUrl, setBackgroundUrl] = useState<string>('');
 
   useEffect(() => {

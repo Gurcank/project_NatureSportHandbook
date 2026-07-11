@@ -20,7 +20,11 @@ function titleFromSlug(slug: string) {
     .join(' ');
 }
 
-export default function PlantDetailPage({ params }: { params: { category: string; slug: string } }) {
+export default function PlantDetailPage({
+  params,
+}: {
+  params: { category: string; slug: string };
+}) {
   const { slug } = params;
   const byId = plants.find((p) => p.id === slug);
   const byName = plants.find((p) => slugify(p.name) === slug);
@@ -32,12 +36,20 @@ export default function PlantDetailPage({ params }: { params: { category: string
       <div className="flex-1 mx-auto w-full max-w-4xl px-4 py-12">
         <section className="rounded-2xl border border-green-300/40 bg-black/35 p-6 backdrop-blur-sm">
           <h1 className="mb-4 text-3xl font-bold text-green-100">{title}</h1>
-          <p className="mb-4 text-green-50/85">Bu öğe için ayrıntılı veri bulunamadı. Sonra içerik ekleyebilirsiniz.</p>
+          <p className="mb-4 text-green-50/85">
+            Bu öğe için ayrıntılı veri bulunamadı. Sonra içerik ekleyebilirsiniz.
+          </p>
           <div className="flex gap-3">
-            <Link href={`/nature/plants/${params.category}`} className="rounded-lg border border-green-200/60 bg-green-100/10 px-4 py-2 font-medium text-green-100">
+            <Link
+              href={`/nature/plants/${params.category}`}
+              className="rounded-lg border border-green-200/60 bg-green-100/10 px-4 py-2 font-medium text-green-100"
+            >
               Kategoriye dön
             </Link>
-            <Link href="/nature/plants" className="rounded-lg border border-green-200/60 bg-green-100/10 px-4 py-2 font-medium text-green-100">
+            <Link
+              href="/nature/plants"
+              className="rounded-lg border border-green-200/60 bg-green-100/10 px-4 py-2 font-medium text-green-100"
+            >
               Tüm bitki kategorileri
             </Link>
           </div>
@@ -50,7 +62,11 @@ export default function PlantDetailPage({ params }: { params: { category: string
     <div className="flex-1 mx-auto w-full max-w-4xl px-4 py-12">
       <article className="rounded-2xl border border-emerald-300/40 bg-black/35 p-6 backdrop-blur-sm">
         <div className="flex flex-col gap-6 md:flex-row">
-          <img src={plant.image} alt={plant.name} className="h-48 w-full rounded-lg object-cover md:w-56" />
+          <img
+            src={plant.image}
+            alt={plant.name}
+            className="h-48 w-full rounded-lg object-cover md:w-56"
+          />
 
           <div className="flex-1">
             <h1 className="mb-2 text-3xl font-bold text-emerald-100">{plant.name}</h1>
@@ -77,10 +93,16 @@ export default function PlantDetailPage({ params }: { params: { category: string
             </dl>
 
             <div className="mt-6 flex gap-3">
-              <Link href={`/nature/plants/${params.category}`} className="rounded-lg border border-emerald-200/60 bg-emerald-100/10 px-4 py-2 font-medium text-emerald-100">
+              <Link
+                href={`/nature/plants/${params.category}`}
+                className="rounded-lg border border-emerald-200/60 bg-emerald-100/10 px-4 py-2 font-medium text-emerald-100"
+              >
                 Kategoriye dön
               </Link>
-              <Link href="/nature/plants" className="rounded-lg border border-emerald-200/60 bg-emerald-100/10 px-4 py-2 font-medium text-emerald-100">
+              <Link
+                href="/nature/plants"
+                className="rounded-lg border border-emerald-200/60 bg-emerald-100/10 px-4 py-2 font-medium text-emerald-100"
+              >
                 Tüm bitki kategorileri
               </Link>
             </div>
