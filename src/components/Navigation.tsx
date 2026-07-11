@@ -198,8 +198,19 @@ export default function Navigation() {
                 className="relative group"
                 onMouseEnter={() => openDropdown('nature')}
                 onMouseLeave={scheduleDropdownClose}
+                onFocus={() => openDropdown('nature')}
+                onBlur={(event) => {
+                  if (!event.currentTarget.contains(event.relatedTarget)) {
+                    scheduleDropdownClose();
+                  }
+                }}
               >
-                <button className="px-4 py-2 text-[#c9f0e0] hover:text-white font-semibold transition-all duration-300 flex items-center gap-2 relative group/btn rounded-lg hover:bg-[#3d9d6f]/20">
+                <button
+                  type="button"
+                  aria-haspopup="true"
+                  aria-expanded={activeDropdown === 'nature'}
+                  className="px-4 py-2 text-[#c9f0e0] hover:text-white font-semibold transition-all duration-300 flex items-center gap-2 relative group/btn rounded-lg hover:bg-[#3d9d6f]/20"
+                >
                   <IconWrapper
                     icon={Icons.nature}
                     size={18}
@@ -244,8 +255,19 @@ export default function Navigation() {
                 className="relative group"
                 onMouseEnter={() => openDropdown('sport')}
                 onMouseLeave={scheduleDropdownClose}
+                onFocus={() => openDropdown('sport')}
+                onBlur={(event) => {
+                  if (!event.currentTarget.contains(event.relatedTarget)) {
+                    scheduleDropdownClose();
+                  }
+                }}
               >
-                <button className="px-4 py-2 text-[#c9f0e0] hover:text-white font-semibold transition-all duration-300 flex items-center gap-2 relative group/btn rounded-lg hover:bg-[#3d9d6f]/20">
+                <button
+                  type="button"
+                  aria-haspopup="true"
+                  aria-expanded={activeDropdown === 'sport'}
+                  className="px-4 py-2 text-[#c9f0e0] hover:text-white font-semibold transition-all duration-300 flex items-center gap-2 relative group/btn rounded-lg hover:bg-[#3d9d6f]/20"
+                >
                   <IconWrapper
                     icon={Icons.person}
                     size={18}
@@ -290,6 +312,7 @@ export default function Navigation() {
                 className="hidden md:flex items-center gap-2 rounded-lg border-2 border-[#4ca97f]/40 bg-[#2a6f4a]/50 px-3 py-1.5 backdrop-blur-sm hover:border-[#5eb87f]/60 transition-all duration-300"
               >
                 <svg
+                  aria-hidden="true"
                   className="w-4 h-4 text-[#a8d5ba]"
                   fill="none"
                   stroke="currentColor"
@@ -307,16 +330,25 @@ export default function Navigation() {
                   value={searchQuery}
                   onChange={(event) => setSearchQuery(event.target.value)}
                   placeholder={searchPlaceholder}
-                  className="w-36 lg:w-48 bg-transparent text-sm text-[#e8f7f1] placeholder:text-[#7ab59a]/70 focus:outline-none"
+                  aria-label={searchPlaceholder}
+                  className="w-36 lg:w-48 bg-transparent text-sm text-[#e8f7f1] placeholder:text-[#7ab59a]/70 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-[#5eb87f]"
                 />
               </form>
 
               {/* Settings Button */}
               <button
+                type="button"
                 onClick={() => setIsSettingsOpen(true)}
+                aria-label={translate('settings')}
                 className="p-2.5 rounded-lg text-[#c9f0e0] hover:text-white border-2 border-[#4ca97f]/40 hover:border-[#5eb87f]/70 hover:bg-[#3d9d6f]/30 transition-all duration-300 group"
               >
-                <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  aria-hidden="true"
+                  className="w-5 h-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -334,10 +366,27 @@ export default function Navigation() {
 
               {/* Mobile Menu Button */}
               <button
+                type="button"
                 onClick={() => setIsOpen(!isOpen)}
+                aria-label={
+                  isOpen
+                    ? language === 'tr'
+                      ? 'Menüyü kapat'
+                      : 'Close menu'
+                    : language === 'tr'
+                      ? 'Menüyü aç'
+                      : 'Open menu'
+                }
+                aria-expanded={isOpen}
                 className="md:hidden p-2.5 rounded-lg text-[#c9f0e0] hover:text-white border-2 border-[#4ca97f]/40 hover:border-[#5eb87f]/70 hover:bg-[#3d9d6f]/30 transition-all duration-300"
               >
-                <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg
+                  aria-hidden="true"
+                  className="w-6 h-6"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
                   <path
                     strokeLinecap="round"
                     strokeLinejoin="round"
@@ -355,6 +404,7 @@ export default function Navigation() {
               <form onSubmit={handleSearchSubmit} className="px-4 pt-3 pb-2">
                 <div className="flex items-center gap-2 rounded-lg border-2 border-[#4ca97f]/40 bg-[#2a6f4a]/50 px-3 py-2 hover:border-[#5eb87f]/60 transition-all duration-300">
                   <svg
+                    aria-hidden="true"
                     className="w-4 h-4 text-[#a8d5ba]"
                     fill="none"
                     stroke="currentColor"
@@ -372,7 +422,8 @@ export default function Navigation() {
                     value={searchQuery}
                     onChange={(event) => setSearchQuery(event.target.value)}
                     placeholder={searchPlaceholder}
-                    className="min-w-0 flex-1 bg-transparent text-sm text-[#e8f7f1] placeholder:text-[#7ab59a]/70 focus:outline-none"
+                    aria-label={searchPlaceholder}
+                    className="min-w-0 flex-1 bg-transparent text-sm text-[#e8f7f1] placeholder:text-[#7ab59a]/70 focus:outline-none focus:ring-1 focus:ring-inset focus:ring-[#5eb87f]"
                   />
                 </div>
               </form>
