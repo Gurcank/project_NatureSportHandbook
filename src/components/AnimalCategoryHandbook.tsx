@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useState } from 'react';
+import { useEffect, useMemo, useState } from 'react';
 import { useSettings } from '@/context/SettingsContext';
 import NotebookSpread from '@/components/NotebookSpread';
 import type { Animal } from '@/types';
@@ -14,6 +14,9 @@ function AnimalCard({ animal }: { animal: Animal }) {
         <img
           src={animal.image}
           alt={animal.name}
+          width={139}
+          height={160}
+          loading="lazy"
           className="h-[10rem] w-full rounded-[0.8rem] object-cover"
         />
         <figcaption
@@ -80,8 +83,11 @@ function PageArrow({
 
 export default function AnimalCategoryHandbook({ items }: { items: Animal[] }) {
   const { language } = useSettings();
-  const spreads: Animal[][] = [];
-  for (let i = 0; i < items.length; i += 6) spreads.push(items.slice(i, i + 6));
+  const spreads = useMemo(() => {
+    const grouped: Animal[][] = [];
+    for (let i = 0; i < items.length; i += 6) grouped.push(items.slice(i, i + 6));
+    return grouped;
+  }, [items]);
 
   const [pageIndex, setPageIndex] = useState(0);
   const [turning, setTurning] = useState(false);

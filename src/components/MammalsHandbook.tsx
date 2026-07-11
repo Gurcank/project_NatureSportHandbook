@@ -14,6 +14,9 @@ function MammalCard({ animal, language }: { animal: MammalEntry; language: Langu
         <img
           src={animal.image}
           alt={animal.name[language]}
+          width={139}
+          height={160}
+          loading="lazy"
           className="h-[10rem] w-full rounded-[0.8rem] object-cover"
         />
         <figcaption

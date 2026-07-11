@@ -143,7 +143,14 @@ function PlantCard({
           <div className="w-[7.25rem] shrink-0">
             <div className="overflow-hidden rounded-[1.1rem] border border-[#e5dcc7] bg-white shadow-[0_8px_18px_rgba(57,36,15,0.08)]">
               {item.image ? (
-                <img src={item.image} alt={item.name} className="h-[8.6rem] w-full object-cover" />
+                <img
+                  src={item.image}
+                  alt={item.name}
+                  width={116}
+                  height={138}
+                  loading="lazy"
+                  className="h-[8.6rem] w-full object-cover"
+                />
               ) : (
                 <div className="flex h-[8.6rem] items-center justify-center bg-[#f1eadb] text-sm text-[#7b6a52]">
                   {item.name}

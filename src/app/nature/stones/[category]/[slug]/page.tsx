@@ -65,6 +65,9 @@ export default function StoneDetailPage({
           <img
             src={stone.image}
             alt={stone.name}
+            width={224}
+            height={192}
+            loading="lazy"
             className="h-48 w-full rounded-lg object-cover md:w-56"
           />
 
