@@ -1,0 +1,19 @@
+node_modules
+.next
+out
+build
+
+# raw source dataset, not needed at runtime or build time
+data
+
+.git
+.gitignore
+.env
+.env.*
+!.env.example
+
+*.md
+.vscode
+.idea
+
+npm-debug.log*
