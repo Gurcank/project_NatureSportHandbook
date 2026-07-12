@@ -5,6 +5,7 @@ import { useMemo } from 'react';
 import { useParams } from 'next/navigation';
 import { useSettings } from '@/context/SettingsContext';
 import { plants } from '@/data/plants';
+import { slugify } from '@/lib/slug';
 
 type PlantCategoryKey = 'trees' | 'herbs' | 'shrubs' | 'flowers' | 'mosses' | 'aquatic';
 
@@ -64,17 +65,6 @@ const categoryContent: Record<PlantCategoryKey, Record<'tr' | 'en', CategoryText
     },
   },
 };
-
-function slugify(text: string) {
-  return text
-    .toString()
-    .toLowerCase()
-    .normalize('NFKD')
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9\-]/g, '')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '');
-}
 
 function matchesCategory(type: string, category: PlantCategoryKey) {
   const normalized = type.toLowerCase();

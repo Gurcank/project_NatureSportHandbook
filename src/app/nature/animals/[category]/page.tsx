@@ -6,17 +6,7 @@ import { useParams } from 'next/navigation';
 import { useSettings } from '@/context/SettingsContext';
 import { animals } from '@/data/animals';
 import NotebookSpread from '@/components/NotebookSpread';
-
-function slugify(text: string) {
-  return text
-    .toString()
-    .toLowerCase()
-    .normalize('NFKD')
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9\-]/g, '')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '');
-}
+import { slugify } from '@/lib/slug';
 
 const categoryContent = {
   mammals: {

@@ -3,17 +3,7 @@
 import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useSettings } from '@/context/SettingsContext';
-
-function slugify(text: string) {
-  return text
-    .toString()
-    .toLowerCase()
-    .normalize('NFKD')
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9\-]/g, '')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '');
-}
+import { slugify } from '@/lib/slug';
 
 const categoryContent = {
   edible: {

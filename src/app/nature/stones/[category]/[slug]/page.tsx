@@ -1,27 +1,10 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import { stones } from '@/data/stones';
+import { slugify, titleFromSlug } from '@/lib/slug';
 import { Stone } from '@/types';
 
 type PageParams = { category: string; slug: string };
-
-function slugify(text: string) {
-  return text
-    .toString()
-    .toLowerCase()
-    .normalize('NFKD')
-    .replace(/\s+/g, '-')
-    .replace(/[^a-z0-9\-]/g, '')
-    .replace(/-+/g, '-')
-    .replace(/^-|-$/g, '');
-}
-
-function titleFromSlug(slug: string) {
-  return slug
-    .split('-')
-    .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
-    .join(' ');
-}
 
 export async function generateMetadata({
   params,

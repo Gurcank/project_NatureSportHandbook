@@ -1,14 +1,8 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { titleFromSlug } from '@/lib/slug';
 
 type PageParams = { category: string; slug: string };
-
-function titleFromSlug(slug: string) {
-  return slug
-    .split('-')
-    .map((s) => s.charAt(0).toUpperCase() + s.slice(1))
-    .join(' ');
-}
 
 export async function generateMetadata({
   params,
