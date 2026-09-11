@@ -6,7 +6,7 @@ const cspHeader = `
   default-src 'self';
   script-src 'self' 'unsafe-inline'${isDev ? " 'unsafe-eval'" : ''};
   style-src 'self' 'unsafe-inline';
-  img-src 'self' data: https://upload.wikimedia.org https://commons.wikimedia.org https://images.unsplash.com https://picsum.photos;
+  img-src 'self' data:;
   font-src 'self' data:;
   object-src 'none';
   base-uri 'self';

@@ -17,7 +17,10 @@
   "dependencies": {
     "next": "^16.2.10",
     "react": "19.2.4",
-    "react-dom": "19.2.4"
+    "react-dom": "19.2.4",
+    "react-pageflip": "^2.0.3",
+    "react-rough-notation": "^1.0.8",
+    "roughjs": "^4.6.6"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -28,6 +31,7 @@
     "eslint-config-next": "16.2.4",
     "prettier": "3.9.5",
     "tailwindcss": "^4",
+    "tsx": "^4.23.13",
     "typescript": "^5",
     "vitest": "4.1.10"
   }

@@ -1,25 +1,62 @@
 import type { Metadata } from 'next';
-import { Geist, Geist_Mono, Kalam } from 'next/font/google';
-import Navigation from '@/components/Navigation';
-import BackgroundProvider from '@/components/BackgroundProvider';
+import {
+  Caveat,
+  Indie_Flower,
+  Kalam,
+  Nothing_You_Could_Do,
+  Reenie_Beanie,
+  Shadows_Into_Light,
+} from 'next/font/google';
+import LanguageToggle from '@/components/LanguageToggle';
+import PencilDefs from '@/components/PencilDefs';
 import { SettingsProvider } from '@/context/SettingsContext';
 import './globals.css';
 
-const geistSans = Geist({
-  variable: '--font-geist-sans',
-  subsets: ['latin'],
-});
-
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
-  subsets: ['latin'],
-});
-
+// One handwriting face for the whole handbook. latin-ext carries the Turkish
+// diacritics the content needs.
 const kalam = Kalam({
   variable: '--font-kalam',
-  subsets: ['latin'],
+  subsets: ['latin', 'latin-ext'],
   weight: ['300', '400', '700'],
+  display: 'swap',
 });
+
+// The five faces `Handwritten` deals from. They are only ever used for the
+// book's own name on the title leaf, so latin alone covers them.
+const caveat = Caveat({ variable: '--font-caveat', subsets: ['latin'], display: 'swap' });
+const indieFlower = Indie_Flower({
+  variable: '--font-indie-flower',
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+});
+const nothingYouCouldDo = Nothing_You_Could_Do({
+  variable: '--font-nothing-you-could-do',
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+});
+const reenieBeanie = Reenie_Beanie({
+  variable: '--font-reenie-beanie',
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+});
+const shadowsIntoLight = Shadows_Into_Light({
+  variable: '--font-shadows-into-light',
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+});
+
+const handwriting = [
+  kalam.variable,
+  caveat.variable,
+  indieFlower.variable,
+  nothingYouCouldDo.variable,
+  reenieBeanie.variable,
+  shadowsIntoLight.variable,
+].join(' ');
 
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000';
 
@@ -49,14 +86,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} ${kalam.variable} h-full overflow-x-hidden antialiased`}
-    >
-      <body className="min-h-full flex flex-col overflow-x-hidden">
+    <html lang="en" className={`${handwriting} h-full antialiased`}>
+      <body className="min-h-full overflow-x-hidden">
+        <PencilDefs />
         <SettingsProvider>
-          <Navigation />
-          <BackgroundProvider>{children}</BackgroundProvider>
+          <LanguageToggle />
+          {children}
         </SettingsProvider>
       </body>
     </html>

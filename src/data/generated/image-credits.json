@@ -1,0 +1,3908 @@
+{
+  "mammals-panda": {
+    "file": "mammals/mammals-panda.webp",
+    "artist": "J. Patrick Fischer",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grosser_Panda.JPG"
+  },
+  "mammals-moose": {
+    "file": "mammals/mammals-moose.webp",
+    "artist": "Paxson Woelber",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alaska_moose.jpg"
+  },
+  "mammals-cheetah": {
+    "file": "mammals/mammals-cheetah.webp",
+    "artist": "AfricanConservation",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_cheetah_facing_left_in_South_Africa.jpg"
+  },
+  "mammals-antelope": {
+    "file": "mammals/mammals-antelope.webp",
+    "artist": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hirschziegenantilope2.JPG"
+  },
+  "mammals-bison": {
+    "file": "mammals/mammals-bison.webp",
+    "artist": "Jack Dykinga",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_bison_k5680-1.jpg"
+  },
+  "mammals-blue-whale": {
+    "file": "mammals/mammals-blue-whale.webp",
+    "artist": "NOAA Photo Library",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg"
+  },
+  "mammals-cow": {
+    "file": "mammals/mammals-cow.webp",
+    "artist": "Kim Hansen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cow_(Fleckvieh_breed)_Oeschinensee_Slaunger_2009-07-07.jpg"
+  },
+  "mammals-sloth": {
+    "file": "mammals/mammals-sloth.webp",
+    "artist": "Fernando Flores",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bradypus_tridactylus_-Parque_del_Este,_Caracas,_Venezuela-8_(2).jpg"
+  },
+  "mammals-camel": {
+    "file": "mammals/mammals-camel.webp",
+    "artist": "Florian Prischl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Camelus_dromedarius_in_Nuweiba.jpg"
+  },
+  "mammals-jackal": {
+    "file": "mammals/mammals-jackal.webp",
+    "artist": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:033_Golden_jackal_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  "mammals-wolf": {
+    "file": "mammals/mammals-wolf.webp",
+    "artist": "User:Mas3cf",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eurasian_wolf_2.jpg"
+  },
+  "mammals-dog": {
+    "file": "mammals/mammals-dog.webp",
+    "artist": "M. Rehemtulla",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Huskiesatrest.jpg"
+  },
+  "mammals-goat": {
+    "file": "mammals/mammals-goat.webp",
+    "artist": "Kuebi = Armin Kübelbeck",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hausziege_04.jpg"
+  },
+  "mammals-beaver": {
+    "file": "mammals/mammals-beaver.webp",
+    "artist": "Per Harald Olsen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Beaver_pho34.jpg"
+  },
+  "mammals-deer": {
+    "file": "mammals/mammals-deer.webp",
+    "artist": "Lviatour",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cervus_elaphus_Luc_Viatour_6.jpg"
+  },
+  "mammals-roe-deer": {
+    "file": "mammals/mammals-roe-deer.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Roe_deer_(Capreolus_capreolus)_young_male_Cumnor.jpg"
+  },
+  "mammals-hyena": {
+    "file": "mammals/mammals-hyena.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spotted_hyena_(Crocuta_crocuta).jpg"
+  },
+  "mammals-armadillo": {
+    "file": "mammals/mammals-armadillo.webp",
+    "artist": "Aramburu Carlos",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dasypus_novemcinctus_en_Zool%C3%B3gico_de_Paraguan%C3%A1.jpg"
+  },
+  "mammals-dolphin": {
+    "file": "mammals/mammals-dolphin.webp",
+    "artist": "NOAA NMFS",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_dolphin_noaa.jpg"
+  },
+  "mammals-horse": {
+    "file": "mammals/mammals-horse.webp",
+    "artist": "Nokota_Horses.jpg : François Marchal derivative work: Dana boomer ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nokota_Horses_cropped.jpg"
+  },
+  "mammals-zebra": {
+    "file": "mammals/mammals-zebra.webp",
+    "artist": "Yathin S Krishnappa",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Equus_quagga_burchellii_-_Etosha,_2014.jpg"
+  },
+  "mammals-hedgehog": {
+    "file": "mammals/mammals-hedgehog.webp",
+    "artist": "Jörg Hempel",
+    "license": "CC BY-SA 2.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Erinaceus_europaeus_LC0119.jpg"
+  },
+  "mammals-giraffe": {
+    "file": "mammals/mammals-giraffe.webp",
+    "artist": "Thomas Fuhrmann",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rothschild%27s_giraffe_(Giraffa_camelopardalis_rothschildi)_-_Murchison_Falls_National_Park.jpg"
+  },
+  "mammals-hippopotamus": {
+    "file": "mammals/mammals-hippopotamus.webp",
+    "artist": "Muhammad Mahdi Karim",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_Hippopotamus_in_the_water.jpg"
+  },
+  "mammals-gorilla": {
+    "file": "mammals/mammals-gorilla.webp",
+    "artist": "Brocken Inaglory",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_gorilla_in_SF_zoo.jpg"
+  },
+  "mammals-porcupine": {
+    "file": "mammals/mammals-porcupine.webp",
+    "artist": "Quartl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hystrix_cristata_qtl1.jpg"
+  },
+  "mammals-lemur": {
+    "file": "mammals/mammals-lemur.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ring-tailed_lemur_(Lemur_catta).jpg"
+  },
+  "mammals-ocelot": {
+    "file": "mammals/mammals-ocelot.webp",
+    "artist": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:016_Ocelot_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  "mammals-elephant": {
+    "file": "mammals/mammals-elephant.webp",
+    "artist": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  "mammals-otter": {
+    "file": "mammals/mammals-otter.webp",
+    "artist": "Bernard Landgraf",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fischotter,_Lutra_Lutra.JPG"
+  },
+  "mammals-kangaroo": {
+    "file": "mammals/mammals-kangaroo.webp",
+    "artist": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Canon 70-200mm f/2.8 L",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_kangaroo_-_melbourne_zoo.jpg"
+  },
+  "mammals-badger": {
+    "file": "mammals/mammals-badger.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:European_badger_(Meles_meles_taxus)_Drenthe.jpg"
+  },
+  "mammals-skunk": {
+    "file": "mammals/mammals-skunk.webp",
+    "artist": "Wallace Keck",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skunk_about_to_spray.jpg"
+  },
+  "mammals-mouse": {
+    "file": "mammals/mammals-mouse.webp",
+    "artist": "Unknown author Unknown author (original) / Ilmari Karonen (editing)",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mouse_white_background.jpg"
+  },
+  "mammals-orca": {
+    "file": "mammals/mammals-orca.webp",
+    "artist": "Robert Pittman",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Killerwhales_jumping.jpg"
+  },
+  "mammals-rabbit": {
+    "file": "mammals/mammals-rabbit.webp",
+    "artist": "euqirneto",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oryctolagus_cuniculus_-_euqirneto_-_419737670_(cropped).jpeg"
+  },
+  "mammals-chimpanzee": {
+    "file": "mammals/mammals-chimpanzee.webp",
+    "artist": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  "mammals-lion": {
+    "file": "mammals/mammals-lion.webp",
+    "artist": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  "mammals-sheep": {
+    "file": "mammals/mammals-sheep.webp",
+    "artist": "Keith Weller",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flock_of_sheep.jpg"
+  },
+  "mammals-leopard": {
+    "file": "mammals/mammals-leopard.webp",
+    "artist": "Sumeet Moghe",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_leopard_male_(cropped).jpg"
+  },
+  "mammals-tiger": {
+    "file": "mammals/mammals-tiger.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3_crop.jpg"
+  },
+  "mammals-koala": {
+    "file": "mammals/mammals-koala.webp",
+    "artist": "Diliff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koala_climbing_tree.jpg"
+  },
+  "mammals-raccoon": {
+    "file": "mammals/mammals-raccoon.webp",
+    "artist": "Rhododendrites",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raccoon_in_Central_Park_(35264).jpg"
+  },
+  "mammals-reindeer": {
+    "file": "mammals/mammals-reindeer.webp",
+    "artist": "Are G Nilsen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg"
+  },
+  "mammals-orangutan": {
+    "file": "mammals/mammals-orangutan.webp",
+    "artist": "Nanosanchez",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tanjung_Puting30477.jpg"
+  },
+  "mammals-tasmanian-devil": {
+    "file": "mammals/mammals-tasmanian-devil.webp",
+    "artist": "JJ Harrison ( https://www.jjharrison.com.au/ )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarcophilus_harrisii_taranna.jpg"
+  },
+  "mammals-wild-boar": {
+    "file": "mammals/mammals-wild-boar.webp",
+    "artist": "Valentin Panzirsch",
+    "license": "CC BY-SA 3.0 at",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/at/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wildschwein,_N%C3%A4he_Pulverstampftor_(cropped).jpg"
+  },
+  "mammals-mole": {
+    "file": "mammals/mammals-mole.webp",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Talpa_europaea_MHNT.jpg"
+  },
+  "mammals-brown-bear": {
+    "file": "mammals/mammals-brown-bear.webp",
+    "artist": "Yathin S Krishnappa",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2010-kodiak-bear-1.jpg"
+  },
+  "birds-pigeon": {
+    "file": "birds/birds-pigeon.webp",
+    "artist": "william_stephens",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Columba_livia_(Rock_Dove,_wild),_Duncansby_Head,_Caithness,_Scotland_1.jpg"
+  },
+  "mammals-fox": {
+    "file": "mammals/mammals-fox.webp",
+    "artist": "ClaudiaTen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_(cropped).jpg"
+  },
+  "birds-hawk": {
+    "file": "birds/birds-hawk.webp",
+    "artist": "caroline legg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_Buzzard_by_caroline_legg_(cropped).jpg"
+  },
+  "birds-eagle": {
+    "file": "birds/birds-eagle.webp",
+    "artist": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:015_Wild_Golden_Eagle_in_flight_at_Pfyn-Finges_(Switzerland)_Photo_by_Giles_Laurent.jpg"
+  },
+  "birds-seagull": {
+    "file": "birds/birds-seagull.webp",
+    "artist": "Rhododendrites",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:European_herring_gull_vocalizing_(00170).jpg"
+  },
+  "birds-flamingo": {
+    "file": "birds/birds-flamingo.webp",
+    "artist": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:010_Greater_flamingos_male_and_female_in_the_Camargue_during_mating_season_Photo_by_Giles_Laurent.jpg"
+  },
+  "birds-swan": {
+    "file": "birds/birds-swan.webp",
+    "artist": "Sanchezn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:CygneVaires.jpg"
+  },
+  "birds-duck": {
+    "file": "birds/birds-duck.webp",
+    "artist": "This picture was realized by Richard Bartz by using a Canon EF 70-300mm f/4-5.6 IS USM Lens",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anas_platyrhynchos_male_female_quadrat.jpg"
+  },
+  "birds-goose": {
+    "file": "birds/birds-goose.webp",
+    "artist": "Diliff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Greylag_Goose_-_St_James%27s_Park,_London_-_Nov_2006.jpg"
+  },
+  "birds-parrot": {
+    "file": "birds/birds-parrot.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rainbow_lorikeet_(Trichoglossus_moluccanus_moluccanus)_Sydney.jpg"
+  },
+  "birds-budgerigar": {
+    "file": "birds/birds-budgerigar.webp",
+    "artist": "Benjamint444",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Budgerigar-male-strzelecki-qld.jpg"
+  },
+  "birds-turkey": {
+    "file": "birds/birds-turkey.webp",
+    "artist": "Paul Danese",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20260428_tom_wild_turkey_matthaei_botanical_gardens_PD08952.jpg"
+  },
+  "birds-canary": {
+    "file": "birds/birds-canary.webp",
+    "artist": "Juan Emilio",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Serinus_canaria_-Parque_Rural_del_Nublo,_Gran_Canaria,_Spain_-male-8a.jpg"
+  },
+  "birds-blackbird": {
+    "file": "birds/birds-blackbird.webp",
+    "artist": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_Blackbird.jpg"
+  },
+  "birds-starling": {
+    "file": "birds/birds-starling.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_starling_(Sturnus_vulgaris)_breeding_male_Marken.jpg"
+  },
+  "birds-falcon": {
+    "file": "birds/birds-falcon.webp",
+    "artist": "Mykola Swarnyk",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Falco_peregrinus_m_Humber_Bay_Park_Toronto.jpg"
+  },
+  "birds-magpie": {
+    "file": "birds/birds-magpie.webp",
+    "artist": "Alexis Lours",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eurasian_magpie_2024_03_03_02.jpg"
+  },
+  "birds-raven": {
+    "file": "birds/birds-raven.webp",
+    "artist": "Frank Schulenburg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corvus_corax_clarionensis,_Point_Reyes_National_Seashore.jpg"
+  },
+  "reptiles-viper": {
+    "file": "reptiles/reptiles-viper.webp",
+    "artist": "MathKnight",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Viperidae-01.jpg"
+  },
+  "reptiles-basilisk": {
+    "file": "reptiles/reptiles-basilisk.webp",
+    "artist": "Apaleutos25",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solidus_of_emperor_Basiliscus.jpg"
+  },
+  "fish-catfish": {
+    "file": "fish/fish-catfish.webp",
+    "artist": "authors of the images used: HalbsHännile Thomsonmg2000 Guillermo Enrique Terán, Juliano Ferrer, Mauricio Benitez, Felipe Alonso, Gastón Aguilera, Juan Marcos Mirande Luiz Fernando Caserta Tencatt, Maria Elina Bichuette Smithsonian Environmental Research Center Benutzer:Haps ปลาของเอเชียตะวันออกเฉียงใต้แผ่นดินใหญ่ (FiMSeA) Jansen Zuanon & Efrem J. G. Ferreira Chen X-Y, Qin T, Chen Z-Y CONTERALLY at Italian Wikipedia author of the collage: Kostka Martin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Siluriformes.png"
+  },
+  "fish-eel": {
+    "file": "fish/fish-eel.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:New_Zealand_longfin_eel_(Anguilla_dieffenbachii)_Piha.jpg"
+  },
+  "mammals-bat": {
+    "file": "mammals/mammals-bat.webp",
+    "artist": "PD-USGov, exact author unknown",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Big-eared-townsend-fledermaus.jpg"
+  },
+  "mammals-donkey": {
+    "file": "mammals/mammals-donkey.webp",
+    "artist": "Adrian Pingstone",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Donkey_in_Clovelly,_North_Devon,_England.jpg"
+  },
+  "mammals-cat": {
+    "file": "mammals/mammals-cat.webp",
+    "artist": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cat_August_2010-4.jpg"
+  },
+  "mammals-llama": {
+    "file": "mammals/mammals-llama.webp",
+    "artist": "Andrija12345678",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Llamas,_Vernagt-Stausee,_Italy.jpg"
+  },
+  "mammals-hamster": {
+    "file": "mammals/mammals-hamster.webp",
+    "artist": "Adamjennison111 at English Wikipedia",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_hamster_front_1.jpg"
+  },
+  "mammals-humpback-whale": {
+    "file": "mammals/mammals-humpback-whale.webp",
+    "artist": "Juan Cruzado Cortés",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Humpback_whale_breaching_off_Cabo_San_Lucas.jpg"
+  },
+  "mammals-anteater": {
+    "file": "mammals/mammals-anteater.webp",
+    "artist": "Malene Thyssen",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Myresluger2.jpg"
+  },
+  "mammals-gazelle": {
+    "file": "mammals/mammals-gazelle.webp",
+    "artist": "Mvshreeram",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chinkara_-_Shreeram_M_V_-_Bikaner.jpg"
+  },
+  "mammals-walrus": {
+    "file": "mammals/mammals-walrus.webp",
+    "artist": "Nixette",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Walrus_in_the_Russian_Arctic_National_Park,_Novaya_Zemlya_2015-2.jpg"
+  },
+  "mammals-jaguar": {
+    "file": "mammals/mammals-jaguar.webp",
+    "artist": "USFWS",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Standing_jaguar.jpg"
+  },
+  "mammals-seal": {
+    "file": "mammals/mammals-seal.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_seal_(Phoca_vitulina)_2.jpg"
+  },
+  "mammals-baboon": {
+    "file": "mammals/mammals-baboon.webp",
+    "artist": "Muhammad Mahdi Karim",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Olive_baboon_Ngorongoro.jpg"
+  },
+  "mammals-rat": {
+    "file": "mammals/mammals-rat.webp",
+    "artist": "Dunpharlain",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_Rat_(Rattus_norvegicus).jpg"
+  },
+  "mammals-rhinoceros": {
+    "file": "mammals/mammals-rhinoceros.webp",
+    "artist": "Mayank1704",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great-Indian-one-horned-rhinoceros-at-Kaziranga-national-park-in-Assam-India.jpg"
+  },
+  "mammals-squirrel": {
+    "file": "mammals/mammals-squirrel.webp",
+    "artist": "Peter Trimming",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Squirrel_posing.jpg"
+  },
+  "mammals-meerkat": {
+    "file": "mammals/mammals-meerkat.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meerkat_(Suricata_suricatta)_Tswalu.jpg"
+  },
+  "mammals-pig": {
+    "file": "mammals/mammals-pig.webp",
+    "artist": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pig_farm_Vampula_1.jpg"
+  },
+  "mammals-manatee": {
+    "file": "mammals/mammals-manatee.webp",
+    "artist": "Galen Rathbun",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Manatee_with_calf.PD_-_colour_corrected.jpg"
+  },
+  "mammals-buffalo": {
+    "file": "mammals/mammals-buffalo.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:African_buffalo_(Syncerus_caffer_caffer)_male_with_cattle_egret.jpg"
+  },
+  "mammals-alpaca": {
+    "file": "mammals/mammals-alpaca.webp",
+    "artist": "KKPCW",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alpaca_in_Higashiyama_Zoo_-_1.jpg"
+  },
+  "mammals-polar-bear": {
+    "file": "mammals/mammals-polar-bear.webp",
+    "artist": "Alan Wilson",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Polar_Bear_-_Alaska_(cropped).jpg"
+  },
+  "mammals-sea-lion": {
+    "file": "mammals/mammals-sea-lion.webp",
+    "artist": "(c) Jonathan Eisen, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:California_Sea_Lion,_Monterey,_California,_United_States_imported_from_iNaturalist_photo_203598492.jpg"
+  },
+  "birds-sparrow": {
+    "file": "birds/birds-sparrow.webp",
+    "artist": "Rhododendrites",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:House_sparrow_male_in_Prospect_Park_(53532).jpg"
+  },
+  "birds-crow": {
+    "file": "birds/birds-crow.webp",
+    "artist": "Alexis Lours",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carrion_crow_2022_04_05_05_02.jpg"
+  },
+  "birds-owl": {
+    "file": "birds/birds-owl.webp",
+    "artist": "Carlos Delgado",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bubo_bubo_sibiricus_-_01.JPG"
+  },
+  "birds-swallow": {
+    "file": "birds/birds-swallow.webp",
+    "artist": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rauchschwalbe_Hirundo_rustica.jpg"
+  },
+  "birds-stork": {
+    "file": "birds/birds-stork.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_stork_(Ciconia_ciconia)_Bia%C5%82owieza.jpg"
+  },
+  "birds-chicken": {
+    "file": "birds/birds-chicken.webp",
+    "artist": "Andrei Niemimäki from Turku, Finland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_and_female_chicken_sitting_together.jpg"
+  },
+  "birds-rooster": {
+    "file": "birds/birds-rooster.webp",
+    "artist": "Andrei Niemimäki from Turku, Finland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_and_female_chicken_sitting_together.jpg"
+  },
+  "birds-goldfinch": {
+    "file": "birds/birds-goldfinch.webp",
+    "artist": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:072_Wild_European_goldfinch_at_the_Parc_Jura_vaudois_Photo_by_Giles_Laurent.jpg"
+  },
+  "birds-finch": {
+    "file": "birds/birds-finch.webp",
+    "artist": "caroline legg",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Male_Chaffinch_-_Fringilla_coelebs.jpg"
+  },
+  "birds-great-tit": {
+    "file": "birds/birds-great-tit.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_tit_(Parus_major)_Heligan.jpg"
+  },
+  "birds-nightingale": {
+    "file": "birds/birds-nightingale.webp",
+    "artist": "Warrieboy",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Luscinia_megarhynchos_-_Common_nightingale_-_Nachtegaal_(cropped).jpg"
+  },
+  "birds-woodpecker": {
+    "file": "birds/birds-woodpecker.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_spotted_woodpecker_(Dendrocopos_major)_male_Drenthe.jpg"
+  },
+  "birds-cuckoo": {
+    "file": "birds/birds-cuckoo.webp",
+    "artist": "Andy Morffew from Itchen Abbas, Hampshire, UK",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cuckoo_(51169010335).jpg"
+  },
+  "birds-dove": {
+    "file": "birds/birds-dove.webp",
+    "artist": "stevem4560",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2022-04-06_Streptopelia_decaocto,_Plovdiv,_Bulgaria_1.jpg"
+  },
+  "birds-turtle-dove": {
+    "file": "birds/birds-turtle-dove.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turtle_dove_(Streptopelia_turtur_turtur)_Hungary.jpg"
+  },
+  "birds-goshawk": {
+    "file": "birds/birds-goshawk.webp",
+    "artist": "Norbert Kenntner, Berlin",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Northern_Goshawk_ad_M2.jpg"
+  },
+  "birds-vulture": {
+    "file": "birds/birds-vulture.webp",
+    "artist": "Pierre Dalous",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gyps_fulvus_in_flight_-_Spain.jpg"
+  },
+  "birds-peacock": {
+    "file": "birds/birds-peacock.webp",
+    "artist": "Kandukuru Nagarjun from Bangalore, India",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peacock_on_tree_(52077240794).jpg"
+  },
+  "birds-eagle-owl": {
+    "file": "birds/birds-eagle-owl.webp",
+    "artist": "Martin Mecnarowski ( http://www.photomecan.eu/ )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bubo_bubo_3_(Martin_Mecnarowski).jpg"
+  },
+  "birds-pheasant": {
+    "file": "birds/birds-pheasant.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_pheasant_(Phasianus_colchicus)_male_Heligan.jpg"
+  },
+  "birds-partridge": {
+    "file": "birds/birds-partridge.webp",
+    "artist": "david galavan",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Perdix_perdix_Turvey_3.jpg"
+  },
+  "birds-quail": {
+    "file": "birds/birds-quail.webp",
+    "artist": "christoph_moning",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coturnix_coturnix,_Fraunberg,_Bayern,_Deutschland_1,_Ausschnitt.jpg"
+  },
+  "birds-crane": {
+    "file": "birds/birds-crane.webp",
+    "artist": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_crane_grus_grus.jpg"
+  },
+  "birds-pelican": {
+    "file": "birds/birds-pelican.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Great_white_pelican_(Pelecanus_onocrotalus).jpg"
+  },
+  "birds-heron": {
+    "file": "birds/birds-heron.webp",
+    "artist": "Alexis Lours",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grey_heron_2022_03_18_01.jpg"
+  },
+  "birds-cormorant": {
+    "file": "birds/birds-cormorant.webp",
+    "artist": "MPF",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021-05-05_Phalacrocorax_carbo_carbo,_Killingworth_Lake,_Northumberland_1-1.jpg"
+  },
+  "birds-albatross": {
+    "file": "birds/birds-albatross.webp",
+    "artist": "JJ Harrison ( https://www.jjharrison.com.au/ )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Diomedea_exulans_-_SE_Tasmania.jpg"
+  },
+  "birds-penguin": {
+    "file": "birds/birds-penguin.webp",
+    "artist": "Ian Duffy from UK",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aptenodytes_forsteri_-Snow_Hill_Island,_Antarctica_-adults_and_juvenile-8.jpg"
+  },
+  "birds-ostrich": {
+    "file": "birds/birds-ostrich.webp",
+    "artist": "Yathin S Krishnappa",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Struthio_camelus_-_Etosha_2014_(3).jpg"
+  },
+  "birds-hummingbird": {
+    "file": "birds/birds-hummingbird.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trinidad_and_Tobago_hummingbirds_composite.jpg"
+  },
+  "birds-kingfisher": {
+    "file": "birds/birds-kingfisher.webp",
+    "artist": "Tony Wood",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alcedo_atthis_-England-8_(cropped).jpg"
+  },
+  "birds-hoopoe": {
+    "file": "birds/birds-hoopoe.webp",
+    "artist": "Greg Schechter from San Francisco, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Israel._Eurasian_Hoopoe_(6497645007).jpg"
+  },
+  "birds-swift": {
+    "file": "birds/birds-swift.webp",
+    "artist": "Alexis Lours",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_Swift_2025_07_18_02_(cropped).jpg"
+  },
+  "birds-northern-bald-ibis": {
+    "file": "birds/birds-northern-bald-ibis.webp",
+    "artist": "Len Worthington",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Northern_Bald_Ibis_Geronticus_eremita_(8470600428).jpg"
+  },
+  "birds-toucan": {
+    "file": "birds/birds-toucan.webp",
+    "artist": "Giles Laurent",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:006_Toco_toucan_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  "birds-cockatoo": {
+    "file": "birds/birds-cockatoo.webp",
+    "artist": "JJ Harrison ( https://www.jjharrison.com.au/ )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cacatua_galerita_Tas_2.jpg"
+  },
+  "birds-macaw": {
+    "file": "birds/birds-macaw.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scarlet_macaw_(Ara_macao_cyanopterus)_Copan.jpg"
+  },
+  "birds-bee-eater": {
+    "file": "birds/birds-bee-eater.webp",
+    "artist": "Andy Morffew from Itchen Abbas, Hampshire, UK",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bee-eater_(19270331108).jpg"
+  },
+  "birds-lovebird": {
+    "file": "birds/birds-lovebird.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosy-faced_lovebird_(Agapornis_roseicollis_roseicollis)_2.jpg"
+  },
+  "birds-kiwi": {
+    "file": "birds/birds-kiwi.webp",
+    "artist": "Glen Fergus",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokoeka.jpg"
+  },
+  "birds-emu": {
+    "file": "birds/birds-emu.webp",
+    "artist": "JJ Harrison ( https://www.jjharrison.com.au/ )",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Emu_1_-_Tidbinbilla.jpg"
+  },
+  "birds-kite": {
+    "file": "birds/birds-kite.webp",
+    "artist": "Thomas Kraft ( ThKraft )",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Milvus_milvus_R(ThKraft).jpg"
+  },
+  "birds-little-owl": {
+    "file": "birds/birds-little-owl.webp",
+    "artist": "Максат79",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D0%94%D0%BE%D0%BC%D0%BE%D0%B2%D1%8B%D0%B9_%D1%81%D1%8B%D1%87._%D0%A1%D0%BE%D0%B2%D0%B0_%D0%B2_%D0%BA%D0%B0%D0%BD%D1%8C%D0%BE%D0%BD%D0%B5_%D1%83%D1%80%D0%BE%D1%87%D0%B8%D1%89%D0%B0_%D0%91%D0%BE%D0%B7%D0%B6%D1%8B%D1%80%D0%B0._01.jpg"
+  },
+  "reptiles-chameleon": {
+    "file": "reptiles/reptiles-chameleon.webp",
+    "artist": "Rod Waddington",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Panther_Chameleon_738367_(cropped).jpg"
+  },
+  "reptiles-iguana": {
+    "file": "reptiles/reptiles-iguana.webp",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iguana_iguana_(male_resting).jpg"
+  },
+  "reptiles-komodo-dragon": {
+    "file": "reptiles/reptiles-komodo-dragon.webp",
+    "artist": "James Jolokia ( james1203 )",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:202306_Varanus_komodoensis.jpg"
+  },
+  "reptiles-green-sea-turtle": {
+    "file": "reptiles/reptiles-green-sea-turtle.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Green_sea_turtle_(Chelonia_mydas)_Moorea.jpg"
+  },
+  "reptiles-nile-crocodile": {
+    "file": "reptiles/reptiles-nile-crocodile.webp",
+    "artist": "Dewet",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:NileCrocodile.jpg"
+  },
+  "reptiles-american-alligator": {
+    "file": "reptiles/reptiles-american-alligator.webp",
+    "artist": "User:Postdlf",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:American_Alligator.jpg"
+  },
+  "reptiles-king-cobra": {
+    "file": "reptiles/reptiles-king-cobra.webp",
+    "artist": "Michael Allen Smith from Seattle, USA",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:12_-_The_Mystical_King_Cobra_and_Coffee_Forests.jpg"
+  },
+  "reptiles-anaconda": {
+    "file": "reptiles/reptiles-anaconda.webp",
+    "artist": "MKAMPIS",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sucuri_verde.jpg"
+  },
+  "reptiles-python": {
+    "file": "reptiles/reptiles-python.webp",
+    "artist": "Tigerpython",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brooding_female_Python_molurus_bivittatus.jpg"
+  },
+  "reptiles-rattlesnake": {
+    "file": "reptiles/reptiles-rattlesnake.webp",
+    "artist": "Jonathunder",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ZollmanTimberRattlesnake.jpg"
+  },
+  "reptiles-boa-constrictor": {
+    "file": "reptiles/reptiles-boa-constrictor.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red-tailed_boa_(Boa_constrictor_constrictor)_Rio_Napo.jpg"
+  },
+  "reptiles-black-mamba": {
+    "file": "reptiles/reptiles-black-mamba.webp",
+    "artist": "TimVickers",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dendroaspis_polylepis_(14).jpg"
+  },
+  "reptiles-gecko": {
+    "file": "reptiles/reptiles-gecko.webp",
+    "artist": "Nick Hobgood",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokay.jpg"
+  },
+  "reptiles-tortoise": {
+    "file": "reptiles/reptiles-tortoise.webp",
+    "artist": "Childzy at en.wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:A._gigantea_Aldabra_Giant_Tortoise.jpg"
+  },
+  "reptiles-galapagos-tortoise": {
+    "file": "reptiles/reptiles-galapagos-tortoise.webp",
+    "artist": "Mfield , Matthew Field, http://www.photography.mattfield.com",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galapagos_giant_tortoise_Geochelone_elephantopus.jpg"
+  },
+  "reptiles-freshwater-turtle": {
+    "file": "reptiles/reptiles-freshwater-turtle.webp",
+    "artist": "M. Noth",
+    "license": "CC BY 1.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/1.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Graptemys_nigrinoda_hatchlings.jpg"
+  },
+  "reptiles-lacerta": {
+    "file": "reptiles/reptiles-lacerta.webp",
+    "artist": "IAU and Sky & Telescope magazine (Roger Sinnott & Rick Fienberg)",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lacerta_IAU.svg"
+  },
+  "reptiles-agama": {
+    "file": "reptiles/reptiles-agama.webp",
+    "artist": "Christian Mehlführer, User:Chmehl",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:MC_Siedleragame.jpg"
+  },
+  "reptiles-monitor": {
+    "file": "reptiles/reptiles-monitor.webp",
+    "artist": "user:Martin-rnr",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Worldwidevaranus.PNG"
+  },
+  "reptiles-coral-snake": {
+    "file": "reptiles/reptiles-coral-snake.webp",
+    "artist": "Holbrook, John Edwards, 1794-1871 ( English Wikipedia )",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Micrurus_fulviusHolbrookV3P10AA.jpg"
+  },
+  "reptiles-caiman": {
+    "file": "reptiles/reptiles-caiman.webp",
+    "artist": "Lea Maimone",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Caiman_yacare.jpg"
+  },
+  "reptiles-gharial": {
+    "file": "reptiles/reptiles-gharial.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gharial_(Gavialis_gangeticus)_male.jpg"
+  },
+  "reptiles-tuatara": {
+    "file": "reptiles/reptiles-tuatara.webp",
+    "artist": "Sid Mosdell from New Zealand",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tuatara_(5205719005).jpg"
+  },
+  "reptiles-blue-tongued-skink": {
+    "file": "reptiles/reptiles-blue-tongued-skink.webp",
+    "artist": "Doug Beckers",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tiliqua_scincoides_tongue.jpg"
+  },
+  "reptiles-horned-lizard": {
+    "file": "reptiles/reptiles-horned-lizard.webp",
+    "artist": "(c) Juan Cruzado Cortés, some rights reserved (CC BY-SA)",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mountain_Horned_Lizard,_Tutuaca,_Chihuahua_imported_from_iNaturalist_photo_411168.jpg"
+  },
+  "reptiles-draco": {
+    "file": "reptiles/reptiles-draco.webp",
+    "artist": "H. Zell",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Draco_volans_01.JPG"
+  },
+  "reptiles-sea-snake": {
+    "file": "reptiles/reptiles-sea-snake.webp",
+    "artist": "Will Brown",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eastern_Bandy-bandy,_Vermicella_annulata_(23111409351).jpg"
+  },
+  "reptiles-blind-snake": {
+    "file": "reptiles/reptiles-blind-snake.webp",
+    "artist": "ImagesFromBulgaria.com",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Typhlops_vermicularis_9.jpg"
+  },
+  "reptiles-wall-lizard": {
+    "file": "reptiles/reptiles-wall-lizard.webp",
+    "artist": "Mariomassone",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Podarcis_muralis_near_Entella_river_006.jpg"
+  },
+  "reptiles-spitting-cobra": {
+    "file": "reptiles/reptiles-spitting-cobra.webp",
+    "artist": "Pavan Kumar N",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Indian_Cobra,_crop.jpg"
+  },
+  "reptiles-leatherback-turtle": {
+    "file": "reptiles/reptiles-leatherback-turtle.webp",
+    "artist": "U.S. Fish and Wildlife Service Southeast Region",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Leatherback_sea_turtle_Tinglar,_USVI_(5839996547).jpg"
+  },
+  "reptiles-beaded-lizard": {
+    "file": "reptiles/reptiles-beaded-lizard.webp",
+    "artist": "David Rubin",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Heloderma_horridum_-Zurich_Zoo-8a.jpg"
+  },
+  "reptiles-gila-monster": {
+    "file": "reptiles/reptiles-gila-monster.webp",
+    "artist": "Blueag9",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gila_monster2.JPG"
+  },
+  "reptiles-sand-snake": {
+    "file": "reptiles/reptiles-sand-snake.webp",
+    "artist": "Ryanvanhuyssteen",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Psammophis_subtaeniatus2.jpg"
+  },
+  "reptiles-green-lizard": {
+    "file": "reptiles/reptiles-green-lizard.webp",
+    "artist": "Uoaei1",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lacerta_viridis_-_male_01.JPG"
+  },
+  "reptiles-adder": {
+    "file": "reptiles/reptiles-adder.webp",
+    "artist": "Felix Reimann",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vipera_aspis_aspis.jpg"
+  },
+  "amphibians-green-frog": {
+    "file": "amphibians/amphibians-green-frog.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyprus_water_frog_(Pelophylax_cypriensis).jpg"
+  },
+  "amphibians-toad": {
+    "file": "amphibians/amphibians-toad.webp",
+    "artist": "Tythatguy1312",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_Toad_Cornwall.jpeg"
+  },
+  "amphibians-tree-frog": {
+    "file": "amphibians/amphibians-tree-frog.webp",
+    "artist": "Stijn99",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:European_tree_frog_(Hyla_arborea)_on_hemp-agrimony_(Eupatorium_cannabinum).jpg"
+  },
+  "amphibians-salamander": {
+    "file": "amphibians/amphibians-salamander.webp",
+    "artist": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salamandra_atra.jpg"
+  },
+  "amphibians-axolotl": {
+    "file": "amphibians/amphibians-axolotl.webp",
+    "artist": "LoKiLeCh",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Axolotl_ganz.jpg"
+  },
+  "amphibians-poison-dart-frog": {
+    "file": "amphibians/amphibians-poison-dart-frog.webp",
+    "artist": "Pixeltoo",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blue-poison.dart.frog.and.Yellow-banded.dart.frog.arp.jpg"
+  },
+  "amphibians-bullfrog": {
+    "file": "amphibians/amphibians-bullfrog.webp",
+    "artist": "Carl D. Howe",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:North-American-bullfrog1.jpg"
+  },
+  "amphibians-newt": {
+    "file": "amphibians/amphibians-newt.webp",
+    "artist": "Eduard Solà",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Triturus_marmoratus_2.JPG"
+  },
+  "amphibians-giant-chinese-salamander": {
+    "file": "amphibians/amphibians-giant-chinese-salamander.webp",
+    "artist": "Petr Hamerník",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Velemlok_%C4%8D%C3%ADnsk%C3%BD_zoo_praha_1.jpg"
+  },
+  "amphibians-caecilian": {
+    "file": "amphibians/amphibians-caecilian.webp",
+    "artist": "Brian Gratwicke from DC, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oscaecilia_ochrocephala_(16983972190).jpg"
+  },
+  "amphibians-spotted-salamander": {
+    "file": "amphibians/amphibians-spotted-salamander.webp",
+    "artist": "D. Gordon E. Robertson",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Spotted_Salamander,_Cantley,_Quebec.jpg"
+  },
+  "amphibians-fire-salamander": {
+    "file": "amphibians/amphibians-fire-salamander.webp",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salamandra_salamandra_MHNT_1.jpg"
+  },
+  "amphibians-glass-frog": {
+    "file": "amphibians/amphibians-glass-frog.webp",
+    "artist": "Mauricio Rivera Correa",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cochranella_susatamai03.jpg"
+  },
+  "amphibians-african-clawed-frog": {
+    "file": "amphibians/amphibians-african-clawed-frog.webp",
+    "artist": "Brian Gratwicke",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xenopus_laevis_02.jpg"
+  },
+  "amphibians-mudpuppy": {
+    "file": "amphibians/amphibians-mudpuppy.webp",
+    "artist": "Peter Paplanus",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gefleckter_Furchenmolch_(Necturus_maculosus),_Seitenansicht.jpg"
+  },
+  "fish-shark": {
+    "file": "fish/fish-shark.webp",
+    "artist": "NOAA Photo Library",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corl0207_(28225976491).jpg"
+  },
+  "fish-whale-shark": {
+    "file": "fish/fish-whale-shark.webp",
+    "artist": "Abe Khao Lak",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Similan_Dive_Center_-_great_whale_shark.jpg"
+  },
+  "fish-ray": {
+    "file": "fish/fish-ray.webp",
+    "artist": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Raya_pel%C3%A1gica_(Pteroplatytrygon_violacea),_Cabo_de_Palos,_Espa%C3%B1a,_2022-07-16,_DD_69.jpg"
+  },
+  "fish-hammerhead": {
+    "file": "fish/fish-hammerhead.webp",
+    "artist": "Kris Mikael Krister",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scalloped_Hammerhead_Shark_Sphyrna_Lewini_(226845659).jpeg"
+  },
+  "fish-salmon": {
+    "file": "fish/fish-salmon.webp",
+    "artist": "User:Wolfgang Striewski",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wst_atlantischer_lachs_stoer_001.jpg"
+  },
+  "fish-trout": {
+    "file": "fish/fish-trout.webp",
+    "artist": "Engbretson Eric, U.S. Fish and Wildlife Service",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Close_up_of_rainbow_trout_fish_underwater_oncorhynchus_mykiss.jpg"
+  },
+  "fish-tuna": {
+    "file": "fish/fish-tuna.webp",
+    "artist": "OAR/National Undersea Research Program (NURP)",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yellowfin_tuna_nurp.jpg"
+  },
+  "fish-bluefish": {
+    "file": "fish/fish-bluefish.webp",
+    "artist": "Unknown author Unknown author",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pomatomus_saltatrix.png"
+  },
+  "fish-sea-bream": {
+    "file": "fish/fish-sea-bream.webp",
+    "artist": "(c) Julien Renoult, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sparus_aurata,_Alpes-Maritimes,_Provence-Alpes-C%C3%B4te_d%27Azur,_FR_imported_from_iNaturalist_photo_207799710.jpg"
+  },
+  "fish-sea-bass": {
+    "file": "fish/fish-sea-bass.webp",
+    "artist": "Miguel Mendez from Malahide, Ireland",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sealife,_Bray,_Ireland._(6985874908).jpg"
+  },
+  "fish-anchovy": {
+    "file": "fish/fish-anchovy.webp",
+    "artist": "Jschop",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ansjovis.jpg"
+  },
+  "fish-horse-mackerel": {
+    "file": "fish/fish-horse-mackerel.webp",
+    "artist": "Kare Kare",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atlantic_Horse_Mackerel.jpg"
+  },
+  "fish-bonito": {
+    "file": "fish/fish-bonito.webp",
+    "artist": "Sherman Foote Denton",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarda_sarda.jpg"
+  },
+  "fish-sardine": {
+    "file": "fish/fish-sardine.webp",
+    "artist": "This illustration was made by Citron You must credit this : Citron / CC-BY-SA-3.0",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sardina_pilchardus_2011.jpg"
+  },
+  "fish-carp": {
+    "file": "fish/fish-carp.webp",
+    "artist": "George Chernilevsky",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cyprinus_carpio_2008_G1_(cropped).jpg"
+  },
+  "fish-goldfish": {
+    "file": "fish/fish-goldfish.webp",
+    "artist": "לינה אבוגוש",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gold_fish1.jpg"
+  },
+  "fish-betta": {
+    "file": "fish/fish-betta.webp",
+    "artist": "Daniella Vereeken",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:HM_Orange_M_Sarawut.jpg"
+  },
+  "fish-angelfish": {
+    "file": "fish/fish-angelfish.webp",
+    "artist": "Mattia Nocciola",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pterophyllum_scalare_Natural_History_Museum_University_of_Pisa.jpg"
+  },
+  "fish-clownfish": {
+    "file": "fish/fish-clownfish.webp",
+    "artist": "Nick Hobgood",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amphiprion_ocellaris_(Clown_anemonefish)_by_Nick_Hobgood.jpg"
+  },
+  "fish-moray-eel": {
+    "file": "fish/fish-moray-eel.webp",
+    "artist": "Mstroeck at en.wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Moray_eel.jpg"
+  },
+  "fish-anglerfish": {
+    "file": "fish/fish-anglerfish.webp",
+    "artist": "Anthropophoca",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lophiiformes_Collage.png"
+  },
+  "fish-flying-fish": {
+    "file": "fish/fish-flying-fish.webp",
+    "artist": "David Starr Jordan and Barton Warren Evermann",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sailfin_flyingfish.jpg"
+  },
+  "fish-piranha": {
+    "file": "fish/fish-piranha.webp",
+    "artist": "H. Zell",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pygocentrus_nattereri_-_Karlsruhe_Zoo_01.jpg"
+  },
+  "fish-seahorse": {
+    "file": "fish/fish-seahorse.webp",
+    "artist": "Henry Vandyke Carter",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gray739-emphasizing-hippocampus.png"
+  },
+  "fish-swordfish": {
+    "file": "fish/fish-swordfish.webp",
+    "artist": "Naturalis Biodiversity Center",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Xiphias_gladius_Linnaeus,_1758_2599925021.jpg"
+  },
+  "fish-sturgeon": {
+    "file": "fish/fish-sturgeon.webp",
+    "artist": "Pierre André",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Montr%C3%A9al_Biodome_Acipenser_oxyrinchus_(1).JPG"
+  },
+  "fish-sole": {
+    "file": "fish/fish-sole.webp",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pegusa_lascaris.jpg"
+  },
+  "fish-red-mullet": {
+    "file": "fish/fish-red-mullet.webp",
+    "artist": "Roberto Pillon",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mullus_barbatus_Paros_2.JPG"
+  },
+  "insects-honey-bee": {
+    "file": "insects/insects-honey-bee.webp",
+    "artist": "Andreas Trepte",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apis_mellifera_Western_honey_bee.jpg"
+  },
+  "insects-ant": {
+    "file": "insects/insects-ant.webp",
+    "artist": "Samantha Henneke from Seagrove, North Carolina, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Red_Ant_-_March_2025.jpg"
+  },
+  "insects-butterfly": {
+    "file": "insects/insects-butterfly.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peacock_butterfly_(Aglais_io)_2.jpg"
+  },
+  "insects-dragonfly": {
+    "file": "insects/insects-dragonfly.webp",
+    "artist": "Paul Balfe",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:On_the_wing_(cropped).jpg"
+  },
+  "insects-ladybug": {
+    "file": "insects/insects-ladybug.webp",
+    "artist": "Francisco Welter-Schultes",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coccinella-septempunctata-15-fws.jpg"
+  },
+  "insects-grasshopper": {
+    "file": "insects/insects-grasshopper.webp",
+    "artist": "Dinesh Valke from Thane, India",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pygmy_mole_cricket_(8071068977)_cropped.jpg"
+  },
+  "insects-cockroach": {
+    "file": "insects/insects-cockroach.webp",
+    "artist": "Sripathiharsha",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Domino_cockroach_Therea_petiveriana.jpg"
+  },
+  "insects-praying-mantis": {
+    "file": "insects/insects-praying-mantis.webp",
+    "artist": "Mihai C. Popa",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mantis_(European).jpg"
+  },
+  "insects-housefly": {
+    "file": "insects/insects-housefly.webp",
+    "artist": "USDAgov",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Common_house_fly,_Musca_domestica.jpg"
+  },
+  "insects-mosquito": {
+    "file": "insects/insects-mosquito.webp",
+    "artist": "Muhammad Mahdi Karim",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aedes_aegypti.jpg"
+  },
+  "insects-firefly": {
+    "file": "insects/insects-firefly.webp",
+    "artist": "Bruce Marlin",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Photuris_lucicrescens.jpg"
+  },
+  "insects-termite": {
+    "file": "insects/insects-termite.webp",
+    "artist": "Photo by Scott Bauer.",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coptotermes_formosanus_shiraki_USGov_k8204-7.jpg"
+  },
+  "insects-cicada": {
+    "file": "insects/insects-cicada.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cicada_(Cicada_orni)_male_Babadag.jpg"
+  },
+  "insects-stag-beetle": {
+    "file": "insects/insects-stag-beetle.webp",
+    "artist": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8 + Canon MT 24-EX",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_stag_beetle.jpg"
+  },
+  "insects-dung-beetle": {
+    "file": "insects/insects-dung-beetle.webp",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Copris_lunaris._MHNT.jpg"
+  },
+  "insects-wasp": {
+    "file": "insects/insects-wasp.webp",
+    "artist": "Richard Bartz , Munich aka Makro Freak",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vespula_germanica_Horizontalview_Richard_Bartz.jpg"
+  },
+  "insects-moth": {
+    "file": "insects/insects-moth.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peacock_butterfly_(Aglais_io)_2.jpg"
+  },
+  "insects-louse": {
+    "file": "insects/insects-louse.webp",
+    "artist": "photo by Vincent S. Smith",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fahrenholzia_pinnata.JPG"
+  },
+  "insects-flea": {
+    "file": "insects/insects-flea.webp",
+    "artist": "CDC/Janice Haney Carr",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flea_Scanning_Electron_Micrograph_False_Color.jpg"
+  },
+  "insects-earwig": {
+    "file": "insects/insects-earwig.webp",
+    "artist": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Earwig_on_white_background.jpg"
+  },
+  "insects-bed-bug": {
+    "file": "insects/insects-bed-bug.webp",
+    "artist": "AJC1 from UK",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bed_bug,_Cimex_lectularius_(9627010587).jpg"
+  },
+  "insects-water-beetle": {
+    "file": "insects/insects-water-beetle.webp",
+    "artist": "This image is created by user Wim Rubers at Waarneming.nl , a source of nature observations in the Netherlands.",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cybister_lateralimarginalis_(Dytiscidae)_-_(imago),_Berkenwoude,_the_Netherlands.jpg"
+  },
+  "insects-silkworm": {
+    "file": "insects/insects-silkworm.webp",
+    "artist": "Oakenking at en.wikipedia",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pairedmoths.jpg"
+  },
+  "insects-bumblebee": {
+    "file": "insects/insects-bumblebee.webp",
+    "artist": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bombus_lapidarius_-_Melilotus_officinalis_-_Tallinn.jpg"
+  },
+  "insects-stick-insect": {
+    "file": "insects/insects-stick-insect.webp",
+    "artist": "Fritz Geller-Grimm and Felix Grimm",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Le_Caylar_fg01.JPG"
+  },
+  "insects-leaf-beetle": {
+    "file": "insects/insects-leaf-beetle.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scarlet_lily_beetle_lilioceris_lilii.jpg"
+  },
+  "insects-horsefly": {
+    "file": "insects/insects-horsefly.webp",
+    "artist": "Bruce Marlin",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Horse_fly_Tabanus_2.jpg"
+  },
+  "insects-whitefly": {
+    "file": "insects/insects-whitefly.webp",
+    "artist": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Weisse-Fliege.jpg"
+  },
+  "insects-carpet-beetle": {
+    "file": "insects/insects-carpet-beetle.webp",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Anthrenus_verbasci_MHNT_Fronton_Side_view.jpg"
+  },
+  "insects-mealybug": {
+    "file": "insects/insects-mealybug.webp",
+    "artist": "Crisco 1492",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mealybugs_on_flower_stem,_Yogyakarta,_2014-10-31.jpg"
+  },
+  "plants-bryophytes-kara-yosunu": {
+    "file": "plants-bryophytes/plants-bryophytes-kara-yosunu.webp",
+    "artist": "Michael Becker",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bryum_capillare_2005.07.25_10.45.47.jpg"
+  },
+  "plants-bryophytes-ciger-otu": {
+    "file": "plants-bryophytes/plants-bryophytes-ciger-otu.webp",
+    "artist": "HermannSchachner",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marchantia_polymorpha_(b,_145318-481413)_3497.JPG"
+  },
+  "plants-bryophytes-turba-yosunu": {
+    "file": "plants-bryophytes/plants-bryophytes-turba-yosunu.webp",
+    "artist": "Kristian Peters -- Fabelfroh 15:11, 5 September 2007 (UTC)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sphagnum_magellanicum.jpeg"
+  },
+  "plants-bryophytes-boynuz-otu": {
+    "file": "plants-bryophytes/plants-bryophytes-boynuz-otu.webp",
+    "artist": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phaeoceros_laevis.jpg"
+  },
+  "plants-bryophytes-duvar-yosunu": {
+    "file": "plants-bryophytes/plants-bryophytes-duvar-yosunu.webp",
+    "artist": "Kurt Stüber [1]",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hypnum_cupressiforme0.jpg"
+  },
+  "plants-bryophytes-orman-yosunu": {
+    "file": "plants-bryophytes/plants-bryophytes-orman-yosunu.webp",
+    "artist": "Fungus Guy",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Broom_moss_(Orphan_Lk)_2.JPG"
+  },
+  "plants-ferns-bracken": {
+    "file": "plants-ferns/plants-ferns-bracken.webp",
+    "artist": "Rasbak",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adelaarsvaren_planten_Pteridium_aquilinum.jpg"
+  },
+  "plants-ferns-male-fern": {
+    "file": "plants-ferns/plants-ferns-male-fern.webp",
+    "artist": "Carl Axel Magnus Lindman",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dryopteris_filix_mas_nf.jpg"
+  },
+  "plants-ferns-hart-tongue-fern": {
+    "file": "plants-ferns/plants-ferns-hart-tongue-fern.webp",
+    "artist": "No machine-readable author provided. MPF assumed (based on copyright claims).",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asplenium_scolopendrium.jpg"
+  },
+  "plants-ferns-royal-fern": {
+    "file": "plants-ferns/plants-ferns-royal-fern.webp",
+    "artist": "E Wusk",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osmunda_regalis_Mimizan.jpg"
+  },
+  "plants-ferns-maidenhair-fern": {
+    "file": "plants-ferns/plants-ferns-maidenhair-fern.webp",
+    "artist": "Balles2601",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Adiantum_capillus-veneris_2601.jpg"
+  },
+  "plants-ferns-ostrich-fern": {
+    "file": "plants-ferns/plants-ferns-ostrich-fern.webp",
+    "artist": "The Cosmonaut",
+    "license": "CC BY-SA 2.5 ca",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matteuccia_struthiopteris_fiddleheads.jpg"
+  },
+  "plants-ferns-polypody": {
+    "file": "plants-ferns/plants-ferns-polypody.webp",
+    "artist": "Michael Linnenbach",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C3%BCpfelfarn_(Polypodium_vulgare).jpg"
+  },
+  "plants-ferns-horsetail": {
+    "file": "plants-ferns/plants-ferns-horsetail.webp",
+    "artist": "MPF",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Equisetum_arvense_foliage.jpg"
+  },
+  "plants-ferns-hard-fern": {
+    "file": "plants-ferns/plants-ferns-hard-fern.webp",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blechnum_spicant_(fertile_and_sterile_fronts).jpg"
+  },
+  "plants-ferns-water-clover": {
+    "file": "plants-ferns/plants-ferns-water-clover.webp",
+    "artist": "Hardyplants",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marsilea_quadrifolia_plants.jpg"
+  },
+  "plants-ferns-su-mercimegi": {
+    "file": "plants-ferns/plants-ferns-su-mercimegi.webp",
+    "artist": "Len Worthington",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Water_Fern_Azolla_filiculoides_(6165580451).jpg"
+  },
+  "plants-conifers-kizilcam": {
+    "file": "plants-conifers/plants-conifers-kizilcam.webp",
+    "artist": "Zeynel Cebeci",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pines_in_Mersin_02.jpg"
+  },
+  "plants-conifers-karacam": {
+    "file": "plants-conifers/plants-conifers-karacam.webp",
+    "artist": "Stefan.lefnaer",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinus_nigra_(subsp._nigra)_sl2.jpg"
+  },
+  "plants-conifers-saricam": {
+    "file": "plants-conifers/plants-conifers-saricam.webp",
+    "artist": "Mickaël Delcey ( Silverkey )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skuleskogen_pine.jpg"
+  },
+  "plants-conifers-fistik-cami": {
+    "file": "plants-conifers/plants-conifers-fistik-cami.webp",
+    "artist": "Karora",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pinus_pinea_Wellington_Botanic_Gardens.jpg"
+  },
+  "plants-conifers-sedir": {
+    "file": "plants-conifers/plants-conifers-sedir.webp",
+    "artist": "Olivier BEZES",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:C%C3%A8dre_du_Liban_Barouk_2005.jpg"
+  },
+  "plants-conifers-goknar": {
+    "file": "plants-conifers/plants-conifers-goknar.webp",
+    "artist": "Elie plus",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Abies_cilicica.JPG"
+  },
+  "plants-conifers-ladin": {
+    "file": "plants-conifers/plants-conifers-ladin.webp",
+    "artist": "Dominicus Johannes Bergsma",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:L%27A_de_Bran,_(1798_m)_Val_d%27Anniviers._Europese_larix_(Larix_decidua)_01.JPG"
+  },
+  "plants-conifers-ardic": {
+    "file": "plants-conifers/plants-conifers-ardic.webp",
+    "artist": "Rasbak at Dutch Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jeneverbes.jpg"
+  },
+  "plants-conifers-servi": {
+    "file": "plants-conifers/plants-conifers-servi.webp",
+    "artist": "Andloukakis",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%CE%95%CE%B8%CE%BD%CE%B9%CE%BA%CF%8C%CF%82_%CE%94%CF%81%CF%85%CE%BC%CF%8C%CF%82_%CE%A3%CE%B1%CE%BC%CE%B1%CF%81%CE%B9%CE%AC%CF%82.jpg"
+  },
+  "plants-conifers-porsuk": {
+    "file": "plants-conifers/plants-conifers-porsuk.webp",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taxus_baccata_MHNT.jpg"
+  },
+  "plants-conifers-sekoya": {
+    "file": "plants-conifers/plants-conifers-sekoya.webp",
+    "artist": "Acroterion",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:US_199_Redwood_Highway.jpg"
+  },
+  "plants-flowering-mese": {
+    "file": "plants-flowering/plants-flowering-mese.webp",
+    "artist": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quercus_robur.jpg"
+  },
+  "plants-flowering-cinar": {
+    "file": "plants-flowering/plants-flowering-cinar.webp",
+    "artist": "uncredited",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plane_tree_Grove_Tsav_River.jpg"
+  },
+  "plants-flowering-kayin": {
+    "file": "plants-flowering/plants-flowering-kayin.webp",
+    "artist": "GooseCanada",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fagus-sylvatica-cansiglio-forest-italy.jpg"
+  },
+  "plants-flowering-gurgen": {
+    "file": "plants-flowering/plants-flowering-gurgen.webp",
+    "artist": "Karduelis",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Do%C4%9Fu_g%C3%BCrgeni-2.JPG"
+  },
+  "plants-flowering-kestane": {
+    "file": "plants-flowering/plants-flowering-kestane.webp",
+    "artist": "Fir0002",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chestnuts.jpg"
+  },
+  "plants-flowering-ihlamur": {
+    "file": "plants-flowering/plants-flowering-ihlamur.webp",
+    "artist": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tilia-tomentosa.JPG"
+  },
+  "plants-flowering-kavak": {
+    "file": "plants-flowering/plants-flowering-kavak.webp",
+    "artist": "Famartin",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2013-10-06_15_04_21_Aspens_during_autumn_along_the_Changing_Canyon_Nature_Trail_in_Lamoille_Canyon,_Nevada.jpg"
+  },
+  "plants-flowering-disbudak": {
+    "file": "plants-flowering/plants-flowering-disbudak.webp",
+    "artist": "No machine-readable author provided. MPF assumed (based on copyright claims).",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fraxinus_excelsior.jpg"
+  },
+  "plants-flowering-akcaagac": {
+    "file": "plants-flowering/plants-flowering-akcaagac.webp",
+    "artist": "Willow",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acer_pseudoplatanus_005.jpg"
+  },
+  "plants-flowering-sogut": {
+    "file": "plants-flowering/plants-flowering-sogut.webp",
+    "artist": "MPF",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salix_alba_leaves.jpg"
+  },
+  "plants-flowering-kizilagac": {
+    "file": "plants-flowering/plants-flowering-kizilagac.webp",
+    "artist": "AnRo0002",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:20120904Alnus_glutinosa01.jpg"
+  },
+  "plants-flowering-okaliptus": {
+    "file": "plants-flowering/plants-flowering-okaliptus.webp",
+    "artist": "Ian Brooker and David Kleinig",
+    "license": "CC BY 3.0 au",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/au/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eucalyptus_globulus_subsp._maidenii.jpg"
+  },
+  "plants-flowering-hus": {
+    "file": "plants-flowering/plants-flowering-hus.webp",
+    "artist": "Willow",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Betula_pubescens_-_Burgwald_002.jpg"
+  },
+  "plants-flowering-karaagac": {
+    "file": "plants-flowering/plants-flowering-karaagac.webp",
+    "artist": "Ronnie Nijboer",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:RN_Ulmus_glabra_(alnarp_sweden).jpg"
+  },
+  "plants-flowering-erguvan": {
+    "file": "plants-flowering/plants-flowering-erguvan.webp",
+    "artist": "אורנה לוטן",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_3421_Geography_of_Israel.jpg"
+  },
+  "plants-flowering-zeytin": {
+    "file": "plants-flowering/plants-flowering-zeytin.webp",
+    "artist": "Abu Shawka",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Olea_europaea_cuspidata-africana_Cape_Town.JPG"
+  },
+  "plants-flowering-ceviz": {
+    "file": "plants-flowering/plants-flowering-ceviz.webp",
+    "artist": "Thesupermat",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Noyer_centenaire_en_automne.JPG"
+  },
+  "plants-flowering-elma": {
+    "file": "plants-flowering/plants-flowering-elma.webp",
+    "artist": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pink_lady_and_cross_section.jpg"
+  },
+  "plants-flowering-armut": {
+    "file": "plants-flowering/plants-flowering-armut.webp",
+    "artist": "Keith Weller",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pears.jpg"
+  },
+  "plants-flowering-kiraz": {
+    "file": "plants-flowering/plants-flowering-kiraz.webp",
+    "artist": "MPF",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prunus_avium_fruit.jpg"
+  },
+  "plants-flowering-visne": {
+    "file": "plants-flowering/plants-flowering-visne.webp",
+    "artist": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prunus_cerasus_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-113.jpg"
+  },
+  "plants-flowering-kayisi": {
+    "file": "plants-flowering/plants-flowering-kayisi.webp",
+    "artist": "Fir0002",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Apricots.jpg"
+  },
+  "plants-flowering-seftali": {
+    "file": "plants-flowering/plants-flowering-seftali.webp",
+    "artist": "File:Illustration Prunus persica0.jpg : PLEASE COMPLETE AUTHOR INFORMATION derivative work: Kenraiz",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illustration_Prunus_persica_clean_no_descr.jpg"
+  },
+  "plants-flowering-erik": {
+    "file": "plants-flowering/plants-flowering-erik.webp",
+    "artist": "YAMAMAYA",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fruits_Prunus_domestica.jpg"
+  },
+  "plants-flowering-badem": {
+    "file": "plants-flowering/plants-flowering-badem.webp",
+    "artist": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Almonds_-_in_shell,_shell_cracked_open,_shelled,_blanched.jpg"
+  },
+  "plants-flowering-incir": {
+    "file": "plants-flowering/plants-flowering-incir.webp",
+    "artist": "Trew, C.J",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ficus_carica_L,_1771.jpg"
+  },
+  "plants-flowering-nar": {
+    "file": "plants-flowering/plants-flowering-nar.webp",
+    "artist": "Augustus Binu : flickr",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pomegranate_Juice_(2019).jpg"
+  },
+  "plants-flowering-dut": {
+    "file": "plants-flowering/plants-flowering-dut.webp",
+    "artist": "Emőke Dénes",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosales_-_Morus_alba_-_3.jpg"
+  },
+  "plants-flowering-ayva": {
+    "file": "plants-flowering/plants-flowering-ayva.webp",
+    "artist": "Pancrace Bessa",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pancrace_Bessa00.jpg"
+  },
+  "plants-flowering-limon": {
+    "file": "plants-flowering/plants-flowering-limon.webp",
+    "artist": "Elena Chochkova",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:P1030323.JPG"
+  },
+  "plants-flowering-portakal": {
+    "file": "plants-flowering/plants-flowering-portakal.webp",
+    "artist": "Ellen Levy Finch ( Elf )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:OrangeBloss_wb.jpg"
+  },
+  "plants-flowering-mandalina": {
+    "file": "plants-flowering/plants-flowering-mandalina.webp",
+    "artist": "4028mdk09",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Citrus_reticulata_April_2013_Nordbaden.JPG"
+  },
+  "plants-flowering-antep-fistigi": {
+    "file": "plants-flowering/plants-flowering-antep-fistigi.webp",
+    "artist": "Lumbar~commonswiki",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pistacia_lentiscus.jpg"
+  },
+  "plants-flowering-findik": {
+    "file": "plants-flowering/plants-flowering-findik.webp",
+    "artist": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corylus_avellana.jpg"
+  },
+  "plants-flowering-palmiye": {
+    "file": "plants-flowering/plants-flowering-palmiye.webp",
+    "artist": "Nepenthes",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dates005.jpg"
+  },
+  "plants-flowering-hurma-agaci": {
+    "file": "plants-flowering/plants-flowering-hurma-agaci.webp",
+    "artist": "Sphl",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kaki_20041002.jpg"
+  },
+  "plants-flowering-baobab": {
+    "file": "plants-flowering/plants-flowering-baobab.webp",
+    "artist": "Ferdinand Reus from Arnhem, Holland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Baobab_and_elephant,_Tanzania.jpg"
+  },
+  "plants-flowering-sakura": {
+    "file": "plants-flowering/plants-flowering-sakura.webp",
+    "artist": "Myrabella",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cerisier_du_Japon_Prunus_serrulata.jpg"
+  },
+  "plants-flowering-manolya": {
+    "file": "plants-flowering/plants-flowering-manolya.webp",
+    "artist": "Josep Renalias Lohen11",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magn%C3%B2lia_a_Verbania.JPG"
+  },
+  "plants-flowering-jakaranda": {
+    "file": "plants-flowering/plants-flowering-jakaranda.webp",
+    "artist": "O Tupinólogo",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jacarand%C3%A1-mimoso_(do_tupi_%C3%AEakarand%C3%A1)_-_54942878507_02.jpg"
+  },
+  "plants-flowering-bambu": {
+    "file": "plants-flowering/plants-flowering-bambu.webp",
+    "artist": "Earth100",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_Bamboo(Bambusa_vulgaris)_in_Hong_Kong.jpg"
+  },
+  "plants-flowering-mimoza": {
+    "file": "plants-flowering/plants-flowering-mimoza.webp",
+    "artist": "Eugene Zelenko ( talk · contribs )",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Acacia_dealbata-1.jpg"
+  },
+  "plants-flowering-kaucuk-agaci": {
+    "file": "plants-flowering/plants-flowering-kaucuk-agaci.webp",
+    "artist": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hevea_brasiliensis_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-071.jpg"
+  },
+  "plants-flowering-mantar-mesesi": {
+    "file": "plants-flowering/plants-flowering-mantar-mesesi.webp",
+    "artist": "Kent Wang from London, United Kingdom",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cork_oak_(28864190188).jpg"
+  },
+  "plants-flowering-sandal-agaci": {
+    "file": "plants-flowering/plants-flowering-sandal-agaci.webp",
+    "artist": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Santalum_album_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-128.jpg"
+  },
+  "plants-flowering-nane": {
+    "file": "plants-flowering/plants-flowering-nane.webp",
+    "artist": "Simon Eugster -- Simon 13:07, 2 July 2006 (UTC)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Minze.jpg"
+  },
+  "plants-flowering-kekik": {
+    "file": "plants-flowering/plants-flowering-kekik.webp",
+    "artist": "Henry Brisse (upload by user:Abalg )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thymus_vulgaris1.JPG"
+  },
+  "plants-flowering-feslegen": {
+    "file": "plants-flowering/plants-flowering-feslegen.webp",
+    "artist": "Photo by David J. Stang",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ocimum_basilicum_8zz.jpg"
+  },
+  "plants-flowering-biberiye": {
+    "file": "plants-flowering/plants-flowering-biberiye.webp",
+    "artist": "Margalob",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosemary_in_bloom.JPG"
+  },
+  "plants-flowering-adacayi": {
+    "file": "plants-flowering/plants-flowering-adacayi.webp",
+    "artist": "Kurt Stüber [1]",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salvia_officinalis0.jpg"
+  },
+  "plants-flowering-reyhan": {
+    "file": "plants-flowering/plants-flowering-reyhan.webp",
+    "artist": "Shashidhara halady",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tulsi_or_Tulasi_Holy_basil.jpg"
+  },
+  "plants-flowering-dereotu": {
+    "file": "plants-flowering/plants-flowering-dereotu.webp",
+    "artist": "Masparasol",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Watercress_(2).JPG"
+  },
+  "plants-flowering-maydanoz": {
+    "file": "plants-flowering/plants-flowering-maydanoz.webp",
+    "artist": "Jonathunder",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Petroselinum.jpg"
+  },
+  "plants-flowering-tere": {
+    "file": "plants-flowering/plants-flowering-tere.webp",
+    "artist": "Salicyna",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lepidium_sativum_2019-05-04_2820.jpg"
+  },
+  "plants-flowering-roka": {
+    "file": "plants-flowering/plants-flowering-roka.webp",
+    "artist": "Unknown author Unknown author",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eruca_vesicaria_BM010755249.jpg"
+  },
+  "plants-flowering-kisnis": {
+    "file": "plants-flowering/plants-flowering-kisnis.webp",
+    "artist": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coriandrum_sativum_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-193.jpg"
+  },
+  "plants-flowering-zahter": {
+    "file": "plants-flowering/plants-flowering-zahter.webp",
+    "artist": "Gideon Pisanty ( Gidip ) גדעון פיזנטי",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Thymbra_spicata_1.jpg"
+  },
+  "plants-flowering-melisa": {
+    "file": "plants-flowering/plants-flowering-melisa.webp",
+    "artist": "Amitchell125",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lemon_balm_plant.jpg"
+  },
+  "plants-flowering-isirgan-otu": {
+    "file": "plants-flowering/plants-flowering-isirgan-otu.webp",
+    "artist": "Evelyn Simak",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fen_nettle_(Urtica_dioica_ssp._galeopsifolia)_-_geograph.org.uk_-_5423125.jpg"
+  },
+  "plants-flowering-rezene": {
+    "file": "plants-flowering/plants-flowering-rezene.webp",
+    "artist": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Foeniculum_July_2011-1a.jpg"
+  },
+  "plants-flowering-karahindiba": {
+    "file": "plants-flowering/plants-flowering-karahindiba.webp",
+    "artist": "Walther Otto Müller",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taraxacum_officinale_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-135.jpg"
+  },
+  "plants-flowering-sumak": {
+    "file": "plants-flowering/plants-flowering-sumak.webp",
+    "artist": "Dedda71",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sommacco.jpg"
+  },
+  "plants-flowering-safran": {
+    "file": "plants-flowering/plants-flowering-safran.webp",
+    "artist": "KENPEI",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crocus_sativus2.jpg"
+  },
+  "plants-flowering-zencefil": {
+    "file": "plants-flowering/plants-flowering-zencefil.webp",
+    "artist": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Koeh-146-no_text.jpg"
+  },
+  "plants-flowering-zerdecal": {
+    "file": "plants-flowering/plants-flowering-zerdecal.webp",
+    "artist": "SKsiddhartthan",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turmeric_inflorescence.jpg"
+  },
+  "plants-flowering-tarhun": {
+    "file": "plants-flowering/plants-flowering-tarhun.webp",
+    "artist": "No machine-readable author provided. Ies assumed (based on copyright claims).",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Estragon_1511.jpg"
+  },
+  "plants-flowering-corek-otu": {
+    "file": "plants-flowering/plants-flowering-corek-otu.webp",
+    "artist": "AndreHolz at English Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nsativa001Wien.jpg"
+  },
+  "plants-flowering-hardal-otu": {
+    "file": "plants-flowering/plants-flowering-hardal-otu.webp",
+    "artist": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sinapis_alba_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-265.jpg"
+  },
+  "plants-flowering-kuzu-kulagi": {
+    "file": "plants-flowering/plants-flowering-kuzu-kulagi.webp",
+    "artist": "Rasbak",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grote_weegbree_bloeiwijze_Plantago_major_subsp._major.jpg"
+  },
+  "plants-flowering-semizotu": {
+    "file": "plants-flowering/plants-flowering-semizotu.webp",
+    "artist": "ZooFari",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portulaca_oleracea.jpg"
+  },
+  "plants-flowering-zakkum": {
+    "file": "plants-flowering/plants-flowering-zakkum.webp",
+    "artist": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ricinus_March_2010-1.jpg"
+  },
+  "plants-flowering-simsir": {
+    "file": "plants-flowering/plants-flowering-simsir.webp",
+    "artist": "No machine-readable author provided. MPF assumed (based on copyright claims).",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Buxus_sempervirens.jpg"
+  },
+  "plants-flowering-ortanca": {
+    "file": "plants-flowering/plants-flowering-ortanca.webp",
+    "artist": "belvedere04",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:(Natural)_Hydrangea_macrophylla,_Iwafune,_Isumi,_Chiba,_Japan_2.jpg"
+  },
+  "plants-flowering-hanimeli": {
+    "file": "plants-flowering/plants-flowering-hanimeli.webp",
+    "artist": "Meneerke bloem",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lonicera_caprifolium002.jpg"
+  },
+  "plants-flowering-yasemin-1": {
+    "file": "plants-flowering/plants-flowering-yasemin-1.webp",
+    "artist": "Botanical Magazine",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jasminum_officinale_-_Bot._Mag._31,_1787.jpg"
+  },
+  "plants-flowering-bogurtlen": {
+    "file": "plants-flowering/plants-flowering-bogurtlen.webp",
+    "artist": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Blackberry_(Rubus_fruticosus).jpg"
+  },
+  "plants-flowering-kusburnu": {
+    "file": "plants-flowering/plants-flowering-kusburnu.webp",
+    "artist": "Roberta F.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Divlja_ruza_cvijet_270508.jpg"
+  },
+  "plants-flowering-ormangulu": {
+    "file": "plants-flowering/plants-flowering-ormangulu.webp",
+    "artist": "Duartefrade",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhododendron_ponticum_ssp._baeticum_in_Cambarinho_Botanical_Reserve,_Portugal.JPG"
+  },
+  "plants-flowering-lavanta-1": {
+    "file": "plants-flowering/plants-flowering-lavanta-1.webp",
+    "artist": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lavandula_angustifolia_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-087.jpg"
+  },
+  "plants-flowering-defne": {
+    "file": "plants-flowering/plants-flowering-defne.webp",
+    "artist": "Forest and Kim Starr",
+    "license": "CC BY 3.0 us",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0/us/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Starr-071024-0195-Laurus_nobilis-leaves-Enchanting_Floral_Gardens_of_Kula-Maui_(24867859296).jpg"
+  },
+  "plants-flowering-berberis": {
+    "file": "plants-flowering/plants-flowering-berberis.webp",
+    "artist": "Unknown",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Illustration_Berberis_vulgaris0.jpg"
+  },
+  "plants-flowering-alev-calisi": {
+    "file": "plants-flowering/plants-flowering-alev-calisi.webp",
+    "artist": "Eric Hunt",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhus_glabra_AR.jpg"
+  },
+  "plants-flowering-kelebek-calisi": {
+    "file": "plants-flowering/plants-flowering-kelebek-calisi.webp",
+    "artist": "-- IKAl 15:22, 23 July 2007 (UTC)",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:BuddlejaDavidiiStrauch.jpg"
+  },
+  "plants-flowering-altincanak": {
+    "file": "plants-flowering/plants-flowering-altincanak.webp",
+    "artist": "Jerzy Opioła",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Forsythia_intermedia_a1.jpg"
+  },
+  "plants-flowering-ates-dikeni": {
+    "file": "plants-flowering/plants-flowering-ates-dikeni.webp",
+    "artist": "noebse",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Feuerdorn_(Pyracantha_coccinea).JPG"
+  },
+  "plants-flowering-yasemin-calisi": {
+    "file": "plants-flowering/plants-flowering-yasemin-calisi.webp",
+    "artist": "Jjron",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lilac_Flower%26Leaves,_SC,_Vic,_13.10.2007.jpg"
+  },
+  "plants-flowering-kartopu": {
+    "file": "plants-flowering/plants-flowering-kartopu.webp",
+    "artist": "Lestat (Jan Mehlich)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Viburnum_01.JPG"
+  },
+  "plants-flowering-amberbaris": {
+    "file": "plants-flowering/plants-flowering-amberbaris.webp",
+    "artist": "User:Tigerente",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amelanchier_ovalis01.jpg"
+  },
+  "plants-flowering-dag-musmulasi": {
+    "file": "plants-flowering/plants-flowering-dag-musmulasi.webp",
+    "artist": "peganum from Henfield, England",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cotoneaster_horizontalis_(13937637589).jpg"
+  },
+  "plants-flowering-mazi-bodur": {
+    "file": "plants-flowering/plants-flowering-mazi-bodur.webp",
+    "artist": "Jürgen Howaldt",
+    "license": "CC BY-SA 2.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/de/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ilex-aquifolium_(Europaeische_Stechpalme-1).jpg"
+  },
+  "plants-flowering-cennet-bambusu": {
+    "file": "plants-flowering/plants-flowering-cennet-bambusu.webp",
+    "artist": "KENPEI",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nandina_domestica_cv_Otafukunante1.jpg"
+  },
+  "plants-flowering-taflan": {
+    "file": "plants-flowering/plants-flowering-taflan.webp",
+    "artist": "LIGURIAN VASCULAR FLORA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Myrtus_communis_L._subsp._communis_-_52505075873.png"
+  },
+  "plants-flowering-lavantin": {
+    "file": "plants-flowering/plants-flowering-lavantin.webp",
+    "artist": "fir0002 flagstaffotos [at] gmail.com Canon 20D + Sigma 150mm f/2.8",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Topped_lavendar_flowerhead.jpg"
+  },
+  "plants-flowering-gul": {
+    "file": "plants-flowering/plants-flowering-gul.webp",
+    "artist": "Stan Shebs",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rosa_rubiginosa_1.jpg"
+  },
+  "plants-flowering-lale": {
+    "file": "plants-flowering/plants-flowering-lale.webp",
+    "artist": "Dina L",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:%D7%A6%D7%91%D7%A2%D7%95%D7%A0%D7%99%D7%9D.JPG"
+  },
+  "plants-flowering-papatya": {
+    "file": "plants-flowering/plants-flowering-papatya.webp",
+    "artist": "Alvesgaspar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Matricaria_February_2008-1.jpg"
+  },
+  "plants-flowering-karanfil": {
+    "file": "plants-flowering/plants-flowering-karanfil.webp",
+    "artist": "草花写真館",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:W_carnation4051.jpg"
+  },
+  "plants-flowering-orkide": {
+    "file": "plants-flowering/plants-flowering-orkide.webp",
+    "artist": "Rohit Naniwadekar",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plant_Orchid_Cymbidium_aloifolium_P1110661_05_-_cropped.jpg"
+  },
+  "plants-flowering-menekse": {
+    "file": "plants-flowering/plants-flowering-menekse.webp",
+    "artist": "Fritz Geller-Grimm",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Viola_odorata_fg01.JPG"
+  },
+  "plants-flowering-aycicegi": {
+    "file": "plants-flowering/plants-flowering-aycicegi.webp",
+    "artist": "Fir0002",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sunflower_sky_backdrop.jpg"
+  },
+  "plants-flowering-nergis": {
+    "file": "plants-flowering/plants-flowering-nergis.webp",
+    "artist": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narcissus_pseudonarcissus_flower_300303.jpg"
+  },
+  "plants-flowering-sumbul": {
+    "file": "plants-flowering/plants-flowering-sumbul.webp",
+    "artist": "Plantman",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hyacinth_flower.jpg"
+  },
+  "plants-flowering-zambak": {
+    "file": "plants-flowering/plants-flowering-zambak.webp",
+    "artist": "Zachi Evenor",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ShoshanTzachor-2-wiki-Zachi-Evenor.jpg"
+  },
+  "plants-flowering-gelincik": {
+    "file": "plants-flowering/plants-flowering-gelincik.webp",
+    "artist": "Franz Eugen Köhler, Köhler's Medizinal-Pflanzen",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Papaver_rhoeas_-_K%C3%B6hler%E2%80%93s_Medizinal-Pflanzen-101.jpg"
+  },
+  "plants-flowering-begonvil": {
+    "file": "plants-flowering/plants-flowering-begonvil.webp",
+    "artist": "Zbigniew Niepokój",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bugenwilla.D%C5%82ugo_kwitnaca_roslina.jpg"
+  },
+  "plants-flowering-sardunya": {
+    "file": "plants-flowering/plants-flowering-sardunya.webp",
+    "artist": "MPF",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2012-07-03_Bloody_Crane%27s-bill,_Hauxley,_Northumberland_1.jpg"
+  },
+  "plants-flowering-sakayik": {
+    "file": "plants-flowering/plants-flowering-sakayik.webp",
+    "artist": "Meneerke bloem",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paeonia_officinalis_01.JPG"
+  },
+  "plants-flowering-krizantem": {
+    "file": "plants-flowering/plants-flowering-krizantem.webp",
+    "artist": "Aruna at Malayalam Wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chrysanthemum.JPG"
+  },
+  "plants-flowering-manolya-cicek": {
+    "file": "plants-flowering/plants-flowering-manolya-cicek.webp",
+    "artist": "Myrabella",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magnolia_stellata_fleurs.jpg"
+  },
+  "plants-flowering-acelya": {
+    "file": "plants-flowering/plants-flowering-acelya.webp",
+    "artist": "Lany pirna",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rhododendron_simsii-bunga_2-Lany_pirna.jpg"
+  },
+  "plants-flowering-nilufer": {
+    "file": "plants-flowering/plants-flowering-nilufer.webp",
+    "artist": "Jacek Halicki",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2016_Kwiat_grzybieni_bia%C5%82ych_2.jpg"
+  },
+  "plants-flowering-hercai-menekse": {
+    "file": "plants-flowering/plants-flowering-hercai-menekse.webp",
+    "artist": "Osnat Ravid Amir",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PansyScan_(cropped).jpg"
+  },
+  "plants-flowering-kadife-cicegi": {
+    "file": "plants-flowering/plants-flowering-kadife-cicegi.webp",
+    "artist": "Muhammad Mahdi Karim",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:French_marigold_Tagetes_patula.jpg"
+  },
+  "plants-flowering-aslanagzi": {
+    "file": "plants-flowering/plants-flowering-aslanagzi.webp",
+    "artist": "Craig Franklin",
+    "license": "CC BY-SA 3.0 au",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/au/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Antirrhinum_majus_BCBG_(02).jpg"
+  },
+  "plants-flowering-cuha-cicegi": {
+    "file": "plants-flowering/plants-flowering-cuha-cicegi.webp",
+    "artist": "No machine-readable author provided. Pokrajac assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Prole%C4%87no_cve%C4%87e_3.JPG"
+  },
+  "plants-flowering-petunya": {
+    "file": "plants-flowering/plants-flowering-petunya.webp",
+    "artist": "Rocksmoker 007",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PetuniaFlower.JPG"
+  },
+  "plants-flowering-cam-guzeli": {
+    "file": "plants-flowering/plants-flowering-cam-guzeli.webp",
+    "artist": "Paul venter",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Solanum_pseudocapsicum04.jpg"
+  },
+  "plants-flowering-hanimcicegi": {
+    "file": "plants-flowering/plants-flowering-hanimcicegi.webp",
+    "artist": "Heinz Staudacher",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schneeheide_(Erica_herbacea)_im_Schnee.jpg"
+  },
+  "plants-flowering-horoz-ibigi": {
+    "file": "plants-flowering/plants-flowering-horoz-ibigi.webp",
+    "artist": "Judgefloro",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:03092jfCelosia_argentea_var._cristata_Bulacanfvf_02.jpg"
+  },
+  "plants-flowering-unutmabeni": {
+    "file": "plants-flowering/plants-flowering-unutmabeni.webp",
+    "artist": "No machine-readable author provided. Fabelfroh assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Myosotis_arvensis.jpeg"
+  },
+  "plants-flowering-nilufer-lotus": {
+    "file": "plants-flowering/plants-flowering-nilufer-lotus.webp",
+    "artist": "T.Voekler",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sacred_lotus_Nelumbo_nucifera.jpg"
+  },
+  "plants-flowering-su-sumbulu": {
+    "file": "plants-flowering/plants-flowering-su-sumbulu.webp",
+    "artist": "Wouter Hagens",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eichhornia_crassipes_C.jpg"
+  },
+  "plants-flowering-saz": {
+    "file": "plants-flowering/plants-flowering-saz.webp",
+    "artist": "NASA Goddard Space Flight Center from Greenbelt, MD, USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phragmites_australis_-_NASA_Tracks_an_Environmental_Invader_(48049936657).jpg"
+  },
+  "plants-flowering-kamis": {
+    "file": "plants-flowering/plants-flowering-kamis.webp",
+    "artist": "Peter O'Connor aka anemoneprojectors from Stevenage, United Kingdom",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bulrush_(Typha_latifolia)_(8139113636).jpg"
+  },
+  "plants-flowering-deniz-cayiri": {
+    "file": "plants-flowering/plants-flowering-deniz-cayiri.webp",
+    "artist": "Frédéric Ducarme",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Posidonia_oceanica_(L).jpg"
+  },
+  "plants-flowering-elodea": {
+    "file": "plants-flowering/plants-flowering-elodea.webp",
+    "artist": "Christian Fischer",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ElodeaCanadensis.jpg"
+  },
+  "plants-flowering-papirus": {
+    "file": "plants-flowering/plants-flowering-papirus.webp",
+    "artist": "Bernard DUPONT from FRANCE",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Papyrus_(Cyperus_papyrus)_(7079191471).jpg"
+  },
+  "plants-flowering-su-marulu": {
+    "file": "plants-flowering/plants-flowering-su-marulu.webp",
+    "artist": "Kurt Stüber [1]",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pistia_stratiotes0.jpg"
+  },
+  "plants-flowering-amazon-kilici": {
+    "file": "plants-flowering/plants-flowering-amazon-kilici.webp",
+    "artist": "Salvatore vitale",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Echinodorus_bleheri.jpg"
+  },
+  "fungi-basidiomycota-button-mushroom": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-button-mushroom.webp",
+    "artist": "chris_73",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ChampignonMushroom.jpg"
+  },
+  "fungi-basidiomycota-porcini": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-porcini.webp",
+    "artist": "ReddishClover",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Boletus_edulis_IT.jpg"
+  },
+  "fungi-basidiomycota-chanterelle": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-chanterelle.webp",
+    "artist": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chanterelle_Cantharellus_cibarius.jpg"
+  },
+  "fungi-basidiomycota-fly-agaric": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-fly-agaric.webp",
+    "artist": "Onderwijsgek",
+    "license": "CC BY-SA 3.0 nl",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amanita_muscaria_3_vliegenzwammen_op_rij.jpg"
+  },
+  "fungi-basidiomycota-death-cap": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-death-cap.webp",
+    "artist": "Archenzo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amanita_phalloides_1.JPG"
+  },
+  "fungi-basidiomycota-oyster-mushroom": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-oyster-mushroom.webp",
+    "artist": "voir ci-dessous / see below",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pleurotus_ostreatus_JPG7.jpg"
+  },
+  "fungi-basidiomycota-shiitake": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-shiitake.webp",
+    "artist": "frankenstoen from Portland, Oregon",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shiitakegrowing.jpg"
+  },
+  "fungi-basidiomycota-common-puffball": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-common-puffball.webp",
+    "artist": "Daniel Ullrich, Threedots",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Single_lycoperdon_perlatum.jpg"
+  },
+  "fungi-basidiomycota-shaggy-ink-cap": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-shaggy-ink-cap.webp",
+    "artist": "Bigredwine1",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coprinus_comatus,_the_shaggy_ink_cap,_lawyer%27s_wig,_or_shaggy_mane_mushroom.jpg"
+  },
+  "fungi-basidiomycota-honey-fungus": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-honey-fungus.webp",
+    "artist": "Stu's Images",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Armillaria_mellea,_Honey_Fungus,_UK_1.jpg"
+  },
+  "fungi-basidiomycota-parasol-mushroom": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-parasol-mushroom.webp",
+    "artist": "Holger Krisp",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parasol-Macrolepiota-procera.jpg"
+  },
+  "fungi-basidiomycota-turkey-tail": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-turkey-tail.webp",
+    "artist": "Jerzy Opioła",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Trametes_versicolor_G4_(1).JPG"
+  },
+  "fungi-basidiomycota-tinder-fungus": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-tinder-fungus.webp",
+    "artist": "George Chernilevsky",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fomes_fomentarius_2010_G2.jpg"
+  },
+  "fungi-basidiomycota-slippery-jack": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-slippery-jack.webp",
+    "artist": "walt sturgeon (Mycowalt)",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Suillus_luteus_475376.jpg"
+  },
+  "fungi-basidiomycota-enoki": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-enoki.webp",
+    "artist": "2009-11-19_Flammulina_sp_biolib.cz.jpg : František ŠARŽÍK derivative work: Ak ccm",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2009-11-19_Flammulina_velutipes_agg_biolib.cz_crop.jpg"
+  },
+  "fungi-basidiomycota-hedgehog-mushroom": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-hedgehog-mushroom.webp",
+    "artist": "D J Kelly",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hedgehog_fungi2.jpg"
+  },
+  "fungi-basidiomycota-lions-mane": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-lions-mane.webp",
+    "artist": "(c) Alison Northup, some rights reserved (CC BY)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lion%27s-mane_mushroom_imported_from_iNaturalist_photo_29576097_on_21_March_2024.jpg"
+  },
+  "fungi-basidiomycota-maitake": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-maitake.webp",
+    "artist": "Lukas from London, England",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Grifola_frondosa_(29715305790).jpg"
+  },
+  "fungi-basidiomycota-amethyst-deceiver": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-amethyst-deceiver.webp",
+    "artist": "Jörg Hempel",
+    "license": "CC BY-SA 3.0 de",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/de/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laccaria_amethystina_LC0370.jpg"
+  },
+  "fungi-basidiomycota-deadly-webcap": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-deadly-webcap.webp",
+    "artist": "Eric Steinert",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cortinarius_rubellus_01.jpg"
+  },
+  "fungi-basidiomycota-funeral-bell": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-funeral-bell.webp",
+    "artist": "Alan Rockefeller",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Galerina_marginata_Point_Reyes.jpg"
+  },
+  "fungi-basidiomycota-sickener": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-sickener.webp",
+    "artist": "MichalPL",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Russula_emetica_in_Poland.jpg"
+  },
+  "fungi-basidiomycota-reishi": {
+    "file": "fungi-basidiomycota/fungi-basidiomycota-reishi.webp",
+    "artist": "Unknown",
+    "license": "Attribution",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ganoderma.lucidum.shanofee.png"
+  },
+  "fungi-ascomycota-morel": {
+    "file": "fungi-ascomycota/fungi-ascomycota-morel.webp",
+    "artist": "TOMMES-WIKI",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morchella_esculenta_-_DE_-_TH_-_2013-05-01_-_01.JPG"
+  },
+  "fungi-ascomycota-black-truffle": {
+    "file": "fungi-ascomycota/fungi-ascomycota-black-truffle.webp",
+    "artist": "This illustration was made by ( User:Royonx ) and released under the license(s) stated above. You are free to use it for any purpose as long as you credit me and follow the terms of the license. Example : © Michel Royon / Wikimedia Commons If you use this image outside of the Wikimedia projects, I would be happy to hear from you par courriel ( royonx gmail.com). Thanks ! Ce message en français",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Truffe_nature.JPG"
+  },
+  "fungi-ascomycota-white-truffle": {
+    "file": "fungi-ascomycota/fungi-ascomycota-white-truffle.webp",
+    "artist": "MatthiasKabel",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Truffle_washed_and_cut.jpg"
+  },
+  "fungi-ascomycota-false-morel": {
+    "file": "fungi-ascomycota/fungi-ascomycota-false-morel.webp",
+    "artist": "Unknown",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fr%C3%BChjahrslorchel.JPG"
+  },
+  "fungi-ascomycota-scarlet-elf-cup": {
+    "file": "fungi-ascomycota/fungi-ascomycota-scarlet-elf-cup.webp",
+    "artist": "This image was created by user Ryane Snow (snowman) at Mushroom Observer , a source for mycological images. You can contact this user here .",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sarcoscypha_coccinea_74716.jpg"
+  },
+  "fungi-ascomycota-dead-mans-fingers": {
+    "file": "fungi-ascomycota/fungi-ascomycota-dead-mans-fingers.webp",
+    "artist": "Michael Gäbler",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dead_man%27s_fingers_Xylaria_polymorpha.jpg"
+  },
+  "fungi-ascomycota-ergot": {
+    "file": "fungi-ascomycota/fungi-ascomycota-ergot.webp",
+    "artist": "Dominique Jacquin",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Claviceps_purpurea.JPG"
+  },
+  "fungi-lichens-reindeer-lichen": {
+    "file": "fungi-lichens/fungi-lichens-reindeer-lichen.webp",
+    "artist": "Jason Hollinger",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cladonia_rangiferina_205412.jpg"
+  },
+  "fungi-lichens-common-orange-lichen": {
+    "file": "fungi-lichens/fungi-lichens-common-orange-lichen.webp",
+    "artist": "hedera.baltica from Wrocław, Poland",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lichens_and_algae_(explored)_-_Flickr_-_hedera.baltica.jpg"
+  },
+  "stones-igneous-granite": {
+    "file": "stones-igneous/stones-igneous-granite.webp",
+    "artist": "The stone gate",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bianco_Sardo_Granit_mit_polierter_Oberfl%C3%A4che.jpg"
+  },
+  "fungi-lichens-lungwort-lichen": {
+    "file": "fungi-lichens/fungi-lichens-lungwort-lichen.webp",
+    "artist": "Bernd Haynold",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lobaria_pulmonaria_010108c.jpg"
+  },
+  "stones-igneous-basalt": {
+    "file": "stones-igneous/stones-igneous-basalt.webp",
+    "artist": "James St. John",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Basalt_12_(48674276333).jpg"
+  },
+  "stones-igneous-obsidian": {
+    "file": "stones-igneous/stones-igneous-obsidian.webp",
+    "artist": "Ji-Elle It feels nice and warm It feels like a love storm",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lipari-Obsidienne_(5).jpg"
+  },
+  "stones-igneous-pumice": {
+    "file": "stones-igneous/stones-igneous-pumice.webp",
+    "artist": "User MPF on en.wikipedia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teidepumice.jpg"
+  },
+  "stones-igneous-rhyolite": {
+    "file": "stones-igneous/stones-igneous-rhyolite.webp",
+    "artist": "Benhoff",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loebejuener_porphyr_poliert.jpg"
+  },
+  "stones-igneous-andesite": {
+    "file": "stones-igneous/stones-igneous-andesite.webp",
+    "artist": "Photographer: Siim Sepp , 2005",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amygdaloidal_andesite.jpg"
+  },
+  "stones-sedimentary-limestone": {
+    "file": "stones-sedimentary/stones-sedimentary-limestone.webp",
+    "artist": "Fernando Domínguez Cerejido",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:ElTorcal0408.jpg"
+  },
+  "stones-sedimentary-shale": {
+    "file": "stones-sedimentary/stones-sedimentary-shale.webp",
+    "artist": "Chris Woodrich",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shale_formation,_Marble_Canyon,_Kootenay_National_Park,_British_Columbia,_2025-07-11.jpg"
+  },
+  "stones-sedimentary-sandstone": {
+    "file": "stones-sedimentary/stones-sedimentary-sandstone.webp",
+    "artist": "Unknown",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:USDA_Mineral_Sandstone_93c3955.jpg"
+  },
+  "stones-sedimentary-chalk": {
+    "file": "stones-sedimentary/stones-sedimentary-chalk.webp",
+    "artist": "kallerna",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Seven_Sisters_3.jpg"
+  },
+  "stones-sedimentary-travertine": {
+    "file": "stones-sedimentary/stones-sedimentary-travertine.webp",
+    "artist": "Frank Schulenburg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mammoth_Terraces.jpg"
+  },
+  "stones-sedimentary-coal": {
+    "file": "stones-sedimentary/stones-sedimentary-coal.webp",
+    "artist": "Amcyrus2012",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bituminous_Coal.JPG"
+  },
+  "stones-metamorphic-marble": {
+    "file": "stones-metamorphic/stones-metamorphic-marble.webp",
+    "artist": "Zyance",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marmo_z17.JPG"
+  },
+  "stones-sedimentary-flint": {
+    "file": "stones-sedimentary/stones-sedimentary-flint.webp",
+    "artist": "Otis Crandell",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miorcani_flint.jpg"
+  },
+  "stones-metamorphic-slate": {
+    "file": "stones-metamorphic/stones-metamorphic-slate.webp",
+    "artist": "James St. John",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Slate_(Knife_Lake_Formation,_metamorphism_at_2.7_Ga,_Neoarchean;_Rt._135_roadcut,_Gilbert,_Minnesota,_USA)_3_(23140002749).jpg"
+  },
+  "stones-metamorphic-schist": {
+    "file": "stones-metamorphic/stones-metamorphic-schist.webp",
+    "artist": "Michael C. Rygel",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Schist_detail.jpg"
+  },
+  "stones-metamorphic-gneiss": {
+    "file": "stones-metamorphic/stones-metamorphic-gneiss.webp",
+    "artist": "No machine-readable author provided. Siim assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gneiss.jpg"
+  },
+  "stones-metamorphic-quartzite": {
+    "file": "stones-metamorphic/stones-metamorphic-quartzite.webp",
+    "artist": "Gabriel Haute Maurienne",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quartzite_Solli%C3%A8res.jpg"
+  },
+  "stones-metamorphic-phyllite": {
+    "file": "stones-metamorphic/stones-metamorphic-phyllite.webp",
+    "artist": "EdwardEMeyer",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phyllite_Cenulation.jpg"
+  },
+  "stones-metamorphic-serpentinite": {
+    "file": "stones-metamorphic/stones-metamorphic-serpentinite.webp",
+    "artist": "Gabriel HM",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Serpentinite_sur_gneiss.jpg"
+  },
+  "stones-minerals-quartz": {
+    "file": "stones-minerals/stones-minerals-quartz.webp",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quartz_Br%C3%A9sil.jpg"
+  },
+  "stones-minerals-amethyst": {
+    "file": "stones-minerals/stones-minerals-amethyst.webp",
+    "artist": "Gonzalo Devia",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Amatista_Laye_2.jpg"
+  },
+  "stones-minerals-feldspar": {
+    "file": "stones-minerals/stones-minerals-feldspar.webp",
+    "artist": "PaleoNeolitic",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Feldspar_diversity.png"
+  },
+  "stones-minerals-calcite": {
+    "file": "stones-minerals/stones-minerals-calcite.webp",
+    "artist": "PaleoNeolitic (montage creator)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calcite_Variation.png"
+  },
+  "stones-minerals-pyrite": {
+    "file": "stones-minerals/stones-minerals-pyrite.webp",
+    "artist": "Ivar Leidus",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pyrite_-_Huanzala_mine,_Huallanca,_Bolognesi,_Ancash,_Peru.jpg"
+  },
+  "stones-minerals-hematite": {
+    "file": "stones-minerals/stones-minerals-hematite.webp",
+    "artist": "Wikipedia Loves Art participant \" Assignment_Houston_One \"",
+    "license": "CC BY-SA 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:WLA_hmns_Hematite.jpg"
+  },
+  "stones-minerals-magnetite": {
+    "file": "stones-minerals/stones-minerals-magnetite.webp",
+    "artist": "Robert M. Lavinsky",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Magnetite-118736.jpg"
+  },
+  "stones-minerals-gypsum": {
+    "file": "stones-minerals/stones-minerals-gypsum.webp",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gypse_Caresse.jpg"
+  },
+  "stones-minerals-halite": {
+    "file": "stones-minerals/stones-minerals-halite.webp",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Selpologne.jpg"
+  },
+  "stones-minerals-fluorite": {
+    "file": "stones-minerals/stones-minerals-fluorite.webp",
+    "artist": "CarlesMillan",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:3192M-fluorite1.jpg"
+  },
+  "land-sports-hiking": {
+    "file": "land-sports/land-sports-hiking.webp",
+    "artist": "Paxson Woelber",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hiking_to_the_Ice_Lakes._San_Juan_National_Forest,_Colorado.jpg"
+  },
+  "land-sports-trekking": {
+    "file": "land-sports/land-sports-trekking.webp",
+    "artist": "Wojciech Kucharski",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Backpacking_in_polish_carpathians_cm01.jpg"
+  },
+  "land-sports-rock-climbing": {
+    "file": "land-sports/land-sports-rock-climbing.webp",
+    "artist": "Crystal",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Crack_climbing_in_Indian_Creek,_Utah.jpg"
+  },
+  "land-sports-bouldering": {
+    "file": "land-sports/land-sports-bouldering.webp",
+    "artist": "Ram Sripracha ( talk · contribs )",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bouldering.jpg"
+  },
+  "land-sports-mountaineering": {
+    "file": "land-sports/land-sports-mountaineering.webp",
+    "artist": "Troymason",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:M_Rainier.jpg"
+  },
+  "land-sports-mountain-biking": {
+    "file": "land-sports/land-sports-mountain-biking.webp",
+    "artist": "Jahn Ekman / SFF",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Alexandra_Engen_2012_London_Olympics_002.jpg"
+  },
+  "land-sports-ski-touring": {
+    "file": "land-sports/land-sports-ski-touring.webp",
+    "artist": "Zach Dischner",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ski_Mountaineering_Silverton_Colorado.jpg"
+  },
+  "land-sports-camping": {
+    "file": "land-sports/land-sports-camping.webp",
+    "artist": "Trougnouf (Benoit Brummer)",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tent_camping_along_the_Sulayr_trail_in_La_Taha,_Sierra_Nevada_National_Park_(DSCF5147).jpg"
+  },
+  "land-sports-orienteering": {
+    "file": "land-sports/land-sports-orienteering.webp",
+    "artist": "No machine-readable author provided. Mapmap~commonswiki assumed (based on copyright claims).",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tajfuto.jpg"
+  },
+  "land-sports-via-ferrata": {
+    "file": "land-sports/land-sports-via-ferrata.webp",
+    "artist": "Savognin Tourismus",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Climber_on_fixed_rope_route_Piz_Mitgel_2.jpg"
+  },
+  "land-sports-caving": {
+    "file": "land-sports/land-sports-caving.webp",
+    "artist": "Rama",
+    "license": "CC BY-SA 2.0 fr",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/fr/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Speleo-Faux-Monnayeurs-01.jpg"
+  },
+  "water-sports-kayaking": {
+    "file": "water-sports/water-sports-kayaking.webp",
+    "artist": "Guillaume Bonastre",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Woman_kayaking_on_a_turquoise_lake_(51125937521).jpg"
+  },
+  "water-sports-canoeing": {
+    "file": "water-sports/water-sports-canoeing.webp",
+    "artist": "Felouch Kotek",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Finale_C1_200_m_f%C3%A9minin_Jeux_Olympiques_Paris_2024.jpg"
+  },
+  "water-sports-canyoning": {
+    "file": "water-sports/water-sports-canyoning.webp",
+    "artist": "Dleex07",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bali_canyoning.jpg"
+  },
+  "water-sports-rafting": {
+    "file": "water-sports/water-sports-rafting.webp",
+    "artist": "RRFWTommartin",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Upstream_view_Colorado_River_approximatly_Mile_59.0.jpg"
+  },
+  "water-sports-scuba-diving": {
+    "file": "water-sports/water-sports-scuba-diving.webp",
+    "artist": "Soljaguar",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Underwater_photograph_of_a_recreational_scuba_diver_in_Playa_del_Carmen_2006.jpg"
+  },
+  "water-sports-freediving": {
+    "file": "water-sports/water-sports-freediving.webp",
+    "artist": "Agata Bogusz",
+    "license": "Attribution",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Agata_Bogusz_wrakowe.png"
+  },
+  "water-sports-snorkelling": {
+    "file": "water-sports/water-sports-snorkelling.webp",
+    "artist": "Masato Ikeda",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Reef_snorkeler.jpg"
+  },
+  "water-sports-surfing": {
+    "file": "water-sports/water-sports-surfing.webp",
+    "artist": "Shalom Jacobovitz",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mavericks_Surf_Contest_2010b.jpg"
+  },
+  "water-sports-windsurfing": {
+    "file": "water-sports/water-sports-windsurfing.webp",
+    "artist": "EncMstr",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hood_river_windsurfers_20060701_0759.jpeg"
+  },
+  "water-sports-kitesurfing": {
+    "file": "water-sports/water-sports-kitesurfing.webp",
+    "artist": "Chrumps",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kitesurfing_Sotavento.jpg"
+  },
+  "water-sports-sailing": {
+    "file": "water-sports/water-sports-sailing.webp",
+    "artist": "RThiele",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Regattafeld_vor_Laboe.jpg"
+  },
+  "air-sports-paragliding": {
+    "file": "air-sports/air-sports-paragliding.webp",
+    "artist": "Nevit Dilmen ( talk )",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paragliding_1350361.jpg"
+  },
+  "air-sports-hang-gliding": {
+    "file": "air-sports/air-sports-hang-gliding.webp",
+    "artist": "Audrey from USA",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hang_gliding_hyner.jpg"
+  },
+  "air-sports-skydiving": {
+    "file": "air-sports/air-sports-skydiving.webp",
+    "artist": "Rstpch",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skydiver_Holding_Aircraft_Door_Before_Exit.jpg"
+  },
+  "air-sports-gliding": {
+    "file": "air-sports/air-sports-gliding.webp",
+    "artist": "Sandy Hawkyard",
+    "license": "GFDL",
+    "licenseUrl": "http://www.gnu.org/copyleft/fdl.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Glider_finishing.jpg"
+  },
+  "air-sports-paramotoring": {
+    "file": "air-sports/air-sports-paramotoring.webp",
+    "artist": "Leo za1",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Powered_Paraglider-001.jpg"
+  },
+  "plants-flowering-kupe-cicegi": {
+    "file": "plants-flowering/plants-flowering-kupe-cicegi.webp",
+    "artist": "Gold Bernard",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brincos_De_Princesa.jpg"
+  },
+  "reptiles-sand-boa": {
+    "file": "reptiles/reptiles-sand-boa.webp",
+    "artist": "Guy Haimovitch",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Eryx_jaculus.jpg"
+  },
+  "plants-flowering-yildiz-cicegi": {
+    "file": "plants-flowering/plants-flowering-yildiz-cicegi.webp",
+    "artist": "Muhammad Mahdi Karim",
+    "license": "GFDL 1.2",
+    "licenseUrl": "http://www.gnu.org/licenses/old-licenses/fdl-1.2.html",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dahlia_x_hybrida.jpg"
+  },
+  "plants-flowering-glayol": {
+    "file": "plants-flowering/plants-flowering-glayol.webp",
+    "artist": "Jean-Pol GRANDMONT",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:0_Gladiolus_italicus_-_Samo%C3%ABns_(1).JPG"
+  },
+  "fungi-lichens-beard-lichen": {
+    "file": "fungi-lichens/fungi-lichens-beard-lichen.webp",
+    "artist": "Jason Hollinger",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Usnea_cavernosa_-_Flickr_-_pellaea.jpg"
+  },
+  "stones-sedimentary-conglomerate": {
+    "file": "stones-sedimentary/stones-sedimentary-conglomerate.webp",
+    "artist": "James St. John",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ferruginous_quartz-pebble_conglomerate_(derived_from_boulder_in_%22Sharon_Conglomerate%22,_Lower_Pennsylvanian;_Jackson_North_roadcut,_Ohio,_USA)_30.jpg"
+  },
+  "stones-minerals-olivine": {
+    "file": "stones-minerals/stones-minerals-olivine.webp",
+    "artist": "Robert M. Lavinsky",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Olivine-gem7-10a.jpg"
+  },
+  "stones-minerals-muscovite": {
+    "file": "stones-minerals/stones-minerals-muscovite.webp",
+    "artist": "Robert M. Lavinsky",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Muscovite-Albite-122887.jpg"
+  },
+  "water-sports-paddleboarding": {
+    "file": "water-sports/water-sports-paddleboarding.webp",
+    "artist": "A.belloc",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:J%C3%A9r%C3%A9my-Massi%C3%A8re_stand-up-paddle_biscarrosse-2.JPG"
+  },
+  "land-sports-trail-running": {
+    "file": "land-sports/land-sports-trail-running.webp",
+    "artist": "Pierre Thomas",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kilian.jpg"
+  },
+  "air-sports-wingsuit-flying": {
+    "file": "air-sports/air-sports-wingsuit-flying.webp",
+    "artist": "Wingsuiting",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wingsuit_Flying_over_Langar_Airfield_UK.jpg"
+  },
+  "air-sports-base-jumping": {
+    "file": "air-sports/air-sports-base-jumping.webp",
+    "artist": "Quest Films",
+    "license": "CC BY 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Base_jump.webm"
+  },
+  "air-sports-ballooning": {
+    "file": "air-sports/air-sports-ballooning.webp",
+    "artist": "Kropsoq",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:2006_Ojiya_balloon_festival_011.jpg"
+  },
+  "air-sports-speed-flying": {
+    "file": "air-sports/air-sports-speed-flying.webp",
+    "artist": "Pastelitodepapa",
+    "license": "CC0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://en.wikipedia.org/wiki/File:Executing_a_turn_with_a_speedflyer_on_a_summer_day.jpg"
+  },
+  "cnidarians-moon-jellyfish": {
+    "file": "cnidarians/cnidarians-moon-jellyfish.webp",
+    "artist": "Luc Viatour",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aurelia_aurita_(Cnidaria)_Luc_Viatour.jpg"
+  },
+  "cnidarians-lions-mane-jellyfish": {
+    "file": "cnidarians/cnidarians-lions-mane-jellyfish.webp",
+    "artist": "W.carter",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lion%27s_mane_jellyfish_in_Gullmarn_fjord_at_S%C3%A4mstad_7.jpg"
+  },
+  "cnidarians-portuguese-man-o-war": {
+    "file": "cnidarians/cnidarians-portuguese-man-o-war.webp",
+    "artist": "Image courtesy of Islands in the Sea 2002, NOAA/OER.",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portuguese_Man-O-War_(Physalia_physalis).jpg"
+  },
+  "cnidarians-box-jellyfish": {
+    "file": "cnidarians/cnidarians-box-jellyfish.webp",
+    "artist": "Avispa marina.jpg : Guido Gautsch , Toyota, Japan derivative work: Mithril ( talk )",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Avispa_marina_cropped.png"
+  },
+  "cnidarians-mauve-stinger": {
+    "file": "cnidarians/cnidarians-mauve-stinger.webp",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pelagia_noctiluca_(Sardinia).jpg"
+  },
+  "cnidarians-immortal-jellyfish": {
+    "file": "cnidarians/cnidarians-immortal-jellyfish.webp",
+    "artist": "Bachware",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Turritopsis_dohrnii.jpg"
+  },
+  "cnidarians-beadlet-anemone": {
+    "file": "cnidarians/cnidarians-beadlet-anemone.webp",
+    "artist": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tomate_de_mar_(Actinia_equina),_Set%C3%BAbal,_Portugal,_2020-08-01,_DD_11.jpg"
+  },
+  "cnidarians-staghorn-coral": {
+    "file": "cnidarians/cnidarians-staghorn-coral.webp",
+    "artist": "Albert Kok at Dutch Wikipedia ( Original text: albert kok )",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hertshoon.jpg"
+  },
+  "cnidarians-red-coral": {
+    "file": "cnidarians/cnidarians-red-coral.webp",
+    "artist": "Géry PARENT",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Corallium_rubrum_(Linnaeus,_1758)_11.jpg"
+  },
+  "molluscs-common-octopus": {
+    "file": "molluscs/molluscs-common-octopus.webp",
+    "artist": "albert kok",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Octopus2.jpg"
+  },
+  "cnidarians-green-hydra": {
+    "file": "cnidarians/cnidarians-green-hydra.webp",
+    "artist": "Peter Schuchert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hydra_viridissima2.jpg"
+  },
+  "molluscs-cuttlefish": {
+    "file": "molluscs/molluscs-cuttlefish.webp",
+    "artist": "Diego Delso",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sepia_com%C3%BAn_(Sepia_officinalis),_Parque_natural_de_la_Arr%C3%A1bida,_Portugal,_2020-07-21,_DD_62.jpg"
+  },
+  "molluscs-european-squid": {
+    "file": "molluscs/molluscs-european-squid.webp",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Loligo_vulgaris.jpg"
+  },
+  "molluscs-giant-squid": {
+    "file": "molluscs/molluscs-giant-squid.webp",
+    "artist": "NTNU Vitenskapsmuseet",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_squid_Ranheim.jpg"
+  },
+  "molluscs-nautilus": {
+    "file": "molluscs/molluscs-nautilus.webp",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nautilus_pompilius_(detail).jpg"
+  },
+  "molluscs-roman-snail": {
+    "file": "molluscs/molluscs-roman-snail.webp",
+    "artist": "Waugsberg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Helix_pomatia_89a.jpg"
+  },
+  "molluscs-blue-mussel": {
+    "file": "molluscs/molluscs-blue-mussel.webp",
+    "artist": "Rainer Zenz",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Miesmuscheln-2.jpg"
+  },
+  "molluscs-leopard-slug": {
+    "file": "molluscs/molluscs-leopard-slug.webp",
+    "artist": "Michal Maňas",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Limax_maximus_5.jpg"
+  },
+  "molluscs-european-oyster": {
+    "file": "molluscs/molluscs-european-oyster.webp",
+    "artist": "[H. Zell]",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ostrea_edulis_01.jpg"
+  },
+  "molluscs-great-scallop": {
+    "file": "molluscs/molluscs-great-scallop.webp",
+    "artist": "Manfred Heyde",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pecten_maximus_Pilgermuschel.jpg"
+  },
+  "molluscs-abalone": {
+    "file": "molluscs/molluscs-abalone.webp",
+    "artist": "Philippe Guillaume",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Haliotis_tuberculata_coccinea.jpg"
+  },
+  "molluscs-giant-clam": {
+    "file": "molluscs/molluscs-giant-clam.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Giant_clam_(Tridacna_gigas)_Michaelmas_Cay.jpg"
+  },
+  "molluscs-nudibranch": {
+    "file": "molluscs/molluscs-nudibranch.webp",
+    "artist": "Gabriel Rif",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:PikiWiki_Israel_37509_Nudibranch_on_sponge.jpg"
+  },
+  "crustaceans-european-lobster": {
+    "file": "crustaceans/crustaceans-european-lobster.webp",
+    "artist": "Bart Braun",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:KreeftbijDenOsse.jpg"
+  },
+  "crustaceans-edible-crab": {
+    "file": "crustaceans/crustaceans-edible-crab.webp",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cancer_pagurus.jpg"
+  },
+  "crustaceans-shore-crab": {
+    "file": "crustaceans/crustaceans-shore-crab.webp",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carcinus_maenas.jpg"
+  },
+  "crustaceans-hermit-crab": {
+    "file": "crustaceans/crustaceans-hermit-crab.webp",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pagurus_bernhardus.jpg"
+  },
+  "crustaceans-common-shrimp": {
+    "file": "crustaceans/crustaceans-common-shrimp.webp",
+    "artist": "Etrusko25",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Palaemon_serratus_Croazia.jpg"
+  },
+  "crustaceans-noble-crayfish": {
+    "file": "crustaceans/crustaceans-noble-crayfish.webp",
+    "artist": "Dragon187",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Astacus_astacus_male.jpg"
+  },
+  "crustaceans-coconut-crab": {
+    "file": "crustaceans/crustaceans-coconut-crab.webp",
+    "artist": "Drew Avery",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Coconut_Crab_Birgus_latro.jpg"
+  },
+  "crustaceans-japanese-spider-crab": {
+    "file": "crustaceans/crustaceans-japanese-spider-crab.webp",
+    "artist": "Lycaon (Hans Hillewaert)",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macrocheira_kaempferi.jpg"
+  },
+  "crustaceans-acorn-barnacle": {
+    "file": "crustaceans/crustaceans-acorn-barnacle.webp",
+    "artist": "Stemonitis",
+    "license": "Copyrighted free use",
+    "licenseUrl": "",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Barnacles.jpg"
+  },
+  "crustaceans-woodlouse": {
+    "file": "crustaceans/crustaceans-woodlouse.webp",
+    "artist": "Xeroporcellio",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Armadillidium_vulgare_male.jpg"
+  },
+  "crustaceans-brine-shrimp": {
+    "file": "crustaceans/crustaceans-brine-shrimp.webp",
+    "artist": "Hans Hillewaert",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Artemia_salina_2.jpg"
+  },
+  "crustaceans-water-flea": {
+    "file": "crustaceans/crustaceans-water-flea.webp",
+    "artist": "(Photo: Paul Hebert)",
+    "license": "CC BY 2.5",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.5",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daphnia_pulex.png"
+  },
+  "arachnids-garden-spider": {
+    "file": "arachnids/arachnids-garden-spider.webp",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Araneus_diadematus_MHNT_Femelle_Fronton.jpg"
+  },
+  "arachnids-wasp-spider": {
+    "file": "arachnids/arachnids-wasp-spider.webp",
+    "artist": "Charles J. Sharp",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wasp_spider_(Argiope_bruennichi)_female_ventral_Hrdovicka.jpg"
+  },
+  "arachnids-zebra-jumping-spider": {
+    "file": "arachnids/arachnids-zebra-jumping-spider.webp",
+    "artist": "Kaldari",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kaldari_Salticus_scenicus_male_01.jpg"
+  },
+  "arachnids-wolf-spider": {
+    "file": "arachnids/arachnids-wolf-spider.webp",
+    "artist": "João Coelho",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lycosa_tarantula.png"
+  },
+  "arachnids-brown-recluse": {
+    "file": "arachnids/arachnids-brown-recluse.webp",
+    "artist": "Rosa Pineda",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Brown_Recluse.jpg"
+  },
+  "arachnids-goliath-birdeater": {
+    "file": "arachnids/arachnids-goliath-birdeater.webp",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Theraphosa_blondi_MHNT.jpg"
+  },
+  "arachnids-black-widow": {
+    "file": "arachnids/arachnids-black-widow.webp",
+    "artist": "Unknown",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Latrodectus_mactans_eating.JPG"
+  },
+  "arachnids-cellar-spider": {
+    "file": "arachnids/arachnids-cellar-spider.webp",
+    "artist": "Olei",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pholcus.phalangioides.6905.jpg"
+  },
+  "arachnids-house-spider": {
+    "file": "arachnids/arachnids-house-spider.webp",
+    "artist": "Magne Flåten",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tegenaria_domestica-f.jpg"
+  },
+  "arachnids-scorpion": {
+    "file": "arachnids/arachnids-scorpion.webp",
+    "artist": "Guy Haimovitch",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Scorpio_palmatus.jpg"
+  },
+  "arachnids-castor-bean-tick": {
+    "file": "arachnids/arachnids-castor-bean-tick.webp",
+    "artist": "W.alter",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ixodes_ricinus_on_dry_grass.jpg"
+  },
+  "arachnids-harvestman": {
+    "file": "arachnids/arachnids-harvestman.webp",
+    "artist": "Didier Descouens",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Phalangium_opilio_MHNT_Male.jpg"
+  },
+  "stones-igneous-tuff": {
+    "file": "stones-igneous/stones-igneous-tuff.webp",
+    "artist": "Ivan Fernanadez 1011",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guadalupe_Tuff.jpg"
+  },
+  "stones-minerals-agate": {
+    "file": "stones-minerals/stones-minerals-agate.webp",
+    "artist": "James St. John",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Malawi_Agate_(Malawi,_southeastern_Africa)_(32734668126).jpg"
+  },
+  "stones-minerals-jasper": {
+    "file": "stones-minerals/stones-minerals-jasper.webp",
+    "artist": "Tommy from Arad",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jasper_outcrop_in_the_Bucegi_Mountains.jpg"
+  },
+  "stones-minerals-geode": {
+    "file": "stones-minerals/stones-minerals-geode.webp",
+    "artist": "Manfred Heyde",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Geode_inside_outside.jpg"
+  },
+  "stones-sedimentary-fossiliferous-limestone": {
+    "file": "stones-sedimentary/stones-sedimentary-fossiliferous-limestone.webp",
+    "artist": "PaleoNeolitic",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marine_terrace_64_(Quaternary_-_Coquimbo_Fm.).jpg"
+  }
+}

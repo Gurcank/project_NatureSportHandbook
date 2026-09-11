@@ -1,66 +1,86 @@
-﻿'use client';
+'use client';
 
-import { createContext, useContext, useEffect, useState, type ReactNode } from 'react';
+import {
+  createContext,
+  useContext,
+  useEffect,
+  useSyncExternalStore,
+  type ReactNode,
+} from 'react';
 
 export type Language = 'en' | 'tr';
-export type Theme = 'light' | 'dark';
+
+const STORAGE_KEY = 'language';
+const CHANGE_EVENT = 'handbook:language-change';
 
 interface SettingsContextType {
   language: Language;
   setLanguage: (language: Language) => void;
-  theme: Theme;
-  setTheme: (theme: Theme) => void;
 }
 
 const SettingsContext = createContext<SettingsContextType | undefined>(undefined);
 
-function readStoredSetting<T extends string>(
-  key: string,
-  fallback: T,
-  allowedValues: readonly T[],
-): T {
-  if (typeof window === 'undefined') return fallback;
-
-  try {
-    const storedValue = localStorage.getItem(key) as T | null;
-    return storedValue && allowedValues.includes(storedValue) ? storedValue : fallback;
-  } catch {
-    return fallback;
-  }
+function isLanguage(value: unknown): value is Language {
+  return value === 'en' || value === 'tr';
 }
 
-function writeStoredSetting(key: string, value: string) {
+/**
+ * The chosen language lives outside React so it can be read synchronously
+ * during render without a hydration mismatch. It is held in memory as well as
+ * in storage, so the toggle still works where storage is blocked.
+ */
+let cachedLanguage: Language | null = null;
+
+function getLanguage(): Language {
+  if (cachedLanguage === null) {
+    try {
+      const stored = localStorage.getItem(STORAGE_KEY);
+      cachedLanguage = isLanguage(stored) ? stored : 'en';
+    } catch {
+      cachedLanguage = 'en';
+    }
+  }
+  return cachedLanguage;
+}
+
+function getServerLanguage(): Language {
+  return 'en';
+}
+
+function subscribe(onChange: () => void) {
+  const onStorage = (event: StorageEvent) => {
+    if (event.key !== STORAGE_KEY) return;
+    cachedLanguage = isLanguage(event.newValue) ? event.newValue : 'en';
+    onChange();
+  };
+
+  window.addEventListener(CHANGE_EVENT, onChange);
+  window.addEventListener('storage', onStorage);
+  return () => {
+    window.removeEventListener(CHANGE_EVENT, onChange);
+    window.removeEventListener('storage', onStorage);
+  };
+}
+
+function setStoredLanguage(language: Language) {
+  cachedLanguage = language;
   try {
-    localStorage.setItem(key, value);
+    localStorage.setItem(STORAGE_KEY, language);
   } catch {
     // Keep the in-memory value even if browser storage is unavailable.
   }
+  window.dispatchEvent(new Event(CHANGE_EVENT));
 }
 
 export function SettingsProvider({ children }: { children: ReactNode }) {
-  const [language, setLanguageState] = useState<Language>(() =>
-    readStoredSetting('language', 'en', ['en', 'tr']),
-  );
-  const [theme, setThemeState] = useState<Theme>(() =>
-    readStoredSetting('theme', 'light', ['light', 'dark']),
-  );
-
-  const setLanguage = (newLanguage: Language) => {
-    setLanguageState(newLanguage);
-    writeStoredSetting('language', newLanguage);
-  };
-
-  const setTheme = (newTheme: Theme) => {
-    setThemeState(newTheme);
-    writeStoredSetting('theme', newTheme);
-  };
+  const language = useSyncExternalStore(subscribe, getLanguage, getServerLanguage);
 
   useEffect(() => {
     document.documentElement.lang = language;
   }, [language]);
 
   return (
-    <SettingsContext.Provider value={{ language, setLanguage, theme, setTheme }}>
+    <SettingsContext.Provider value={{ language, setLanguage: setStoredLanguage }}>
       {children}
     </SettingsContext.Provider>
   );

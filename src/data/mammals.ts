@@ -1,969 +1,880 @@
-import type { Language } from '@/context/SettingsContext';
+import type { AnimalEntry } from '@/types';
 
-export type MammalEntry = {
-  id: string;
-  name: Record<Language, string>;
-  scientificName: string;
-  description: Record<Language, string>;
-  diet: string;
-  habitat: string;
-  image: string;
-};
-
-const mammals: MammalEntry[] = [
+/**
+ * Mammalia, written to the handbook's entry template: habitat, diet and size as
+ * the three facts, then two sentences — how it is told apart in the field, and
+ * the one thing about it worth carrying away. Size is length nose to rump for
+ * most, height at the shoulder for the tall ones, and total length at sea.
+ *
+ * The `id` of an entry is what its photograph and its credit are filed under,
+ * so ids are fixed. Names, facts and prose can be revised; ids cannot.
+ */
+export const mammals: AnimalEntry[] = [
   {
     id: 'cheetah',
     name: { tr: 'Çita', en: 'Cheetah' },
     scientificName: 'Acinonyx jubatus',
+    habitat: { tr: 'Afrika’da savan ve açık otlaklar', en: 'Savanna and open grassland in Africa' },
+    diet: { tr: 'Ceylan ve küçük antiloplar', en: 'Gazelle and small antelope' },
+    size: { tr: '110–150 cm', en: '110–150 cm' },
     description: {
-      tr: 'Dünyanın en hızlı karasal hayvanı, 120 km/s hıza kadar ulaşabilir.',
-      en: 'The fastest land animal on Earth, capable of speeds exceeding 70 mph.',
+      tr: 'Gözünden ağzına inen siyah gözyaşı çizgisi ve içeri çekilemeyen pençeleriyle leopardan ayrılır. Kara hayvanlarının en hızlısıdır ama hızını yirmi saniyeden fazla sürdüremez.',
+      en: 'A black tear line from eye to mouth, and claws that do not retract, separate it from a leopard. It is the fastest animal on land, but it cannot hold that speed for more than twenty seconds.',
     },
-    diet: 'Carnivore',
-    habitat: 'Savannas, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/92/Male_cheetah_facing_left_in_South_Africa.jpg/1280px-Male_cheetah_facing_left_in_South_Africa.jpg'
   },
-
   {
     id: 'panda',
-    name: { tr: 'Panda', en: 'Giant Panda' },
+    name: { tr: 'Dev Panda', en: 'Giant Panda' },
     scientificName: 'Ailuropoda melanoleuca',
+    habitat: { tr: 'Çin’de dağlık bambu ormanları', en: 'Mountain bamboo forest in China' },
+    diet: { tr: 'Neredeyse yalnızca bambu', en: 'Almost entirely bamboo' },
+    size: { tr: '120–180 cm', en: '120–180 cm' },
     description: {
-      tr: 'Bambunun %99\'unu yiyen, dünyada yalnızca 1000 kadarı yaşayan nesli tehlike altında bir ayı.',
-      en: 'An endangered bear species that feeds almost exclusively on bamboo.',
+      tr: 'Siyah beyaz deseniyle karıştırılmaz; bilek kemiğinden gelişen sahte başparmağıyla bambuyu kavrar. Sindirim sistemi hâlâ etçil bir ayınınkidir, bu yüzden günde on iki saat yemek zorundadır.',
+      en: 'Unmistakable in black and white, gripping bamboo with a false thumb grown from a wrist bone. Its gut is still that of a carnivorous bear, which is why it must eat for twelve hours a day.',
     },
-    diet: 'Herbivore',
-    habitat: 'Bamboo forests, mountains',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0f/Grosser_Panda.JPG/1280px-Grosser_Panda.JPG'
   },
-
   {
     id: 'moose',
     name: { tr: 'Sığın', en: 'Moose' },
     scientificName: 'Alces alces',
-    description: {
-      tr: 'Uzun bacakları ve geniş boynuzlarıyla kuzey ormanlarının dev otçulu.',
-      en: 'A towering herbivore of northern forests with broad antlers and long legs.',
+    habitat: {
+      tr: 'Kuzey ormanları, bataklık ve göl kıyıları',
+      en: 'Northern forest, bog and lake margins',
     },
-    diet: 'Herbivore',
-    habitat: 'Boreal forests, wetlands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Alaska_moose.jpg/1280px-Alaska_moose.jpg'
+    diet: { tr: 'Su bitkileri, sürgün ve kabuk', en: 'Water plants, shoots and bark' },
+    size: { tr: 'Omuzda 180–210 cm', en: '180–210 cm at the shoulder' },
+    description: {
+      tr: 'Geyiklerin en irisidir; erkeğinin kürek biçimli boynuzları ve sarkık burnu onu her geyikten ayırır. Göl dibindeki bitkiler için başını tümüyle suya sokup dakikalarca dalabilir.',
+      en: 'The largest of the deer, told by the male’s palmate antlers and drooping muzzle. It submerges its whole head for lake-bottom plants and can stay under for minutes.',
+    },
   },
-
   {
     id: 'antelope',
     name: { tr: 'Antilop', en: 'Antelope' },
     scientificName: 'Antilopinae',
+    habitat: { tr: 'Afrika ve Asya’da savan, bozkır ve çalılık', en: 'Savanna, steppe and scrub in Africa and Asia' },
+    diet: { tr: 'Ot, yaprak ve sürgün', en: 'Grass, leaves and shoots' },
+    size: { tr: '60–250 cm', en: '60–250 cm' },
     description: {
-      tr: 'Çeşitli türleri olan, Afrika ve Asya\'da yaşayan, hızlı otçullar.',
-      en: 'A diverse group of fast, graceful herbivores found across Africa and Asia.',
+      tr: 'Boynuzları içi boş ve kalıcıdır; geyikte ise kemikten ve her yıl dökülür — ikisini ayıran şey budur. Yeni doğan yavru bir saat içinde sürüyle birlikte koşabilecek durumdadır.',
+      en: 'Its horns are hollow and permanent, where a deer’s antlers are bone and shed each year — that is the dividing line. A newborn is on its feet and running with the herd within the hour.',
     },
-    diet: 'Herbivore',
-    habitat: 'Savannas, grasslands, forests',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/5/5e/Blackbuck_male_female.jpg'
   },
-
   {
     id: 'blue-whale',
     name: { tr: 'Mavi Balina', en: 'Blue Whale' },
     scientificName: 'Balaenoptera musculus',
+    habitat: { tr: 'Bütün açık okyanuslar', en: 'Open ocean worldwide' },
+    diet: { tr: 'Süzerek aldığı kril', en: 'Krill, taken by filtering' },
+    size: { tr: '24–30 m', en: '24–30 m' },
     description: {
-      tr: 'Dünyanın en büyük memelisi ve insanlar tarafından bilinen en büyük hayvan.',
-      en: 'The largest animal ever known to have existed on Earth.',
+      tr: 'Yeryüzünde yaşamış en büyük hayvandır; dili bir filden, kalbi bir otomobilden ağırdır. Sesi okyanusta yüzlerce kilometre yol alır ve hayvanların çıkardığı en güçlü sestir.',
+      en: 'The largest animal that has ever lived: its tongue outweighs an elephant and its heart a car. Its call carries hundreds of kilometres through the ocean, the loudest sound any animal makes.',
     },
-    diet: 'Herbivore',
-    habitat: 'Oceans',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg/1280px-Anim1754_-_Flickr_-_NOAA_Photo_Library.jpg'
   },
-
   {
     id: 'bison',
-    name: { tr: 'Bizon', en: 'Bison' },
+    name: { tr: 'Amerika Bizonu', en: 'American Bison' },
     scientificName: 'Bison bison',
+    habitat: { tr: 'Kuzey Amerika’da bozkır ve açık ovalar', en: 'Prairie and open plains of North America' },
+    diet: { tr: 'Ot ve saz', en: 'Grasses and sedges' },
+    size: { tr: 'Omuzda 165–186 cm', en: '165–186 cm at the shoulder' },
     description: {
-      tr: 'Kuzey Amerika\'nın en büyük hayvanı, kalın kürküyle kış soğuklarına dayanıklı.',
-      en: 'North America\'s largest land animal, built for harsh winters.',
+      tr: 'Öne doğru düşen ağır omuz kamburu ve kalın yeleyle sığırdan ayrılır. On dokuzuncu yüzyılda otuz milyondan birkaç yüze indi; bugünkü sürüler o birkaç yüzün soyundandır.',
+      en: 'A heavy shoulder hump falling forward and a thick mane separate it from cattle. It went from thirty million to a few hundred in the nineteenth century, and every herd today descends from those.',
     },
-    diet: 'Herbivore',
-    habitat: 'Grasslands, prairies',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/American_bison_k5680-1.jpg/1280px-American_bison_k5680-1.jpg'
   },
-
   {
     id: 'cow',
-    name: { tr: 'İnek', en: 'Cow' },
+    name: { tr: 'Sığır', en: 'Cattle' },
     scientificName: 'Bos taurus',
+    habitat: { tr: 'Mera, ahır ve tarım arazileri', en: 'Pasture, byres and farmland' },
+    diet: { tr: 'Ot, saman ve yem', en: 'Grass, hay and feed' },
+    size: { tr: 'Omuzda 130–150 cm', en: '130–150 cm at the shoulder' },
     description: {
-      tr: 'İnsanlar tarafından evcilleştirilen, süt ve et üretiminde önemli hayvan.',
-      en: 'A domesticated bovine essential for dairy and meat production worldwide.',
+      tr: 'Dört bölmeli midesiyle otu sindirir; yuttuğunu geri getirip yeniden çiğnemesi geviş getirmektir. Bugün yaşayan bütün sığırlar, on bin yıl önce evcilleştirilen yaban öküzünün soyundandır.',
+      en: 'A four-chambered stomach digests grass, and bringing the food back up to chew again is what rumination means. Every animal alive descends from the aurochs, domesticated ten thousand years ago.',
     },
-    diet: 'Herbivore',
-    habitat: 'Pastures, farmland',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg/1280px-Cow_%28Fleckvieh_breed%29_Oeschinensee_Slaunger_2009-07-07.jpg'
   },
-
   {
     id: 'sloth',
-    name: { tr: 'Tembel Hayvan', en: 'Sloth' },
+    name: { tr: 'Üç Parmaklı Tembel Hayvan', en: 'Pale-throated Sloth' },
     scientificName: 'Bradypus tridactylus',
+    habitat: { tr: 'Güney Amerika yağmur ormanlarının tepe katı', en: 'The canopy of South American rainforest' },
+    diet: { tr: 'Yaprak ve tomurcuk', en: 'Leaves and buds' },
+    size: { tr: '45–75 cm', en: '45–75 cm' },
     description: {
-      tr: 'Ağaçlarda yavaş hareket eden, enerji tasarrufu yapan Güney Amerika\'nın memelisi.',
-      en: 'A slow-moving South American mammal that conserves energy through inactivity.',
+      tr: 'Uzun kancalı pençeleriyle daldan baş aşağı asılı durur ve dakikada birkaç metre ilerler. Kürkünde yeşil alg yetişir; bu yeşillik onu tepe katında neredeyse görünmez kılar.',
+      en: 'It hangs upside down from a branch on long hooked claws and moves a few metres a minute. Green algae grow in its coat, and that greenness makes it all but invisible in the canopy.',
     },
-    diet: 'Herbivore',
-    habitat: 'Tropical rainforests',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Bicho-pregui%C3%A7a_3.jpg/1280px-Bicho-pregui%C3%A7a_3.jpg'
   },
-
   {
     id: 'camel',
-    name: { tr: 'Deve', en: 'Camel' },
+    name: { tr: 'Tek Hörgüçlü Deve', en: 'Dromedary' },
     scientificName: 'Camelus dromedarius',
+    habitat: { tr: 'Kuzey Afrika ve Arabistan’da çöl ve bozkır', en: 'Desert and steppe in North Africa and Arabia' },
+    diet: { tr: 'Dikenli çalı, kuru ot ve yaprak', en: 'Thorny scrub, dry grass and leaves' },
+    size: { tr: 'Omuzda 180–200 cm', en: '180–200 cm at the shoulder' },
     description: {
-      tr: 'Çöl ortamına mükemmel şekilde uyarlanmış, sırtında yağ depolayan hayvan.',
-      en: 'A desert-adapted mammal capable of surviving weeks without water.',
+      tr: 'Tek hörgücüyle çift hörgüçlü Baktriya devesinden ayrılır; hörgüçte su değil yağ depolanır. Vücut ısısının gün içinde altı derece dalgalanmasına izin vererek terlemekten kaçınır.',
+      en: 'A single hump separates it from the two-humped Bactrian, and the hump stores fat, not water. It lets its body temperature swing six degrees through the day rather than lose water by sweating.',
     },
-    diet: 'Herbivore',
-    habitat: 'Deserts, arid regions',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/07._Camel_Profile%2C_near_Silverton%2C_NSW%2C_07.07.2007.jpg/1280px-07._Camel_Profile%2C_near_Silverton%2C_NSW%2C_07.07.2007.jpg'
   },
-
   {
     id: 'jackal',
-    name: { tr: 'Çakal', en: 'Jackal' },
+    name: { tr: 'Altın Çakal', en: 'Golden Jackal' },
     scientificName: 'Canis aureus',
+    habitat: { tr: 'Çalılık, tarla kenarı ve köy çevresi', en: 'Scrub, field margins and around villages' },
+    diet: { tr: 'Kemirgen, meyve, leş ve artık', en: 'Rodents, fruit, carrion and scraps' },
+    size: { tr: '70–85 cm', en: '70–85 cm' },
     description: {
-      tr: 'Afrika ve Asya\'nın çoğu bölgesinde yaşayan, çok uyarlanabilir bir hayvan.',
-      en: 'An adaptable scavenger and hunter found across Africa and Asia.',
+      tr: 'Kurttan küçük, tilkiden iri ve daha uzun bacaklıdır; kürkü kum sarısıdır. Gece duyulan uluma korosu bir sürünün değil, çoğunlukla tek bir çiftin sesidir.',
+      en: 'Smaller than a wolf, larger and longer-legged than a fox, with a sandy coat. The chorus of howling heard at night is usually not a pack but a single pair.',
     },
-    diet: 'Omnivore',
-    habitat: 'Savannas, grasslands, scrublands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/e/ee/033_Golden_jackal_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg/1280px-033_Golden_jackal_in_Keoladeo_National_Park_Photo_by_Giles_Laurent.jpg'
   },
-
   {
     id: 'wolf',
-    name: { tr: 'Kurt', en: 'Gray Wolf' },
+    name: { tr: 'Boz Kurt', en: 'Grey Wolf' },
     scientificName: 'Canis lupus',
+    habitat: { tr: 'Orman, dağ, bozkır ve tundra', en: 'Forest, mountain, steppe and tundra' },
+    diet: { tr: 'Geyik, yaban domuzu ve kemirgen', en: 'Deer, wild boar and rodents' },
+    size: { tr: '100–160 cm', en: '100–160 cm' },
     description: {
-      tr: 'Sürü halinde yaşayan, zeki ve dayanıklı bir yırtıcı tür.',
-      en: 'A highly social predator that lives and hunts in packs.',
+      tr: 'Köpekten uzun bacakları, dar göğsü ve düz taşıdığı kuyruğuyla ayrılır. Sürü bir savaş düzeni değil bir ailedir: bir çift ve onların farklı yaşlardaki yavruları.',
+      en: 'Longer legs, a narrow chest and a tail carried straight separate it from a dog. A pack is not an army but a family — one breeding pair and their young of different years.',
     },
-    diet: 'Carnivore',
-    habitat: 'Forests, tundra, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/6/68/Eurasian_wolf_2.jpg/1280px-Eurasian_wolf_2.jpg'
   },
-
   {
     id: 'dog',
     name: { tr: 'Köpek', en: 'Dog' },
     scientificName: 'Canis lupus familiaris',
+    habitat: { tr: 'Ev, çiftlik, sokak ve sürü başı', en: 'Homes, farms, streets and flocks' },
+    diet: { tr: 'Et, tahıl ve insan artığı', en: 'Meat, grain and human leftovers' },
+    size: { tr: '20–90 cm', en: '20–90 cm' },
     description: {
-      tr: 'İnsanların en sadık arkadaşı, evcil hayvan olarak sevilen bir memeli.',
-      en: 'Man\'s best friend, a loyal domesticated mammal valued worldwide.',
+      tr: 'Kurdun evcilleşmiş hâlidir ve en az on beş bin yıldır insanla birliktedir; ırklar arasındaki boy farkı hiçbir yaban türünde görülmez. İnsan yüzünü okuyabilen az sayıdaki hayvandan biridir.',
+      en: 'A domesticated wolf, alongside people for at least fifteen thousand years, with a range of size between breeds that no wild species shows. It is one of the few animals that reads a human face.',
     },
-    diet: 'Omnivore',
-    habitat: 'Urban, rural areas',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Huskiesatrest.jpg/1280px-Huskiesatrest.jpg'
   },
-
   {
     id: 'goat',
     name: { tr: 'Keçi', en: 'Goat' },
     scientificName: 'Capra hircus',
+    habitat: { tr: 'Kayalık yamaç, makilik ve dağ köyleri', en: 'Rocky slopes, maquis and mountain villages' },
+    diet: { tr: 'Yaprak, çalı ve sürgün', en: 'Leaves, shrubs and shoots' },
+    size: { tr: 'Omuzda 65–90 cm', en: '65–90 cm at the shoulder' },
     description: {
-      tr: 'Çevre dostu, kolay bakılan ve yetenekli tırmanıcı bir evcil hayvan.',
-      en: 'An adaptable domesticated animal known for climbing and agility.',
+      tr: 'Yatay dikdörtgen göz bebeği ona neredeyse üç yüz derecelik bir görüş alanı verir. Koyundan farklı olarak otlamaz, göz hizasındaki yaprak ve sürgünleri koparır; bu yüzden dik kayaya tırmanır.',
+      en: 'A horizontal rectangular pupil gives it a field of view close to three hundred degrees. Unlike a sheep it browses rather than grazes, taking leaves at head height, which is why it climbs.',
     },
-    diet: 'Herbivore',
-    habitat: 'Grasslands, mountains, farms',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hausziege_04.jpg/1280px-Hausziege_04.jpg'
   },
-
   {
     id: 'roe-deer',
     name: { tr: 'Karaca', en: 'Roe Deer' },
     scientificName: 'Capreolus capreolus',
+    habitat: { tr: 'Orman kenarı, koru ve tarla arası çalılık', en: 'Woodland edges, copses and field scrub' },
+    diet: { tr: 'Sürgün, tomurcuk ve otlar', en: 'Shoots, buds and herbs' },
+    size: { tr: 'Omuzda 65–75 cm', en: '65–75 cm at the shoulder' },
     description: {
-      tr: 'Orta Avrupa\'da yaşayan, geyikten daha küçük zarif bir hayvan.',
-      en: 'A smaller, delicate deer species found across Europe.',
+      tr: 'Avrupa’nın en küçük geyiğidir; kuyruğu yok denecek kadar kısadır ve kaçarken beyaz kalça lekesi kabarır. Erkeğinin boynuzları yalnızca üç uçludur ve kışın dökülür.',
+      en: 'The smallest deer in Europe, with a tail so short it seems absent and a white rump patch that flares as it bolts. The buck’s antlers carry only three points and are shed in winter.',
     },
-    diet: 'Herbivore',
-    habitat: 'Forests, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Roe_deer_%28Capreolus_capreolus%29_young_male_Cumnor.jpg/1280px-Roe_deer_%28Capreolus_capreolus%29_young_male_Cumnor.jpg'
   },
-
   {
     id: 'beaver',
-    name: { tr: 'Kunduz', en: 'Beaver' },
+    name: { tr: 'Avrupa Kunduzu', en: 'Eurasian Beaver' },
     scientificName: 'Castor fiber',
+    habitat: { tr: 'Ağaçlı nehir, dere ve göl kıyıları', en: 'Wooded rivers, streams and lake shores' },
+    diet: { tr: 'Ağaç kabuğu, sürgün ve su bitkisi', en: 'Bark, shoots and water plants' },
+    size: { tr: '80–100 cm', en: '80–100 cm' },
     description: {
-      tr: 'Su kenarlarında baraj kuran ve ekosistemi dönüştüren çalışkan memeli.',
-      en: 'A hardworking dam-building mammal that reshapes waterways.',
+      tr: 'Yassı, pullu kuyruğuyla her kemirgenden ayrılır; kuyruk hem dümen hem tehlike alarmı olarak suya vurulur. Kurduğu barajlar sulak alan yaratır ve o alan onlarca başka türü besler.',
+      en: 'A flat scaly tail separates it from every other rodent, and that tail is both rudder and alarm, slapped hard on the water. Its dams create wetland, and that wetland carries dozens of other species.',
     },
-    diet: 'Herbivore',
-    habitat: 'Rivers, wetlands, lakes',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/6/6b/American_Beaver.jpg'
   },
-
   {
     id: 'deer',
-    name: { tr: 'Geyik', en: 'Deer' },
+    name: { tr: 'Kızıl Geyik', en: 'Red Deer' },
     scientificName: 'Cervus elaphus',
+    habitat: { tr: 'Geniş orman, dağ çayırı ve fundalık', en: 'Large forest, mountain meadow and heath' },
+    diet: { tr: 'Ot, yaprak, kabuk ve meşe palamudu', en: 'Grass, leaves, bark and acorns' },
+    size: { tr: 'Omuzda 105–130 cm', en: '105–130 cm at the shoulder' },
     description: {
-      tr: 'Geniş ormanlarda ve açık arazilerde görülen, zarif ve hızlı bir otçul.',
-      en: 'An elegant herbivore with impressive antlers, seen in forests and meadows.',
+      tr: 'Erkeğinin çok uçlu dallı boynuzları her yıl döküldükten sonra daha da büyüyerek yeniden çıkar. Sonbaharda duyulan boğuk böğürme, dişileri toplamak için kurulan bir güç gösterisidir.',
+      en: 'The stag’s many-tined antlers are shed each year and grow back larger. The hoarse bellowing heard in autumn is a contest of strength, staged to gather and hold a group of hinds.',
     },
-    diet: 'Herbivore',
-    habitat: 'Forests, grasslands, meadows',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Cervus_elaphus_Luc_Viatour_6.jpg/1280px-Cervus_elaphus_Luc_Viatour_6.jpg'
   },
-
   {
     id: 'bat',
     name: { tr: 'Yarasa', en: 'Bat' },
     scientificName: 'Chiroptera',
+    habitat: { tr: 'Mağara, ağaç kovuğu, çatı arası ve harabe', en: 'Caves, tree holes, lofts and ruins' },
+    diet: { tr: 'Böcek; bazı türlerde meyve ve nektar', en: 'Insects; fruit and nectar in some species' },
+    size: { tr: '3–40 cm', en: '3–40 cm' },
     description: {
-      tr: 'Ekolokasyonla yön bulan, gece uçuşuna uyum sağlamış tek memeli grubu.',
-      en: 'The only mammal group capable of true flight, using echolocation at night.',
+      tr: 'Gerçekten uçabilen tek memelidir; kanadı, parmakları arasına gerilmiş deriden ibarettir. Karanlıkta yolunu ses yollayıp yankısını dinleyerek bulur ve böylece bir sivrisineği havada saptar.',
+      en: 'The only mammal that truly flies, its wing nothing but skin stretched between elongated fingers. It navigates by sending out sound and listening to the echo, which locates a mosquito in mid-air.',
     },
-    diet: 'Insectivore/Frugivore',
-    habitat: 'Caves, forests, urban areas',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/7/77/Big-eared-townsend-fledermaus.jpg'
   },
-
   {
     id: 'hyena',
-    name: { tr: 'Sırtlan', en: 'Hyena' },
+    name: { tr: 'Benekli Sırtlan', en: 'Spotted Hyena' },
     scientificName: 'Crocuta crocuta',
+    habitat: { tr: 'Afrika’da savan, çalılık ve yarı çöl', en: 'Savanna, scrub and semi-desert in Africa' },
+    diet: { tr: 'Avladığı hayvanlar ve leş', en: 'Animals it hunts, and carrion' },
+    size: { tr: 'Omuzda 70–90 cm', en: '70–90 cm at the shoulder' },
     description: {
-      tr: 'Güçlü çeneleriyle bilinen, iş birliğiyle avlayan sosyal bir yırtıcı.',
-      en: 'A powerful predator with the strongest bite of any land carnivore.',
+      tr: 'Öne yüksek, arkaya alçalan sırtı ve benekli kürküyle tanınır. Leşçil ününün aksine yediğinin çoğunu kendi avlar; çenesi bir zürafanın uyluk kemiğini kırabilir.',
+      en: 'A back that slopes down from high shoulders, and a spotted coat. Despite its reputation it hunts most of what it eats, and its jaws can break the thigh bone of a giraffe.',
     },
-    diet: 'Carnivore',
-    habitat: 'Savannas, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Spotted_hyena_%28Crocuta_crocuta%29.jpg/1280px-Spotted_hyena_%28Crocuta_crocuta%29.jpg'
   },
-
   {
     id: 'armadillo',
-    name: { tr: 'Armadillo', en: 'Armadillo' },
+    name: { tr: 'Dokuz Bantlı Armadillo', en: 'Nine-banded Armadillo' },
     scientificName: 'Dasypus novemcinctus',
+    habitat: { tr: 'Amerika’da çalılık, orman ve tarla kenarı', en: 'Scrub, woodland and field edges in the Americas' },
+    diet: { tr: 'Böcek, larva ve solucan', en: 'Insects, grubs and worms' },
+    size: { tr: '40–60 cm', en: '40–60 cm' },
     description: {
-      tr: 'Zırh gibi plakalarla örtülü, toprak kazıcı Güney Amerika memelisi.',
-      en: 'A South American mammal covered in protective bony plates.',
+      tr: 'Sırtındaki kemik plakalardan oluşan zırh, ortadaki hareketli bantlar sayesinde bükülebilir. Her batında dört yavru doğurur ve bu dördü daima tek yumurtadan gelen dört ikizdir.',
+      en: 'Armour of bony plates across the back, made flexible by the movable bands across the middle. It bears four young at a time, and those four are always identical quadruplets from one egg.',
     },
-    diet: 'Insectivore',
-    habitat: 'Grasslands, forests, deserts',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Nine-banded_Armadillo.jpg/1280px-Nine-banded_Armadillo.jpg'
   },
-
   {
     id: 'dolphin',
-    name: { tr: 'Yunus', en: 'Dolphin' },
+    name: { tr: 'Yunus', en: 'Common Dolphin' },
     scientificName: 'Delphinus delphis',
+    habitat: { tr: 'Ilıman ve sıcak denizler, kıyı suları', en: 'Temperate and warm seas and coastal water' },
+    diet: { tr: 'Sürü balıkları ve mürekkepbalığı', en: 'Shoaling fish and squid' },
+    size: { tr: '1.7–2.4 m', en: '1.7–2.4 m' },
     description: {
-      tr: 'Zekası yüksek, sosyal yaşayan ve sesten konuşan deniz memelisi.',
-      en: 'An intelligent and social marine mammal known for its communication skills.',
+      tr: 'Yanlarındaki kum saati biçimli sarı ve gri desen onu öteki yunuslardan ayırır. Beyninin bir yarısı uyurken diğeri uyanık kalır; bu yüzden hiç durmadan nefes almayı sürdürebilir.',
+      en: 'An hourglass of buff and grey along each flank separates it from other dolphins. One half of its brain sleeps while the other stays awake, which is how it never stops surfacing to breathe.',
     },
-    diet: 'Carnivore',
-    habitat: 'Oceans, coastal waters',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Tursiops_truncatus_01-cropped.jpg/1280px-Tursiops_truncatus_01-cropped.jpg'
   },
-
   {
     id: 'donkey',
     name: { tr: 'Eşek', en: 'Donkey' },
     scientificName: 'Equus africanus asinus',
+    habitat: { tr: 'Köy, dağ patikası ve kurak tarım arazileri', en: 'Villages, mountain tracks and dry farmland' },
+    diet: { tr: 'Kaba ot, saman ve diken', en: 'Coarse grass, straw and thistle' },
+    size: { tr: 'Omuzda 90–140 cm', en: '90–140 cm at the shoulder' },
     description: {
-      tr: 'Atın yakın akrabası, daha küçük ve dayanıklı, taşımacılıkta kullanılan hayvan.',
-      en: 'A hardy cousin of the horse, valued for its strength and resilience.',
+      tr: 'Uzun kulakları, dik yelesi ve omuzlarından geçen koyu haç deseniyle attan ayrılır. Attan çok daha az suya ihtiyaç duyar; kurak arazide yük taşımanın binlerce yıllık çözümüdür.',
+      en: 'Long ears, an upright mane and a dark cross over the shoulders separate it from a horse. It needs far less water than a horse, and has carried loads across dry country for thousands of years.',
     },
-    diet: 'Herbivore',
-    habitat: 'Grasslands, semi-arid regions',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/1/1a/Donkey_in_Clovelly%2C_North_Devon%2C_England.jpg'
   },
-
   {
     id: 'horse',
     name: { tr: 'At', en: 'Horse' },
     scientificName: 'Equus caballus',
+    habitat: { tr: 'Otlak, bozkır ve ahırlar', en: 'Pasture, steppe and stables' },
+    diet: { tr: 'Ot, saman ve yulaf', en: 'Grass, hay and oats' },
+    size: { tr: 'Omuzda 140–180 cm', en: '140–180 cm at the shoulder' },
     description: {
-      tr: 'İnsanlar tarafından evcilleştirilen, hızlı ve dayanıklı bir hayvan.',
-      en: 'A domesticated equine valued for riding, farming, and racing.',
+      tr: 'Her ayağında tek bir parmak vardır ve tırnak o parmağın tırnağıdır; bu yapı hızı için ödenmiş bir bedeldir. Ayakta uyuyabilir: bacak kirişleri kilitlenerek gövdeyi kas gücü harcamadan taşır.',
+      en: 'Each foot carries a single toe, and the hoof is that toe’s nail — the price paid for speed. It can sleep standing, the tendons of the leg locking so the body is held without muscular effort.',
     },
-    diet: 'Herbivore',
-    habitat: 'Grasslands, meadows, farms',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Horse_007.jpg/1280px-Horse_007.jpg'
   },
-
   {
     id: 'zebra',
-    name: { tr: 'Zebra', en: 'Zebra' },
+    name: { tr: 'Ova Zebrası', en: 'Plains Zebra' },
     scientificName: 'Equus quagga',
+    habitat: { tr: 'Doğu ve Güney Afrika’da savan ve otlaklar', en: 'Savanna and grassland in east and southern Africa' },
+    diet: { tr: 'Kaba ot', en: 'Coarse grass' },
+    size: { tr: 'Omuzda 127–140 cm', en: '127–140 cm at the shoulder' },
     description: {
-      tr: 'Benzersiz siyah-beyaz çizgileriyle tanınan, sürü halinde yaşayan otçul.',
-      en: 'A striped herbivore living in herds across African savannas.',
+      tr: 'Çizgi deseni her bireyde farklıdır ve parmak izi gibi kullanılır. Çizgilerin en güçlü açıklaması kamuflaj değil: at sineklerinin bu desene inmekte zorlandığı ölçülmüştür.',
+      en: 'The stripe pattern differs on every animal and serves as a fingerprint would. The best-supported explanation is not camouflage: horseflies have been measured failing to land on that pattern.',
     },
-    diet: 'Herbivore',
-    habitat: 'Savannas, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/9/96/Plains_Zebra_Equus_quagga_cropped.jpg'
   },
-
   {
     id: 'hedgehog',
-    name: { tr: 'Kirpi', en: 'Hedgehog' },
+    name: { tr: 'Avrupa Kirpisi', en: 'European Hedgehog' },
     scientificName: 'Erinaceus europaeus',
+    habitat: { tr: 'Bahçe, çalılık, orman kenarı ve çit dipleri', en: 'Gardens, scrub, woodland edges and hedge bottoms' },
+    diet: { tr: 'Böcek, solucan, sümüklüböcek ve yumurta', en: 'Insects, worms, slugs and eggs' },
+    size: { tr: '20–30 cm', en: '20–30 cm' },
     description: {
-      tr: 'Gece aktif olan, küçük böceklerle beslenen, vücudu dikenli bir memeli.',
-      en: 'A small nocturnal mammal covered in protective spines.',
+      tr: 'Sırtındaki beş bin kadar diken içi boş kıllardan oluşur; tehdit altında sırt kası kasılarak hayvanı tam bir topa çevirir. Kışı gerçek uykuya yatarak geçirir, kalp atışı dakikada yirmiye düşer.',
+      en: 'The five thousand spines on its back are hollow hairs, and a sheet of back muscle pulls the animal into a complete ball. It truly hibernates, its heartbeat dropping to twenty a minute.',
     },
-    diet: 'Insectivore',
-    habitat: 'Forests, grasslands, gardens',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/7/72/Igel.JPG'
   },
-
   {
     id: 'cat',
     name: { tr: 'Kedi', en: 'Cat' },
     scientificName: 'Felis catus',
+    habitat: { tr: 'Ev, sokak, çiftlik ve ambarlar', en: 'Homes, streets, farms and barns' },
+    diet: { tr: 'Kemirgen, kuş ve hazır mama', en: 'Rodents, birds and prepared food' },
+    size: { tr: '45–50 cm', en: '45–50 cm' },
     description: {
-      tr: 'İnsanlar tarafından evcilleştirilen, bağımsız ve zekası yüksek bir hayvan.',
-      en: 'A domesticated companion known for its independence and agility.',
+      tr: 'İçeri çekilebilen pençeleri, dikey göz bebeği ve neredeyse sessiz yürüyüşüyle tanınır. Zorunlu etçildir: bazı amino asitleri kendi üretemez, bu yüzden bitkisel beslenmeye uyum sağlayamaz.',
+      en: 'Retractable claws, a vertical pupil and a near-silent walk. It is an obligate carnivore — it cannot make certain amino acids for itself, so it can never adapt to a plant diet.',
     },
-    diet: 'Carnivore',
-    habitat: 'Urban, rural areas',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/15/Cat_August_2010-4.jpg/1280px-Cat_August_2010-4.jpg'
   },
-
   {
     id: 'giraffe',
     name: { tr: 'Zürafa', en: 'Giraffe' },
     scientificName: 'Giraffa camelopardalis',
+    habitat: { tr: 'Afrika’da savan ve akasyalı açık ormanlık', en: 'Savanna and acacia woodland in Africa' },
+    diet: { tr: 'Akasya yaprağı ve sürgün', en: 'Acacia leaves and shoots' },
+    size: { tr: '4.3–5.7 m', en: '4.3–5.7 m' },
     description: {
-      tr: 'Dünyanın en uzun memelisi, yüksek ağaçların yapraklarını yemek için uyarlanmış.',
-      en: 'The world\'s tallest mammal, adapted to reach leaves high in trees.',
+      tr: 'Yaşayan en uzun hayvandır ama boynunda insanla aynı sayıda, yedi omur bulunur; her biri yirmi santimden uzundur. Beynine kan pompalayan kalbi on bir kilo gelir.',
+      en: 'The tallest animal alive, yet its neck holds seven vertebrae, the same number as a human’s, each over twenty centimetres long. The heart that drives blood up to its brain weighs eleven kilos.',
     },
-    diet: 'Herbivore',
-    habitat: 'Savannas, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9e/Giraffe_Mikumi_National_Park.jpg/1280px-Giraffe_Mikumi_National_Park.jpg'
   },
-
   {
     id: 'gorilla',
-    name: { tr: 'Goril', en: 'Gorilla' },
+    name: { tr: 'Batı Gorili', en: 'Western Gorilla' },
     scientificName: 'Gorilla gorilla',
+    habitat: { tr: 'Orta Afrika’da yağmur ormanı ve bataklık orman', en: 'Rainforest and swamp forest in central Africa' },
+    diet: { tr: 'Yaprak, sap, meyve ve öz', en: 'Leaves, stems, fruit and pith' },
+    size: { tr: '140–180 cm', en: '140–180 cm' },
     description: {
-      tr: 'Dünyanın en büyük maymunu, göz korkutucu görünüşüne rağmen barışçıl bir hayvan.',
-      en: 'The world\'s largest primate, surprisingly gentle despite its size.',
+      tr: 'Yaşayan en büyük primattır; olgun erkeğin sırtındaki gümüş rengi tüyler onu grubun lideri yapar. Göğüs dövmesi saldırı değil, çatışmayı başlamadan bitirmeye çalışan bir gösteridir.',
+      en: 'The largest living primate, the mature male marked out as leader by the silver hair across his back. The chest-beating is not an attack but a display meant to end a fight before it starts.',
     },
-    diet: 'Herbivore',
-    habitat: 'Tropical rainforests, mountains',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg/1280px-Gorille_des_plaines_de_l%27ouest_%C3%A0_l%27Espace_Zoologique.jpg'
   },
-
   {
     id: 'hippopotamus',
-    name: { tr: 'Hipopotam', en: 'Hippopotamus' },
+    name: { tr: 'Su Aygırı', en: 'Hippopotamus' },
     scientificName: 'Hippopotamus amphibius',
+    habitat: { tr: 'Afrika’da nehir, göl ve sığ sulak alanlar', en: 'Rivers, lakes and shallow wetland in Africa' },
+    diet: { tr: 'Geceleri karada otladığı otlar', en: 'Grass, grazed on land at night' },
+    size: { tr: '3.3–5 m', en: '3.3–5 m' },
     description: {
-      tr: 'Suya çok uyarlanmış, sürü halinde yaşayan büyük bir otçul.',
-      en: 'A massive water-loving herbivore that spends most of its time in rivers.',
+      tr: 'Gözleri, kulakları ve burun delikleri başının üstünde tek bir hizada durur; böylece gövdesi suyun altındayken hepsi çalışır. Derisinden salgıladığı kırmızımsı sıvı hem güneş kremi hem antiseptiktir.',
+      en: 'Eyes, ears and nostrils sit in one line on top of the head, so all three work while the body stays under. The reddish fluid it sweats is both a sunscreen and an antiseptic.',
     },
-    diet: 'Herbivore',
-    habitat: 'Rivers, lakes, wetlands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Portrait_Hippopotamus_in_the_water.jpg/1280px-Portrait_Hippopotamus_in_the_water.jpg'
   },
-
   {
     id: 'porcupine',
-    name: { tr: 'Gelincik', en: 'Porcupine' },
+    name: { tr: 'Oklu Kirpi', en: 'Crested Porcupine' },
     scientificName: 'Hystrix cristata',
+    habitat: { tr: 'Akdeniz çevresinde kayalık, makilik ve tarla', en: 'Rocky ground, maquis and farmland around the Mediterranean' },
+    diet: { tr: 'Kök, yumru, kabuk ve düşmüş meyve', en: 'Roots, tubers, bark and fallen fruit' },
+    size: { tr: '60–85 cm', en: '60–85 cm' },
     description: {
-      tr: 'Keskin dikenli bir kemici, kendini savunmada başarılı olan hayvan.',
-      en: 'A spiky rodent covered in sharp quills used for defense.',
+      tr: 'Sırtındaki otuz santime varan siyah beyaz dikenler kıldan gelişmiştir ve kolayca ayrılır. Diken atmaz; geri geri yürüyerek dikenlerini avcının gövdesine saplar.',
+      en: 'The black-and-white quills on its back, up to thirty centimetres long, are modified hairs that detach easily. It does not shoot them: it reverses hard and drives them into whatever is behind it.',
     },
-    diet: 'Herbivore',
-    habitat: 'Forests, grasslands, semi-arid regions',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/8c/Erethizon_dorsatum_-_Prince_Rupert.jpg/1280px-Erethizon_dorsatum_-_Prince_Rupert.jpg'
   },
-
   {
     id: 'llama',
     name: { tr: 'Lama', en: 'Llama' },
     scientificName: 'Lama glama',
+    habitat: { tr: 'And Dağları’nda yüksek yaylalar', en: 'High plateaux of the Andes' },
+    diet: { tr: 'Sert dağ otları ve saman', en: 'Tough mountain grasses and hay' },
+    size: { tr: 'Omuzda 110–120 cm', en: '110–120 cm at the shoulder' },
     description: {
-      tr: 'Andes Dağları\'ndan gelen, taşıyıcı hayvan olarak evcilleştirilen süre hayvanı.',
-      en: 'An Andean camelid domesticated for centuries as a beast of burden.',
+      tr: 'Alpakadan iri, uzun yüzlü ve muz biçiminde dik kulaklıdır; yünü daha kaba, yük taşıma gücü daha yüksektir. Rahatsız edildiğinde tükürmesi bir küstahlık değil, sürü içi bir sıra bildirisidir.',
+      en: 'Larger than an alpaca, long-faced and with banana-shaped upright ears, its wool coarser and its carrying power greater. The spitting is not rudeness but a statement of rank within the herd.',
     },
-    diet: 'Herbivore',
-    habitat: 'Grasslands, mountains',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f7/Llamas%2C_Vernagt-Stausee%2C_Italy.jpg/1280px-Llamas%2C_Vernagt-Stausee%2C_Italy.jpg'
   },
-
   {
     id: 'lemur',
-    name: { tr: 'Lemur', en: 'Lemur' },
+    name: { tr: 'Halkalı Kuyruklu Lemur', en: 'Ring-tailed Lemur' },
     scientificName: 'Lemur catta',
+    habitat: { tr: 'Madagaskar’da kuru orman ve dikenli çalılık', en: 'Dry forest and spiny scrub in Madagascar' },
+    diet: { tr: 'Meyve, yaprak, çiçek ve böcek', en: 'Fruit, leaves, flowers and insects' },
+    size: { tr: '39–46 cm, kuyruk hariç', en: '39–46 cm without the tail' },
     description: {
-      tr: 'Madagascar\'nın özgü maymunu, çizgili kuyrağı ve sosyal yapısıyla bilinen hayvan.',
-      en: 'A Madagascar endemic primate known for its striped tail and social behavior.',
+      tr: 'Siyah beyaz halkalı, gövdesinden uzun kuyruğuyla karıştırılmaz; o kuyruk uzun otların üstünde bir bayrak gibi taşınır. Erkekler bilek bezlerinin kokusunu kuyruğa sürüp birbirlerine savurarak kavga eder.',
+      en: 'A tail longer than its body, ringed black and white and carried like a flag above tall grass. Males fight by wiping scent from wrist glands onto the tail and wafting it at each other.',
     },
-    diet: 'Omnivore',
-    habitat: 'Tropical and subtropical forests',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0b/Ring-tailed_lemur_%28Lemur_catta%29.jpg/1280px-Ring-tailed_lemur_%28Lemur_catta%29.jpg'
   },
-
   {
     id: 'ocelot',
-    name: { tr: 'Vaşak', en: 'Ocelot' },
+    name: { tr: 'Osilot', en: 'Ocelot' },
     scientificName: 'Leopardus pardalis',
+    habitat: { tr: 'Orta ve Güney Amerika’da orman ve çalılık', en: 'Forest and scrub in Central and South America' },
+    diet: { tr: 'Kemirgen, kertenkele, kuş ve maymun', en: 'Rodents, lizards, birds and monkeys' },
+    size: { tr: '55–100 cm', en: '55–100 cm' },
     description: {
-      tr: 'Benekli deseni ve çevik hareketleri ile Orta ve Güney Amerika\'nın kedisi.',
-      en: 'A small spotted wild cat found in Central and South America.',
+      tr: 'Zincir gibi birbirine bağlanan uzun lekeleri onu benekli öteki küçük kedilerden ayırır. Gece avlanır ve avının çoğunu yerde bulur; ağaca yalnızca dinlenmek için çıkar.',
+      en: 'Long blotches linked into chains separate it from the other small spotted cats. It hunts at night and takes most of its prey on the ground, climbing only to rest.',
     },
-    diet: 'Carnivore',
-    habitat: 'Tropical forests, savannas, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/016_Ocelot_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg/1280px-016_Ocelot_in_Encontro_das_%C3%81guas_State_Park_Photo_by_Giles_Laurent.jpg'
   },
-
   {
     id: 'elephant',
-    name: { tr: 'Fil', en: 'Elephant' },
+    name: { tr: 'Afrika Fili', en: 'African Bush Elephant' },
     scientificName: 'Loxodonta africana',
+    habitat: { tr: 'Afrika’da savan, açık ormanlık ve nehir kenarı', en: 'Savanna, woodland and riverside in Africa' },
+    diet: { tr: 'Ot, yaprak, kabuk ve kök', en: 'Grass, leaves, bark and roots' },
+    size: { tr: 'Omuzda 3–4 m', en: '3–4 m at the shoulder' },
     description: {
-      tr: 'Dünyanın en büyük kara hayvanı, sosyal ve zeki yapısıyla bilinir.',
-      en: 'The largest land animal on Earth, known for its intelligence and social bonds.',
+      tr: 'Asya filinden iri kulakları ve iki parmaklı hortum ucuyla ayrılır. Ayak tabanıyla yerin titreşimini algılar; kilometrelerce öteden gelen bir sürünün sesini böyle duyar.',
+      en: 'Larger ears and a trunk tip with two fingers separate it from the Asian elephant. It reads ground vibration through the soles of its feet, which is how it hears a herd kilometres away.',
     },
-    diet: 'Herbivore',
-    habitat: 'Savannas, forests, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg/1280px-178_Male_African_bush_elephant_in_Etosha_National_Park_Photo_by_Giles_Laurent.jpg'
   },
-
   {
     id: 'otter',
-    name: { tr: 'Su Samuru', en: 'Otter' },
+    name: { tr: 'Su Samuru', en: 'Eurasian Otter' },
     scientificName: 'Lutra lutra',
+    habitat: { tr: 'Temiz nehir, göl ve kıyı suları', en: 'Clean rivers, lakes and coastal water' },
+    diet: { tr: 'Balık, kurbağa ve kabuklu', en: 'Fish, frogs and crustaceans' },
+    size: { tr: '60–90 cm', en: '60–90 cm' },
     description: {
-      tr: 'Su hayatına uyarlanmış, çok yaramaz ve sosyal davranışlı bir hayvan.',
-      en: 'A playful and social mammal highly adapted to aquatic life.',
+      tr: 'Kalın kuyruğu, perdeli ayakları ve suda uzayıp giden kıvrak gövdesiyle tanınır. Kürkü santimetrekarede yetmiş bin kıl taşır ve suyu tümüyle dışarıda tutar; yağ tabakası yoktur.',
+      en: 'A thick tapering tail, webbed feet and a body that lengthens into a curve as it swims. Its fur carries seventy thousand hairs to the square centimetre and keeps water out entirely; it has no blubber.',
     },
-    diet: 'Carnivore',
-    habitat: 'Rivers, coastal waters, wetlands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/d/d3/Fischotter%2C_Lutra_Lutra.JPG'
   },
-
   {
     id: 'kangaroo',
-    name: { tr: 'Kanguru', en: 'Kangaroo' },
+    name: { tr: 'Kızıl Kanguru', en: 'Red Kangaroo' },
     scientificName: 'Macropus rufus',
+    habitat: { tr: 'Avustralya’nın kurak içlerinde ovalar', en: 'Plains of the arid Australian interior' },
+    diet: { tr: 'Ot ve çalı yaprağı', en: 'Grass and shrub leaves' },
+    size: { tr: '1.3–1.6 m', en: '1.3–1.6 m' },
     description: {
-      tr: 'Avustralya\'nın simgesi, güçlü arka bacakları ile çok hızlı ve verimli seği koşan hayvan.',
-      en: 'Australia\'s iconic marsupial, capable of hopping at high speeds.',
+      tr: 'Keseli hayvanların en irisidir; kalın kuyruğu ayakta dururken üçüncü bacak gibi işlev görür. Sıçrayarak ilerlemek, hızlandıkça enerji harcamasını azaltan ender bir hareket biçimidir.',
+      en: 'The largest marsupial, using its heavy tail as a third leg when standing. Hopping is one of the rare gaits that costs less energy the faster the animal goes.',
     },
-    diet: 'Herbivore',
-    habitat: 'Grasslands, scrublands, savannas',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Red_kangaroo_-_melbourne_zoo.jpg/1280px-Red_kangaroo_-_melbourne_zoo.jpg'
   },
-
   {
     id: 'humpback-whale',
     name: { tr: 'Kambur Balina', en: 'Humpback Whale' },
     scientificName: 'Megaptera novaeangliae',
+    habitat: { tr: 'Bütün okyanuslar; kutuptan tropiğe göç', en: 'All oceans, migrating from pole to tropics' },
+    diet: { tr: 'Kril ve küçük sürü balıkları', en: 'Krill and small shoaling fish' },
+    size: { tr: '13–16 m', en: '13–16 m' },
     description: {
-      tr: 'Uzun yüzgeçleri ve karmaşık şarkıları ile ünlü göçmen balina türü.',
-      en: 'A migratory whale known for its long pectoral fins and complex songs.',
+      tr: 'Gövdesinin üçte biri uzunluğundaki beyaz göğüs yüzgeçleriyle karıştırılmaz. Sürü hâlinde hava kabarcıklarından ağ örüp balığı yüzeye toplar; bu yöntem her populasyonda ayrı öğrenilir.',
+      en: 'White flippers a third of its body long make it unmistakable. Working together, they blow a net of bubbles to herd fish upward — a technique learned separately by each population.',
     },
-    diet: 'Herbivore',
-    habitat: 'Oceans worldwide',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/6/61/Humpback_Whale_underwater_shot.jpg'
   },
-
   {
     id: 'badger',
-    name: { tr: 'Porsuk', en: 'Badger' },
+    name: { tr: 'Avrupa Porsuğu', en: 'European Badger' },
     scientificName: 'Meles meles',
+    habitat: { tr: 'Orman, koru ve eğimli tarla kenarları', en: 'Woodland, copses and sloping field edges' },
+    diet: { tr: 'Solucan, böcek, kök ve meyve', en: 'Worms, insects, roots and fruit' },
+    size: { tr: '60–90 cm', en: '60–90 cm' },
     description: {
-      tr: 'Toprak kazıp sıralarında yaşayan, gece aktif bir şiddetli hayvan.',
-      en: 'A nocturnal burrowing mammal with a stocky build and fierce nature.',
+      tr: 'Beyaz başındaki iki siyah bant onu karanlıkta bile tanıtır. Kuşaklar boyunca genişletilen yeraltı yuvaları yüz metreyi aşabilir ve yüzyıllarca aynı aile tarafından kullanılabilir.',
+      en: 'Two black bands across a white head give it away even in the dark. Its underground setts, enlarged over generations, can run past a hundred metres and stay in one family for centuries.',
     },
-    diet: 'Omnivore',
-    habitat: 'Forests, grasslands, gardens',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/M%C3%A4yr%C3%A4_%C3%84ht%C3%A4ri_4.jpg/1280px-M%C3%A4yr%C3%A4_%C3%84ht%C3%A4ri_4.jpg'
   },
-
   {
     id: 'skunk',
-    name: { tr: 'Kokarca', en: 'Skunk' },
+    name: { tr: 'Çizgili Kokarca', en: 'Striped Skunk' },
     scientificName: 'Mephitis mephitis',
+    habitat: { tr: 'Kuzey Amerika’da tarla, çalılık ve şehir kenarı', en: 'Fields, scrub and town edges in North America' },
+    diet: { tr: 'Böcek, kemirgen, yumurta ve meyve', en: 'Insects, rodents, eggs and fruit' },
+    size: { tr: '52–77 cm', en: '52–77 cm' },
     description: {
-      tr: 'İşkin kokulu sıvı sıçratan, çevre dostu ve ince ayrıntıda cüretli hayvan.',
-      en: 'A mammal famous for spraying a foul-smelling defensive liquid.',
+      tr: 'Siyah üstünde ikiye ayrılan beyaz sırt bandı bir uyarı işaretidir, kamuflaj değil. Kokusunu son çare olarak kullanır; önce ayaklarını yere vurup kuyruğunu kaldırarak uyarır.',
+      en: 'The white stripe forking down a black back is a warning sign, not camouflage. The spray is a last resort — first it stamps its feet and raises its tail to give notice.',
     },
-    diet: 'Omnivore',
-    habitat: 'Forests, grasslands, urban areas',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Skunk_about_to_spray.jpg/1280px-Skunk_about_to_spray.jpg'
   },
-
   {
     id: 'hamster',
-    name: { tr: 'Hamster', en: 'Hamster' },
+    name: { tr: 'Suriye Hamsteri', en: 'Syrian Hamster' },
     scientificName: 'Mesocricetus auratus',
+    habitat: { tr: 'Kuzey Suriye ve Güney Türkiye’de kurak bozkır', en: 'Dry steppe in northern Syria and southern Turkey' },
+    diet: { tr: 'Tohum, tahıl ve böcek', en: 'Seeds, grain and insects' },
+    size: { tr: '13–18 cm', en: '13–18 cm' },
     description: {
-      tr: 'Beslenme keselerinde yiyeceğini depolayan, yaygın olarak evcilleştirilen kemici.',
-      en: 'A popular pet rodent known for storing food in its cheek pouches.',
+      tr: 'Yanaklarındaki keseler omuzlarına kadar uzanır ve gövde ağırlığının beşte birine varan yiyecek taşır. Evcil olarak dünyaya yayılan bütün bireyler, 1930’da yakalanan tek bir dişiden gelmektedir.',
+      en: 'Cheek pouches that reach back to the shoulders carry up to a fifth of its body weight in food. Every pet hamster in the world descends from a single female caught in 1930.',
     },
-    diet: 'Omnivore',
-    habitat: 'Grasslands, semi-deserts, homes',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/4a/European_hamster_%28Cricetus_cricetus%29_Meidling.jpg/1280px-European_hamster_%28Cricetus_cricetus%29_Meidling.jpg'
   },
-
   {
     id: 'mouse',
-    name: { tr: 'Fare', en: 'Mouse' },
+    name: { tr: 'Ev Faresi', en: 'House Mouse' },
     scientificName: 'Mus musculus',
+    habitat: { tr: 'Ev, ambar, tarla ve duvar boşlukları', en: 'Houses, granaries, fields and wall cavities' },
+    diet: { tr: 'Tahıl, tohum ve insan artığı', en: 'Grain, seed and human leftovers' },
+    size: { tr: '7–10 cm, kuyruk hariç', en: '7–10 cm without the tail' },
     description: {
-      tr: 'Küçük ve oldukça uyarlanabilir kemi hayvanı, bilimsel araştırmalarda da kullanılır.',
-      en: 'A small, highly adaptable rodent used extensively in scientific research.',
+      tr: 'Sivri burnu, iri kulakları ve gövdesi kadar uzun çıplak kuyruğuyla tanınır. Kafatasının geçtiği her delikten geçebilir; bu da bir kurşun kalem kalınlığındaki aralık demektir.',
+      en: 'A pointed snout, large ears and a naked tail as long as the body. It can pass through any gap its skull will fit, which means an opening the width of a pencil.',
     },
-    diet: 'Omnivore',
-    habitat: 'Urban areas, fields, homes',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/8/8f/Mouse_white_background.jpg'
   },
-
   {
     id: 'anteater',
-    name: { tr: 'Karıncayiyen', en: 'Anteater' },
+    name: { tr: 'Dev Karıncayiyen', en: 'Giant Anteater' },
     scientificName: 'Myrmecophaga tridactyla',
+    habitat: { tr: 'Güney Amerika’da savan ve açık ormanlık', en: 'Savanna and open woodland in South America' },
+    diet: { tr: 'Karınca ve termit', en: 'Ants and termites' },
+    size: { tr: '1.8–2.4 m', en: '1.8–2.4 m' },
     description: {
-      tr: 'Uzun dili ile karınca ve termitleri besleyen, Güney Amerika\'nın ilginç memelisi.',
-      en: 'A unique South American mammal that feeds on ants with its extremely long tongue.',
+      tr: 'Uzun boru gibi başı, kabarık kuyruğu ve dişsiz ağzıyla karıştırılmaz. Altmış santimlik yapışkan dili dakikada yüz elli kez girip çıkar; günde otuz bin karınca yer.',
+      en: 'A long tubular head, a plumed tail and a mouth with no teeth at all. Its sixty-centimetre sticky tongue flicks in and out a hundred and fifty times a minute, taking thirty thousand ants a day.',
     },
-    diet: 'Insectivore',
-    habitat: 'Tropical forests, grasslands, wetlands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/3/3b/Myresluger2.jpg'
   },
-
   {
     id: 'gazelle',
-    name: { tr: 'Ceylan', en: 'Gazelle' },
-    scientificName: 'Nanger dorcas',
+    name: { tr: 'Ceylan', en: 'Dorcas Gazelle' },
+    scientificName: 'Gazella dorcas',
+    habitat: { tr: 'Kuzey Afrika ve Ortadoğu’da çöl ve bozkır', en: 'Desert and steppe in North Africa and the Middle East' },
+    diet: { tr: 'Yaprak, çiçek ve akasya kozası', en: 'Leaves, flowers and acacia pods' },
+    size: { tr: 'Omuzda 55–65 cm', en: '55–65 cm at the shoulder' },
     description: {
-      tr: 'Afrika\'nın büyük otçuları, zarif yapıları ve hızlarıyla bilinen hayvan.',
-      en: 'An elegant and swift African herbivore living in large herds.',
+      tr: 'İnce bacakları ve S kıvrımlı halkalı boynuzlarıyla tanınır; Türkiye’de Şanlıurfa çevresinde küçük bir populasyonu yaşar. Hiç su içmeden yaşayabilir, ihtiyacını yediği bitkilerden karşılar.',
+      en: 'Slender legs and ringed horns curving in an S; a small population survives around Şanlıurfa in Turkey. It can live without ever drinking, taking all the water it needs from the plants it eats.',
     },
-    diet: 'Herbivore',
-    habitat: 'Savannas, semi-arid grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d6/Chinkara_-_Shreeram_M_V_-_Bikaner.jpg/1280px-Chinkara_-_Shreeram_M_V_-_Bikaner.jpg'
   },
-
   {
     id: 'walrus',
     name: { tr: 'Mors', en: 'Walrus' },
     scientificName: 'Odobenus rosmarus',
+    habitat: { tr: 'Kuzey Kutbu’nda deniz buzu ve sığ kıyılar', en: 'Arctic sea ice and shallow coasts' },
+    diet: { tr: 'Deniz tabanındaki midye ve solucanlar', en: 'Clams and worms from the seabed' },
+    size: { tr: '2.5–3.5 m', en: '2.5–3.5 m' },
     description: {
-      tr: 'Uzun dişleriyle ve masif gövdesiyle ünlü Kuzey kutup deniz memelisi.',
-      en: 'An Arctic marine mammal distinguished by its impressive tusks.',
+      tr: 'Bir metreye varan dişleri ve kalın bıyıklarıyla karıştırılmaz; dişler avlanmak için değil, buza tutunup gövdeyi çekmek içindir. Bıyıkları karanlık dipte midyeyi dokunarak bulur.',
+      en: 'Tusks up to a metre long and a heavy moustache; the tusks are not for hunting but for hooking into ice and hauling the body out. The whiskers find clams by touch on a dark seabed.',
     },
-    diet: 'Carnivore',
-    habitat: 'Arctic seas, ice floes',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg/1280px-Walrus_in_the_Russian_Arctic_National_Park%2C_Novaya_Zemlya_2015-2.jpg'
   },
-
   {
     id: 'orca',
     name: { tr: 'Katil Balina', en: 'Orca' },
     scientificName: 'Orcinus orca',
+    habitat: { tr: 'Kutuptan tropiğe bütün okyanuslar', en: 'Every ocean, from the poles to the tropics' },
+    diet: { tr: 'Balık, fok, penguen ve balina', en: 'Fish, seals, penguins and whales' },
+    size: { tr: '6–8 m', en: '6–8 m' },
     description: {
-      tr: 'Denizin en gücü yırtıcısı, sosyal yapısı ve akıllılığıyla bilinen hayvan.',
-      en: 'The ocean\'s apex predator, known for its intelligence and social structure.',
+      tr: 'Balina değil, yunusgillerin en irisidir; siyah beyaz deseni ve erkeğin iki metrelik sırt yüzgeciyle karıştırılmaz. Her grubun kendi avlanma yöntemi ve kendi ses lehçesi vardır, ikisi de öğretilir.',
+      en: 'Not a whale but the largest of the dolphins, unmistakable in black and white, the male’s dorsal fin standing two metres. Each pod has its own hunting method and its own dialect, and both are taught.',
     },
-    diet: 'Carnivore',
-    habitat: 'Oceans worldwide',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Killerwhales_jumping.jpg/1280px-Killerwhales_jumping.jpg'
   },
-
   {
     id: 'rabbit',
-    name: { tr: 'Tavşan', en: 'Rabbit' },
+    name: { tr: 'Ada Tavşanı', en: 'European Rabbit' },
     scientificName: 'Oryctolagus cuniculus',
+    habitat: { tr: 'Çayır, kumul, çalılık ve tarla kenarı', en: 'Meadow, dune, scrub and field margins' },
+    diet: { tr: 'Ot, sürgün ve kabuk', en: 'Grass, shoots and bark' },
+    size: { tr: '34–50 cm', en: '34–50 cm' },
     description: {
-      tr: 'Hızlı koşuşu, uzun kulakları ve düş endüstrisine verilen emek ile bilinen hayvan.',
-      en: 'A swift-running herbivore known for its long ears and prolific reproduction.',
+      tr: 'Yaban tavşanından küçük, kısa bacaklı ve kısa kulaklıdır; yaban tavşanı yuva kazmaz, o kazar. Yediğini iki kez sindirir: geceleri çıkardığı yumuşak dışkıyı yeniden yer.',
+      en: 'Smaller than a hare, with shorter legs and ears, and unlike a hare it digs — the warren is its own. It digests twice, eating the soft pellets it passes at night a second time.',
     },
-    diet: 'Herbivore',
-    habitat: 'Grasslands, meadows, farms, warrens',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1f/Oryctolagus_cuniculus_Rcdo.jpg/1280px-Oryctolagus_cuniculus_Rcdo.jpg'
   },
-
   {
     id: 'sheep',
     name: { tr: 'Koyun', en: 'Sheep' },
     scientificName: 'Ovis aries',
+    habitat: { tr: 'Mera, yayla ve ağıl', en: 'Pasture, upland grazing and folds' },
+    diet: { tr: 'Ot ve yonca', en: 'Grass and clover' },
+    size: { tr: 'Omuzda 65–90 cm', en: '65–90 cm at the shoulder' },
     description: {
-      tr: 'Yünü ve eti için yetiştirilirken sosyal ve uyumlu bir hayvan.',
-      en: 'A domesticated herbivore valued for its wool, meat, and milk.',
+      tr: 'Keçiden yuvarlak gövdesi, aşağı sarkan kuyruğu ve yere eğik otlamasıyla ayrılır. Sürüden ayrı kalmaya dayanamaz; bu bir aptallık değil, açık arazide hayatta kalmanın kuralıdır.',
+      en: 'A rounder body, a tail that hangs down and head-down grazing separate it from a goat. It cannot bear to be separated from the flock — not stupidity but the rule for surviving in open country.',
     },
-    diet: 'Herbivore',
-    habitat: 'Pastures, hillsides, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flock_of_sheep.jpg/1280px-Flock_of_sheep.jpg'
   },
-
   {
     id: 'chimpanzee',
     name: { tr: 'Şempanze', en: 'Chimpanzee' },
     scientificName: 'Pan troglodytes',
+    habitat: { tr: 'Batı ve Orta Afrika’da orman ve savan ormanı', en: 'Forest and savanna woodland in west and central Africa' },
+    diet: { tr: 'Meyve, yaprak, böcek ve et', en: 'Fruit, leaves, insects and meat' },
+    size: { tr: '70–95 cm', en: '70–95 cm' },
     description: {
-      tr: 'İnsanlarla %99 DNA\'sı aynı olan, sosyal ve zeki bir maymun türü.',
-      en: 'Our closest living relative, sharing 99% of our DNA.',
+      tr: 'İnsanın en yakın iki akrabasından biridir ve genlerinin yüzde doksan sekizini bizimle paylaşır. Termit avlamak için dal soyup alet yapar; bu beceri gruptan gruba farklıdır ve öğretilerek aktarılır.',
+      en: 'One of our two closest relatives, sharing ninety-eight per cent of its genes with us. It strips a twig into a tool to fish for termites, and the technique differs between groups and is taught.',
     },
-    diet: 'Omnivore',
-    habitat: 'Tropical rainforests, woodlands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg/1280px-015_Chimpanzee_at_Kibale_forest_National_Park_Photo_by_Giles_Laurent.jpg'
   },
-
   {
     id: 'lion',
     name: { tr: 'Aslan', en: 'Lion' },
     scientificName: 'Panthera leo',
+    habitat: { tr: 'Afrika’da savan ve açık ormanlık', en: 'Savanna and open woodland in Africa' },
+    diet: { tr: 'Zebra, antilop ve bufalo', en: 'Zebra, antelope and buffalo' },
+    size: { tr: '170–250 cm', en: '170–250 cm' },
     description: {
-      tr: 'Afrika savannalarının en güçlü yırtıcılarından biri, kral unvanıyla bilinen hayvan.',
-      en: 'The king of beasts, a powerful African predator known for its majestic mane.',
+      tr: 'Sürü hâlinde yaşayan tek kedidir; erkeğin yelesi hem yaşını hem sağlığını bildiren bir işarettir. Avlanmanın çoğunu dişiler yapar ve birlikte kuşatarak avlanırlar.',
+      en: 'The only cat that lives in a group, the male’s mane advertising both his age and his condition. Most of the hunting is done by the females, working together to surround the prey.',
     },
-    diet: 'Carnivore',
-    habitat: 'Savannas, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg/1280px-020_The_lion_king_Snyggve_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg'
   },
-
   {
     id: 'jaguar',
     name: { tr: 'Jaguar', en: 'Jaguar' },
     scientificName: 'Panthera onca',
+    habitat: { tr: 'Orta ve Güney Amerika’da orman ve sulak alan', en: 'Forest and wetland in Central and South America' },
+    diet: { tr: 'Kayman, kaplumbağa, kapibara ve balık', en: 'Caiman, turtles, capybara and fish' },
+    size: { tr: '110–190 cm', en: '110–190 cm' },
     description: {
-      tr: 'Amerika\'nın en büyük kedisi, güçlü ve su yüzmede usta bir avıcı.',
-      en: 'The Americas\' largest cat, an excellent swimmer and skilled hunter.',
+      tr: 'Halka biçimli lekelerinin içinde küçük noktalar bulunur; leopardaki halkalar boştur, ayrım budur. Isırığı bütün kediler arasında en güçlüsüdür ve avını boğazından değil, kafatasından yakalar.',
+      en: 'Its rosettes have small spots inside them, where a leopard’s are empty — that is the difference. It has the strongest bite of any cat, and takes prey through the skull rather than the throat.',
     },
-    diet: 'Carnivore',
-    habitat: 'Tropical rainforests, wetlands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/0/0a/Standing_jaguar.jpg'
   },
-
   {
     id: 'leopard',
     name: { tr: 'Leopar', en: 'Leopard' },
     scientificName: 'Panthera pardus',
+    habitat: { tr: 'Afrika ve Asya’da orman, dağ ve savan', en: 'Forest, mountain and savanna in Africa and Asia' },
+    diet: { tr: 'Antilop, maymun, kemirgen ve kuş', en: 'Antelope, monkeys, rodents and birds' },
+    size: { tr: '90–190 cm', en: '90–190 cm' },
     description: {
-      tr: 'Benzersiz benekli deseni ve ağaçlara tırmanma yetenekleriyle ünlü bir yırtıcı.',
-      en: 'A spotted predator renowned for its climbing ability and agility in trees.',
+      tr: 'İçi boş halka lekeleriyle jaguardan, tıknaz gövdesi ve içeri çekilebilen pençeleriyle çitadan ayrılır. Kendi ağırlığının iki katındaki avı ağaca çıkarabilir; böylece sırtlana kaptırmaz.',
+      en: 'Empty rosettes separate it from a jaguar, a stockier build and retractable claws from a cheetah. It can haul prey twice its own weight up a tree, which is how it keeps it from the hyenas.',
     },
-    diet: 'Carnivore',
-    habitat: 'Tropical and subtropical forests, savannas',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/70/African_leopard_male_%28cropped%29.jpg/1280px-African_leopard_male_%28cropped%29.jpg'
   },
-
   {
     id: 'tiger',
     name: { tr: 'Kaplan', en: 'Tiger' },
     scientificName: 'Panthera tigris',
+    habitat: { tr: 'Asya’da orman, sazlık ve mangrov', en: 'Forest, reedbed and mangrove in Asia' },
+    diet: { tr: 'Geyik, yaban domuzu ve sığır', en: 'Deer, wild boar and cattle' },
+    size: { tr: '200–330 cm', en: '200–330 cm' },
     description: {
-      tr: 'Dünyanın en büyük kedilerinden biri, çizgili desenleriyle kolayca tanınır.',
-      en: 'The largest of all cats, recognizable by its striking orange and black stripes.',
+      tr: 'Kedilerin en irisidir ve çizgi deseni her bireyde farklıdır; desen kürkte değil, deride de vardır. Suyu sever ve yüzerek kilometrelerce yol alabilir; çoğu kedide bunun tersi geçerlidir.',
+      en: 'The largest cat, and its stripe pattern is unique to each animal — the pattern is in the skin as well as the fur. It likes water and will swim for kilometres, where most cats will not.',
     },
-    diet: 'Carnivore',
-    habitat: 'Tropical forests, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg/1280px-Bengal_tiger_%28Panthera_tigris_tigris%29_female_3_crop.jpg'
   },
-
   {
     id: 'baboon',
-    name: { tr: 'Babun', en: 'Baboon' },
+    name: { tr: 'Anubis Babunu', en: 'Olive Baboon' },
     scientificName: 'Papio anubis',
+    habitat: { tr: 'Afrika’da savan, açık ormanlık ve kayalık', en: 'Savanna, woodland and rocky ground in Africa' },
+    diet: { tr: 'Meyve, kök, böcek ve küçük hayvan', en: 'Fruit, roots, insects and small animals' },
+    size: { tr: '60–86 cm', en: '60–86 cm' },
     description: {
-      tr: 'Sosyal yaşayan, güçlü ve agresif davranışlı Afrika maymunu.',
-      en: 'A large, social African primate known for its intelligence and strength.',
+      tr: 'Köpeği andıran uzun burnu ve dört ayak üstünde yürümesiyle öteki maymunlardan ayrılır. Yüz kişiyi aşan gruplar kurar; grup içindeki akrabalık ve dostluk ağı kimin ne yiyeceğini belirler.',
+      en: 'A long dog-like muzzle and a walk on all fours separate it from the other monkeys. It lives in troops of over a hundred, where a web of kinship and friendship decides who eats what.',
     },
-    diet: 'Omnivore',
-    habitat: 'Savannas, grasslands, rocky areas',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Olive_baboon_Ngorongoro.jpg/1280px-Olive_baboon_Ngorongoro.jpg'
   },
-
   {
     id: 'koala',
     name: { tr: 'Koala', en: 'Koala' },
     scientificName: 'Phascolarctos cinereus',
+    habitat: { tr: 'Avustralya’da okaliptüs ormanları', en: 'Eucalyptus forest in Australia' },
+    diet: { tr: 'Neredeyse yalnızca okaliptüs yaprağı', en: 'Almost entirely eucalyptus leaves' },
+    size: { tr: '60–85 cm', en: '60–85 cm' },
     description: {
-      tr: 'Avustralya\'nın uyumlu marsupiyali, yalnızca özel bir bitki besler.',
-      en: 'An Australian marsupial that feeds almost exclusively on eucalyptus leaves.',
+      tr: 'Ayı değil, keseli bir hayvandır; her elinde ikisi başparmak gibi çalışan iki parmak vardır. Okaliptüs yaprağı hem zehirli hem besinsizdir, bu yüzden günde yirmi saate kadar uyur.',
+      en: 'Not a bear but a marsupial, with two of the five digits on each hand working as thumbs. Eucalyptus leaves are both toxic and nearly worthless as food, which is why it sleeps up to twenty hours a day.',
     },
-    diet: 'Herbivore',
-    habitat: 'Eucalyptus forests',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/4/49/Koala_climbing_tree.jpg'
   },
-
   {
     id: 'seal',
-    name: { tr: 'Fok', en: 'Seal' },
+    name: { tr: 'Liman Foku', en: 'Harbour Seal' },
     scientificName: 'Phoca vitulina',
+    habitat: { tr: 'Kuzey denizlerinde kumsal, kayalık ve haliçler', en: 'Beaches, rocks and estuaries of northern seas' },
+    diet: { tr: 'Balık, ahtapot ve kabuklu', en: 'Fish, octopus and crustaceans' },
+    size: { tr: '1.4–1.9 m', en: '1.4–1.9 m' },
     description: {
-      tr: 'Suya uyarlanmış, ön ayakları yüzgeç haline gelmiş bir deniz memelisi.',
-      en: 'A marine mammal with flippers, highly adapted to ocean life.',
+      tr: 'Dış kulak kepçesi yoktur ve karada tırtıl gibi sürünür; deniz aslanında kepçe vardır ve yürür. Bıyıklarıyla suda kalan iz akıntısını okuyarak, hiç görmeden bir balığı takip edebilir.',
+      en: 'It has no external ear flap and hauls itself along on land, where a sea lion has flaps and walks. Its whiskers read the wake a fish leaves in the water, letting it follow one it has never seen.',
     },
-    diet: 'Carnivore',
-    habitat: 'Coastal waters, ice floes',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Common_seal_%28Phoca_vitulina%29_2.jpg/1280px-Common_seal_%28Phoca_vitulina%29_2.jpg'
   },
-
   {
     id: 'orangutan',
-    name: { tr: 'Orangutan', en: 'Orangutan' },
+    name: { tr: 'Borneo Orangutanı', en: 'Bornean Orangutan' },
     scientificName: 'Pongo pygmaeus',
+    habitat: { tr: 'Borneo’da yağmur ormanı ve turba ormanı', en: 'Rainforest and peat forest in Borneo' },
+    diet: { tr: 'Meyve, kabuk, yaprak ve bal', en: 'Fruit, bark, leaves and honey' },
+    size: { tr: '110–140 cm', en: '110–140 cm' },
     description: {
-      tr: 'Güney Doğu Asya\'nın sadece bu bölgesinde yaşayan, ağaçlarda yaşamaya uyarlanmış maymun.',
-      en: 'An intelligent tree-dwelling ape found only in Southeast Asian rainforests.',
+      tr: 'Kızıl kürkü ve gövdesinden çok daha uzun kollarıyla karıştırılmaz; büyük maymunların en ağaçta yaşayanıdır. Her akşam ağaç tepesinde dallardan yeni bir yatak örer ve o yatağı bir kez kullanır.',
+      en: 'Red hair and arms far longer than its body; it is the most arboreal of the great apes. Every evening it weaves a fresh bed of branches in the canopy, and uses it only once.',
     },
-    diet: 'Omnivore',
-    habitat: 'Tropical rainforests',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Orang_Utan%2C_Semenggok_Forest_Reserve%2C_Sarawak%2C_Borneo%2C_Malaysia.JPG/1280px-Orang_Utan%2C_Semenggok_Forest_Reserve%2C_Sarawak%2C_Borneo%2C_Malaysia.JPG'
   },
-
   {
     id: 'raccoon',
     name: { tr: 'Rakun', en: 'Raccoon' },
     scientificName: 'Procyon lotor',
+    habitat: { tr: 'Kuzey Amerika’da orman, dere kenarı ve şehir', en: 'Woodland, streamsides and cities in North America' },
+    diet: { tr: 'Meyve, kabuklu, yumurta ve çöp', en: 'Fruit, shellfish, eggs and refuse' },
+    size: { tr: '40–70 cm', en: '40–70 cm' },
     description: {
-      tr: 'Siyah maskeli yüzü ve ince manevra yapan ön ayaklarıyla bilinen hayvan.',
-      en: 'An intelligent and adaptable mammal with distinctive black "mask" markings.',
+      tr: 'Gözlerini çevreleyen siyah maske ve halkalı kuyruğuyla karıştırılmaz. Ön ayakları olağanüstü duyarlıdır; yiyeceği suda evirip çevirmesi yıkamak değil, dokunarak incelemektir.',
+      en: 'A black mask across the eyes and a ringed tail. Its forepaws are extraordinarily sensitive, and turning food over in water is not washing but examining it by touch.',
     },
-    diet: 'Omnivore',
-    habitat: 'Forests, wetlands, urban areas',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Raccoon_in_Central_Park_%2835264%29.jpg/1280px-Raccoon_in_Central_Park_%2835264%29.jpg'
   },
-
   {
     id: 'reindeer',
     name: { tr: 'Ren Geyiği', en: 'Reindeer' },
     scientificName: 'Rangifer tarandus',
+    habitat: { tr: 'Kuzey tundrası ve iğne yapraklı ormanlar', en: 'Northern tundra and coniferous forest' },
+    diet: { tr: 'Liken, ot ve sürgün', en: 'Lichen, grass and shoots' },
+    size: { tr: 'Omuzda 85–150 cm', en: '85–150 cm at the shoulder' },
     description: {
-      tr: 'Kutup bölgelerinde yaşayan, boynuzları sayesinde karın içinde yol bulabilen hayvan.',
-      en: 'An Arctic herbivore adapted to extreme cold and snow.',
+      tr: 'Hem erkeğinde hem dişisinde boynuz bulunan tek geyiktir. Gözü mevsime göre renk değiştirir: yazın altın sarısı olan tabaka kışın maviye döner ve zayıf ışığı daha iyi toplar.',
+      en: 'The only deer in which both sexes carry antlers. Its eye changes colour with the season — the layer behind the retina is gold in summer and turns blue in winter, gathering more of the weak light.',
     },
-    diet: 'Herbivore',
-    habitat: 'Tundra, boreal forests, grasslands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg/1280px-Reinbukken_p%C3%A5_frisk_gr%C3%B8nt_beite._-_panoramio.jpg'
   },
-
   {
     id: 'rat',
-    name: { tr: 'Sıçan', en: 'Rat' },
+    name: { tr: 'Göçmen Sıçan', en: 'Brown Rat' },
     scientificName: 'Rattus norvegicus',
+    habitat: { tr: 'Kanalizasyon, liman, ambar ve şehir altyapısı', en: 'Sewers, ports, granaries and city infrastructure' },
+    diet: { tr: 'Neredeyse her şey', en: 'Almost anything' },
+    size: { tr: '20–25 cm, kuyruk hariç', en: '20–25 cm without the tail' },
     description: {
-      tr: 'Fareden daha büyük, zeki ve sosyal yapısıyla bilinen kemi hayvanı.',
-      en: 'A larger, intelligent rodent known for its social behavior.',
+      tr: 'Fareden iri, küt burunlu ve kuyruğu gövdesinden kısadır; ayrım bu üç işaretle yapılır. İnsanla birlikte Antarktika dışında her kıtaya yayılmıştır ve tuzağı bir kez gördükten sonra kaçınır.',
+      en: 'Bigger than a mouse, blunt-nosed, and with a tail shorter than its body — those three marks make the call. It has followed people onto every continent but Antarctica, and avoids a trap once it has seen one.',
     },
-    diet: 'Omnivore',
-    habitat: 'Urban areas, sewers, fields',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Rattus_norvegicus_-_Brown_rat_02.jpg/1280px-Rattus_norvegicus_-_Brown_rat_02.jpg'
   },
-
   {
     id: 'rhinoceros',
-    name: { tr: 'Gergedan', en: 'Rhinoceros' },
+    name: { tr: 'Hint Gergedanı', en: 'Indian Rhinoceros' },
     scientificName: 'Rhinoceros unicornis',
+    habitat: { tr: 'Hindistan ve Nepal’de yüksek otlu sulak ovalar', en: 'Tall-grass floodplains in India and Nepal' },
+    diet: { tr: 'Ot, saz ve su bitkileri', en: 'Grass, reeds and water plants' },
+    size: { tr: 'Omuzda 170–200 cm', en: '170–200 cm at the shoulder' },
     description: {
-      tr: 'Karakteristik boynuzuyla bilinen, nesli ciddi şekilde tehlike altında olan hayvan.',
-      en: 'A massive herbivore recognizable by its distinctive horn.',
+      tr: 'Tek boynuzu ve zırh plakalarını andıran kalın deri kıvrımlarıyla Afrika gergedanlarından ayrılır. Boynuz kemik değil, saç ve tırnakla aynı maddeden, sıkışmış keratindendir.',
+      en: 'A single horn and deep folds of skin like armour plate separate it from the African rhinos. The horn is not bone but compacted keratin, the same material as hair and fingernail.',
     },
-    diet: 'Herbivore',
-    habitat: 'Savannas, grasslands, forests',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/b/b7/Rhino_collage.png'
   },
-
   {
     id: 'tasmanian-devil',
     name: { tr: 'Tazmanya Canavarı', en: 'Tasmanian Devil' },
     scientificName: 'Sarcophilus harrisii',
+    habitat: { tr: 'Tazmanya’da orman, çalılık ve kıyı fundalığı', en: 'Forest, scrub and coastal heath in Tasmania' },
+    diet: { tr: 'Leş; kemik dahil her parça', en: 'Carrion, bones included' },
+    size: { tr: '52–80 cm', en: '52–80 cm' },
     description: {
-      tr: 'Tazmanya\'nın endemik marsupiyali, güçlü çeneleri ve kırmızı kulakları ile ünlü.',
-      en: 'An iconic Tasmanian marsupial known for its powerful bite and loud calls.',
+      tr: 'Yaşayan en büyük etçil keselidir; siyah kürkü, geniş çenesi ve gece duyulan boğuk hırıltısıyla tanınır. Vücut ağırlığına oranla memeliler arasındaki en güçlü ısırıklardan birine sahiptir.',
+      en: 'The largest carnivorous marsupial alive, black-furred and broad-jawed, known by its rasping night-time screech. For its body weight it has one of the strongest bites of any mammal.',
     },
-    diet: 'Carnivore',
-    habitat: 'Eucalyptus forests, coastal scrublands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/43/Sarcophilus_harrisii_taranna.jpg/1280px-Sarcophilus_harrisii_taranna.jpg'
   },
-
   {
     id: 'squirrel',
-    name: { tr: 'Sincap', en: 'Squirrel' },
+    name: { tr: 'Kızıl Sincap', en: 'Red Squirrel' },
     scientificName: 'Sciurus vulgaris',
+    habitat: { tr: 'İğne yapraklı ve karışık ormanlar', en: 'Coniferous and mixed woodland' },
+    diet: { tr: 'Kozalak tohumu, fındık ve mantar', en: 'Conifer seed, nuts and fungi' },
+    size: { tr: '19–23 cm, kuyruk hariç', en: '19–23 cm without the tail' },
     description: {
-      tr: 'Ağaçlara tırmanan, ön ayakları ile ince manipülasyon yapabilen hafif hayvan.',
-      en: 'An agile tree-climber known for storing nuts for winter.',
+      tr: 'Kışın uzayan kulak püskülleri ve kabarık kuyruğuyla tanınır; kuyruk dengeyi kurar ve uykuda örtü olur. Gömdüğü kozalakların bir kısmını unutur ve o unuttukları ağaca dönüşür.',
+      en: 'Ear tufts that lengthen in winter, and a bushy tail that gives balance and doubles as a blanket. It forgets some of the cones it buries, and those it forgets become trees.',
     },
-    diet: 'Herbivore',
-    habitat: 'Forests, parks, gardens',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/6/68/Sciuridae.jpg'
   },
-
   {
     id: 'meerkat',
     name: { tr: 'Mirket', en: 'Meerkat' },
-    scientificName: 'Suricata suricata',
+    scientificName: 'Suricata suricatta',
+    habitat: { tr: 'Güney Afrika’da Kalahari ve kurak bozkır', en: 'The Kalahari and dry steppe of southern Africa' },
+    diet: { tr: 'Böcek, akrep, kertenkele ve yumurta', en: 'Insects, scorpions, lizards and eggs' },
+    size: { tr: '25–35 cm', en: '25–35 cm' },
     description: {
-      tr: 'Ayakta durarak nöbet tutan, sosyal yapısı ile ünlü Afrika hayvanı.',
-      en: 'An African mammal famous for standing upright as sentries.',
+      tr: 'Arka ayakları üstünde dimdik durup çevreyi taramasıyla tanınır; kuyruk üçüncü destek noktasıdır. Sırayla nöbet tutar ve tehdidin havadan mı yerden mi geldiğini bildiren ayrı alarm sesleri kullanır.',
+      en: 'Known for standing bolt upright on its hind legs to scan, the tail forming a third point of support. Sentries take turns, and their alarm calls say whether the threat is coming from the air or the ground.',
     },
-    diet: 'Omnivore',
-    habitat: 'Deserts, grasslands, savannas',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Meerkat_%28Suricata_suricatta%29_Tswalu.jpg/1280px-Meerkat_%28Suricata_suricatta%29_Tswalu.jpg'
   },
-
   {
     id: 'wild-boar',
     name: { tr: 'Yaban Domuzu', en: 'Wild Boar' },
     scientificName: 'Sus scrofa',
+    habitat: { tr: 'Orman, makilik, sazlık ve tarla kenarı', en: 'Forest, maquis, reedbed and field margins' },
+    diet: { tr: 'Kök, meşe palamudu, larva ve leş', en: 'Roots, acorns, grubs and carrion' },
+    size: { tr: '110–160 cm', en: '110–160 cm' },
     description: {
-      tr: 'Evcil domuzun yabanı akrabası, ormanlarda ve ot tarlalarında yaşayan güçlü hayvan.',
-      en: 'The wild ancestor of domestic pigs, known for its strength and toughness.',
+      tr: 'Yüksek omuzları, sert kılları ve erkeğinin dışarı çıkan alt dişleriyle evcil domuzdan ayrılır. Toprağı burnuyla kazıp altüst etmesi ormanın tohum yatağını hazırlar; aşırı olduğunda da bozar.',
+      en: 'High shoulders, bristled hair and the boar’s outward-curving tusks separate it from a farm pig. Rooting turns the soil and prepares the forest’s seedbed, though in excess it wrecks it.',
     },
-    diet: 'Omnivore',
-    habitat: 'Forests, grasslands, wetlands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Wildschwein%2C_N%C3%A4he_Pulverstampftor_%28cropped%29.jpg/1280px-Wildschwein%2C_N%C3%A4he_Pulverstampftor_%28cropped%29.jpg'
   },
-
   {
     id: 'pig',
     name: { tr: 'Domuz', en: 'Pig' },
     scientificName: 'Sus scrofa domesticus',
+    habitat: { tr: 'Çiftlik, ağıl ve köy avluları', en: 'Farms, pens and village yards' },
+    diet: { tr: 'Tahıl, kök, artık ve yem', en: 'Grain, roots, scraps and feed' },
+    size: { tr: '90–180 cm', en: '90–180 cm' },
     description: {
-      tr: 'Zekası yüksek, evcilleştirilen, pek çok kültürde beslenilen hayvan.',
-      en: 'An intelligent domesticated animal farmed for meat and other products.',
+      tr: 'Yaban domuzunun evcilleşmiş hâlidir; kılları seyrek, gövdesi yuvarlak ve kulakları sarkıktır. Terleyemediği için çamura yatar; bu bir pislik değil, ısı düşürmenin tek yoludur.',
+      en: 'A domesticated wild boar, sparsely haired, round-bodied and with drooping ears. It cannot sweat, so it lies in mud — not dirtiness but the only way it has of shedding heat.',
     },
-    diet: 'Omnivore',
-    habitat: 'Farms, pastures',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/3e/Pig_farm_Vampula_1.jpg/1280px-Pig_farm_Vampula_1.jpg'
   },
-
   {
     id: 'buffalo',
-    name: { tr: 'Bufalo', en: 'Buffalo' },
+    name: { tr: 'Afrika Bufalosu', en: 'African Buffalo' },
     scientificName: 'Syncerus caffer',
+    habitat: { tr: 'Afrika’da savan, sulak çayır ve açık ormanlık', en: 'Savanna, wet meadow and woodland in Africa' },
+    diet: { tr: 'Kaba ot ve saz', en: 'Coarse grass and reeds' },
+    size: { tr: 'Omuzda 130–150 cm', en: '130–150 cm at the shoulder' },
     description: {
-      tr: 'Afrika savannalarının güçlü otçusu, boynuzlarıyla ünlü hayvan.',
-      en: 'A powerful African herbivore known for its formidable horns.',
+      tr: 'Erkeğin alnında birleşerek kemik bir miğfer oluşturan boynuzlarıyla tanınır. Hiç evcilleştirilememiştir; sürü, tehdit altında dağılmak yerine toplanıp karşı saldırıya geçer.',
+      en: 'The bull’s horns meet across the forehead to form a solid boss of bone. It has never been domesticated, and under threat the herd closes up and charges rather than scattering.',
     },
-    diet: 'Herbivore',
-    habitat: 'Savannas, grasslands, wetlands',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg/1280px-African_buffalo_%28Syncerus_caffer_caffer%29_male_with_cattle_egret.jpg'
   },
-
   {
     id: 'mole',
-    name: { tr: 'Köstebek', en: 'Mole' },
+    name: { tr: 'Avrupa Köstebeği', en: 'European Mole' },
     scientificName: 'Talpa europaea',
+    habitat: { tr: 'Çayır, bahçe ve tarlaların derin toprağı', en: 'Deep soil of meadows, gardens and fields' },
+    diet: { tr: 'Solucan, larva ve böcek', en: 'Worms, grubs and insects' },
+    size: { tr: '11–16 cm', en: '11–16 cm' },
     description: {
-      tr: 'Yeraltında tünel açan, gözleri zayıf ama dokunma duyusu çok güçlü olan hayvan.',
-      en: 'A burrowing mammal with powerful limbs and highly developed touch.',
+      tr: 'Kürek gibi dışa dönük ön ayakları ve deri altında kalmış gözleriyle karıştırılmaz. Kazdığı tüneller bir tuzak sistemidir: içine düşen solucanları toplar ve canlı olarak depolar.',
+      en: 'Spade-like forefeet turned outward, and eyes buried under the skin. Its tunnels are a trapping system: worms fall in, and it collects and stores them alive.',
     },
-    diet: 'Insectivore',
-    habitat: 'Grasslands, forests, gardens',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/4/44/Kret_mole.jpg/1280px-Kret_mole.jpg'
   },
-
   {
     id: 'manatee',
-    name: { tr: 'Deniz Fili', en: 'Manatee' },
+    name: { tr: 'Deniz İneği', en: 'West Indian Manatee' },
     scientificName: 'Trichechus manatus',
+    habitat: { tr: 'Karayipler’de sığ kıyı suları, haliç ve nehirler', en: 'Shallow coasts, estuaries and rivers of the Caribbean' },
+    diet: { tr: 'Deniz çayırı ve su bitkileri', en: 'Seagrass and water plants' },
+    size: { tr: '2.7–3.5 m', en: '2.7–3.5 m' },
     description: {
-      tr: 'Sakin ve yaşlı görüntüsü ile beraber, yavaş temposu ve uyumlu hareketi olan suda yaşayan memeli.',
-      en: 'A slow-moving, gentle marine mammal with surprising grace in water.',
+      tr: 'Kürek biçimli kuyruğu ve kırışık burnuyla foktan ayrılır; en yakın akrabası fildir, deniz memelisi değil. Saatte beş kilometreyle yüzer ve günde vücut ağırlığının onda birini otlayarak geçirir.',
+      en: 'A paddle-shaped tail and a wrinkled snout separate it from a seal; its nearest relative is the elephant, not any sea mammal. It swims at five kilometres an hour and grazes a tenth of its body weight a day.',
     },
-    diet: 'Herbivore',
-    habitat: 'Shallow coastal waters, rivers, lagoons',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Underwater_photography_on_endangered_mammal_manatee.jpg/1280px-Underwater_photography_on_endangered_mammal_manatee.jpg'
   },
-
   {
     id: 'brown-bear',
     name: { tr: 'Boz Ayı', en: 'Brown Bear' },
     scientificName: 'Ursus arctos',
+    habitat: { tr: 'Dağ ormanları, alpin çayır ve nehir vadileri', en: 'Mountain forest, alpine meadow and river valleys' },
+    diet: { tr: 'Meyve, kök, balık, böcek ve leş', en: 'Berries, roots, fish, insects and carrion' },
+    size: { tr: '1.5–2.8 m', en: '1.5–2.8 m' },
     description: {
-      tr: 'Kuzey yarımkürenin en yaygın ayısı, adaptif ve güçlü bir hayvan.',
-      en: 'A massive omnivore found across the Northern Hemisphere.',
+      tr: 'Omuzlarındaki kas kamburu ve uzun, eğri olmayan tırnaklarıyla kara ayıdan ayrılır. Kış uykusunda ne yer ne içer ne de dışkılar; buna rağmen kas kütlesini büyük ölçüde korur.',
+      en: 'A hump of muscle over the shoulders and long, barely curved claws separate it from a black bear. Through the winter it neither eats, drinks nor passes waste, and still keeps most of its muscle.',
     },
-    diet: 'Omnivore',
-    habitat: 'Forests, mountains, tundra',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/7/71/2010-kodiak-bear-1.jpg/1280px-2010-kodiak-bear-1.jpg'
   },
-
   {
     id: 'polar-bear',
     name: { tr: 'Kutup Ayısı', en: 'Polar Bear' },
     scientificName: 'Ursus maritimus',
+    habitat: { tr: 'Kuzey Kutbu’nda deniz buzu ve kıyılar', en: 'Arctic sea ice and coasts' },
+    diet: { tr: 'Neredeyse yalnızca fok', en: 'Almost entirely seals' },
+    size: { tr: '2–3 m', en: '2–3 m' },
     description: {
-      tr: 'Kutup bölgelerinin en büyük yırtıcısı, buzda yaşamaya mükemmel şekilde uyarlanmış.',
-      en: 'The Arctic\'s apex predator, perfectly adapted to life on ice.',
+      tr: 'Kürkü beyaz değil, saydam ve içi boş kıllardan oluşur; derisi ise siyahtır ve ışığı emer. Buzdaki nefes deliğinin başında saatlerce kımıldamadan bekleyerek avlanır.',
+      en: 'Its fur is not white but transparent and hollow, over black skin that soaks up the light. It hunts by waiting at a seal’s breathing hole in the ice, motionless, for hours.',
     },
-    diet: 'Carnivore',
-    habitat: 'Arctic ice, coastal areas',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/6/66/Polar_Bear_-_Alaska_%28cropped%29.jpg'
   },
-
   {
     id: 'alpaca',
     name: { tr: 'Alpaka', en: 'Alpaca' },
     scientificName: 'Vicugna pacos',
+    habitat: { tr: 'And Dağları’nda yüksek otlaklar', en: 'High grassland of the Andes' },
+    diet: { tr: 'Dağ otları ve saman', en: 'Mountain grasses and hay' },
+    size: { tr: 'Omuzda 80–100 cm', en: '80–100 cm at the shoulder' },
     description: {
-      tr: 'Lamadan daha küçük, yumuşak ve değerli yünüyle bilinen hayvan.',
-      en: 'A smaller cousin of the llama, valued for its soft fleece.',
+      tr: 'Lamadan küçük, kısa yüzlü ve sivri kulaklıdır; yük hayvanı değil, yün için yetiştirilir. Yünü içi boş liflerden oluşur, bu yüzden koyun yününden hem hafif hem daha sıcaktır.',
+      en: 'Smaller than a llama, short-faced and with pointed ears, kept for fleece rather than for carrying. Its fibre is hollow, which makes it both lighter and warmer than sheep’s wool.',
     },
-    diet: 'Herbivore',
-    habitat: 'Grasslands, mountains, farms',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Alpaca_in_Higashiyama_Zoo_-_1.jpg/1280px-Alpaca_in_Higashiyama_Zoo_-_1.jpg'
   },
-
   {
     id: 'fox',
-    name: { tr: 'Tilki', en: 'Fox' },
+    name: { tr: 'Kızıl Tilki', en: 'Red Fox' },
     scientificName: 'Vulpes vulpes',
+    habitat: { tr: 'Orman, tarla, çalılık ve şehir kenarı', en: 'Woodland, farmland, scrub and town edges' },
+    diet: { tr: 'Kemirgen, kuş, meyve ve artık', en: 'Rodents, birds, fruit and scraps' },
+    size: { tr: '58–90 cm, kuyruk hariç', en: '58–90 cm without the tail' },
     description: {
-      tr: 'Kırmızı renginin yanı sıra zekası ve kurnazlığıyla bilinir.',
-      en: 'A cunning and intelligent predator known for its reddish-orange fur.',
+      tr: 'Ucu beyaz kabarık kuyruğu ve dikey göz bebeğiyle her köpekgilden ayrılır. Karın altındaki fareyi bulmak için havaya sıçrayıp dik iner; bunu yaparken kuzey-güney doğrultusuna yöneldiği ölçülmüştür.',
+      en: 'A bushy white-tipped tail and a vertical pupil separate it from every other dog. To reach a vole under snow it leaps and comes down steeply, and it has been measured aligning north-south as it does so.',
     },
-    diet: 'Omnivore',
-    habitat: 'Forests, grasslands, urban areas',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg/1280px-Portrait_of_a_red_fox_in_Rautas_fj%C3%A4llurskog_%28cropped%29.jpg'
   },
-
   {
     id: 'sea-lion',
-    name: { tr: 'Deniz Aslanı', en: 'Sea Lion' },
+    name: { tr: 'Kaliforniya Deniz Aslanı', en: 'California Sea Lion' },
     scientificName: 'Zalophus californianus',
+    habitat: { tr: 'Pasifik kıyıları, iskeleler ve kayalık adalar', en: 'Pacific coasts, jetties and rocky islands' },
+    diet: { tr: 'Balık ve mürekkepbalığı', en: 'Fish and squid' },
+    size: { tr: '1.8–2.4 m', en: '1.8–2.4 m' },
     description: {
-      tr: 'Foktan daha yüksek hayvanlı, kara üzerinde daha iyi hareketi olan deniz memelisi.',
-      en: 'A marine mammal more agile on land than seals, known for its acrobatics.',
+      tr: 'Küçük dış kulak kepçeleri ve arka yüzgeçlerini öne çevirip karada yürüyebilmesiyle foktan ayrılır. Erkeğin alnındaki kemik ibik olgunlukla yükselir ve uzaktan görülür.',
+      en: 'Small external ear flaps, and hind flippers it can turn forward to walk on land, separate it from a seal. The bony crest on the male’s forehead rises with maturity and shows from a distance.',
     },
-    diet: 'Carnivore',
-    habitat: 'Coastal waters, rocky shores',
-    image: 'https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/South_American_bull_sea_lion_%28Otaria_flavescens%29.jpg/1280px-South_American_bull_sea_lion_%28Otaria_flavescens%29.jpg'
   },
 ];
-
-// Function to organize mammals into spreads (pages with 6 items each)
-function organizeSpreads(animalList: MammalEntry[]): MammalEntry[][] {
-  const spreads: MammalEntry[][] = [];
-  for (let i = 0; i < animalList.length; i += 6) {
-    spreads.push(animalList.slice(i, i + 6));
-  }
-  return spreads;
-}
-
-// Mammal order (and therefore spreads) is language-independent; only the
-// per-item name/description text varies by language.
-const mammalSpreadsByOrder = organizeSpreads(mammals);
-
-export const mammalSpreads: Record<string, MammalEntry[][]> = {
-  tr: mammalSpreadsByOrder,
-  en: mammalSpreadsByOrder,
-};
-
-
