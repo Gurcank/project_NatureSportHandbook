@@ -9,7 +9,7 @@ import { createContext, useContext } from 'react';
  * node stays and only nearby leaves fill it, which keeps a 180-leaf book from
  * mounting 400 photographs at once.
  */
-export const NEAR_WINDOW = 10;
+const NEAR_WINDOW = 10;
 
 /**
  * The reading positions a leaf can be near: normally just where the reader is,

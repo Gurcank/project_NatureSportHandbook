@@ -8,7 +8,7 @@ import {
   Shadows_Into_Light,
 } from 'next/font/google';
 import LanguageToggle from '@/components/LanguageToggle';
-import PencilDefs from '@/components/PencilDefs';
+import PencilDefs from '@/components/ui/PencilDefs';
 import { SettingsProvider } from '@/context/SettingsContext';
 import './globals.css';
 

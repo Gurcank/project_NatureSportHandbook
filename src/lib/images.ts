@@ -1,6 +1,6 @@
 import credits from '@/data/generated/image-credits.json';
 
-export type PhotoCredit = {
+type PhotoCredit = {
   file: string;
   artist: string;
   license: string;
@@ -21,11 +21,7 @@ export function speciesImage(entryId: string): string | null {
   return credit ? `/images/species/${credit.file}` : null;
 }
 
-export function speciesCredit(entryId: string): PhotoCredit | null {
-  return photoCredits[entryId] ?? null;
-}
-
-export type CreditRow = { id: string; credit: PhotoCredit };
+type CreditRow = { id: string; credit: PhotoCredit };
 
 /** How many photographs the book credits, whatever order they are read in. */
 export function creditCount(): number {

@@ -11,11 +11,9 @@
     --background: #ffffff;
     --foreground: #312b24;
     --paper: #f0e5cf;
-    --paper-deep: #dcc89a;
     --green: #5f7550;
     --green-deep: #304427;
     --brown: #8a6542;
-    --brown-deep: #55361f;
     --pencil: #2e241c;
     --pencil-soft: #564737;
 
@@ -52,7 +50,8 @@
        and a pencil below — so the book is sized from whatever table fits the
        viewport with a margin of grass round it, and the table can never crowd
        the book or leave it floating. */
-    --table-scale: 1.62;
+    /* 1.41: the book fills the table 15% further than it first did. */
+    --table-scale: 1.41;
     --stack-padding: 2.5rem;
     --book-width: min(
       calc((100vw - var(--book-gutter) * 2) / var(--table-scale)),
@@ -61,31 +60,131 @@
     --book-height: calc(var(--book-width) / var(--book-aspect));
     --table-width: calc(var(--book-width) * var(--table-scale));
     --table-height: calc(var(--book-height) * var(--table-scale));
-    /* The sign lies on the table above the book and is cut to the book. */
-    --sign-width: calc(var(--book-width) * 0.6);
+    /* The sign lies across the top of the table, above the book, and is
+       allowed past the table's edge onto the grass. */
+    --sign-width: calc(var(--book-width) * 0.72);
+    /* The lettering on the sign and the paint left in the tin are one paint:
+       chalky and slightly warm — a lime wash, not printer's white. */
+    --sign-paint: #ece3cf;
+    --sign-paint-shade: #c9bea6;
+    /* The language toggle's letters, cut into its wood when not in use:
+       cutting into weathered wood opens up the pale fresh wood under it. */
+    --lang-groove: rgba(226, 196, 150, 0.9);
+    --lang-groove-hover: rgba(244, 222, 184, 1);
 
-    /* The table: old walnut planks, darkened by weather and hands. */
-    --table-wood-lit: #7a4f30;
-    --table-wood: #5e3b22;
-    --table-wood-deep: #3d2414;
-    --table-grain: url('data:image/svg+xml,%3Csvg%20xmlns%3D%27http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%27%20width%3D%27640%27%20height%3D%27320%27%3E%3Cfilter%20id%3D%27g%27%3E%3CfeTurbulence%20type%3D%27fractalNoise%27%20baseFrequency%3D%270.0032%200.13%27%20numOctaves%3D%275%27%20seed%3D%2723%27%20stitchTiles%3D%27stitch%27%2F%3E%3CfeColorMatrix%20values%3D%270.55%200.45%200%200%200.26%20%200.45%200.4%200%200%200.2%20%200.35%200.3%200%200%200.14%20%200%200%200%200%201%27%2F%3E%3C%2Ffilter%3E%3Crect%20width%3D%27640%27%20height%3D%27320%27%20filter%3D%27url(%23g)%27%2F%3E%3C%2Fsvg%3E');
+    /* One weathered hardwood for everything on the table that is wood — the
+       top, the sign lying on it and the language toggle: a photograph of old
+       planks left out in the weather (Pexels #1098764, James Frid), turned a
+       quarter so its boards lie across. Its own grain, cracks, knots and
+       gaps between boards are what make it read as real, bare, matte wood.
+       The flat colours below stand in while it loads and colour the sawn
+       edges the photograph does not show. The copy is chosen by the pixels
+       the screen needs, never stretched past the photograph's own size. */
+    --wood-photo: image-set(
+      url('/images/wood/wood-600.jpg') 1x,
+      url('/images/wood/wood-1200.jpg') 2x
+    );
+    --wood: #785638;
+    --wood-deep: #4a3120;
+    /* A sawn edge turned away from the sun. */
+    --wood-edge: #2f1f12;
+    /* The shadow down a gap between boards. */
+    --wood-gap: rgba(14, 10, 6, 0.95);
+    --wood-screw: #5b5249;
+    --wood-screw-lit: #a59a8c;
+
+    /* Daylight: one sun, high and to the upper left. Everything casts its
+       shadow down and to the right, further the higher it stands off the
+       surface the shadow falls on. */
+    /* Two shadows to everything: a tight dark one where it meets the surface,
+       where the light cannot get in under it, and the long soft one the sun
+       throws. */
+    --sun-contact-low: 0.03rem 0.06rem 0.08rem rgba(16, 8, 2, 0.6);
+    --sun-contact: 0.06rem 0.12rem 0.16rem rgba(16, 8, 2, 0.5);
+    --sun-shadow-low: 0.32rem 0.48rem 0.55rem rgba(22, 12, 4, 0.3);
+    --sun-shadow: 0.75rem 1.05rem 1.2rem rgba(22, 12, 4, 0.32);
+    /* The table stands well off the grass: its shadow falls clear of it,
+       long and soft, and touches no edge of it; the wide faint shade under
+       the whole top is the light it keeps off the grass. */
+    --table-cast: 3rem 4.2rem 2.4rem rgba(6, 14, 2, 0.5), 0 0 3.5rem rgba(6, 14, 2, 0.28);
+    --sunlight: rgba(255, 234, 188, 0.5);
+    --sun-shade: rgba(16, 26, 54, 0.3);
+    --sun-vignette: rgba(8, 18, 28, 0.32);
+    /* Clouds crossing the sun: their shadows drift over everything. */
+    --cloud-shadow: rgba(38, 50, 68, 0.2);
+
+    /* The meadow's flowers and insects, drawn over the grass photograph. */
+    --meadow-gust: rgba(255, 248, 214, 0.42);
+    --meadow-shadow: rgba(10, 22, 4, 0.38);
+    --meadow-gust-faint: rgba(255, 250, 222, 0.24);
+    --meadow-gloss: rgba(255, 255, 255, 0.55);
+    --meadow-leaf: #4f8a2e;
+    --meadow-leaf-deep: #2c5418;
+    --grass-blade: #4c8a2a;
+    --grass-blade-deep: #24461a;
+    --grass-blade-lit: #9cc75a;
+    --meadow-daisy: #f8f6ef;
+    --meadow-daisy-edge: #d6d0bf;
+    --meadow-daisy-eye: #f0bf2c;
+    --meadow-daisy-eye-deep: #b67c0e;
+    --meadow-buttercup: #f1c61e;
+    --meadow-buttercup-lit: #fde873;
+    --meadow-buttercup-deep: #b98a0c;
+    --meadow-clover: #d596bd;
+    --meadow-clover-deep: #9a4f82;
+    --meadow-speedwell: #7f9fe6;
+    --meadow-speedwell-deep: #4d66b3;
+    --meadow-speedwell-eye: #f5f2e8;
+    --butterfly-orange: #eb8a3a;
+    --butterfly-orange-deep: #8f3a10;
+    --butterfly-white: #f4f1e5;
+    --butterfly-white-tip: #3a3530;
+    --butterfly-blue: #86aef0;
+    --butterfly-blue-deep: #3b58a8;
+    --butterfly-body: #2a2019;
+    --bee-yellow: #e7b22b;
+    --bee-dark: #2b2118;
+    --bee-wing: rgba(232, 242, 255, 0.6);
+    --insect-shadow: rgba(8, 16, 4, 0.3);
+    --butterfly-vein: rgba(40, 22, 10, 0.55);
+    --butterfly-spot: #fbf6e8;
+    --bee-fur: #9a7438;
 
     /* What lies on the table. */
     --prop-paint: #e7b62c;
     --prop-paint-lit: #f5d25e;
     --prop-paint-deep: #b88a17;
     --prop-eraser: #d98f88;
+    --prop-eraser-lit: #eeb2aa;
+    --prop-eraser-deep: #a9625c;
     --prop-ferrule: #b7b2a7;
     --prop-ferrule-lit: #e6e3dc;
     --prop-ferrule-deep: #7a756b;
     --prop-wood: #e3c393;
     --prop-lead: #3a3733;
-    --prop-paint-in-tin: var(--green);
-    --prop-gloss: rgba(255, 255, 255, 0.28);
+    --prop-lead-lit: #77736d;
+    --prop-wood-lit: #f2dcb5;
+    --prop-wood-deep: #b48c58;
+    --prop-paint-shadow: #8f6a0e;
+    --prop-foil: #2e3a1b;
+    --prop-highlight: rgba(255, 255, 255, 0.85);
+    --prop-cast-shadow: rgba(20, 10, 4, 0.38);
+    --prop-handle: #9b3b22;
+    --prop-handle-lit: #c86a45;
+    --prop-handle-deep: #5e1f10;
+    --prop-bristle: #7a5f3e;
+    --prop-bristle-deep: #3d2b18;
+    --prop-paint-in-tin: var(--sign-paint);
+    --prop-paint-in-tin-shade: var(--sign-paint-shade);
+    --prop-gloss: rgba(255, 255, 255, 0.55);
   }
 
   @media (min-width: 768px) {
     :root {
+      --wood-photo: image-set(
+        url('/images/wood/wood-1200.jpg') 1x,
+        url('/images/wood/wood-2400.jpg') 2x
+      );
       --book-gutter: 1.25rem;
       --tab-scale: 1;
     }
@@ -95,7 +194,27 @@
      condition is page-flip's own single-page rule restated in viewport terms,
      so the box the CSS draws and the pages the library lays out always agree.
      Must match SPREAD_QUERY in src/hooks/useMediaQuery.ts. */
-  @media (min-width: 883px) and (min-height: 634px) {
+  /* The wood photograph, one step further up for each size of table: a
+     laptop draws a table about 1100px across, a wide screen about 1900. */
+  @media (min-width: 1100px) {
+    :root {
+      --wood-photo: image-set(
+        url('/images/wood/wood-1600.jpg') 1x,
+        url('/images/wood/wood-3502.jpg') 2x
+      );
+    }
+  }
+
+  @media (min-width: 1700px) {
+    :root {
+      --wood-photo: image-set(
+        url('/images/wood/wood-2400.jpg') 1x,
+        url('/images/wood/wood-3502.jpg') 2x
+      );
+    }
+  }
+
+  @media (min-width: 774px) and (min-height: 557px) {
     :root {
       --book-aspect: 1.42;
       --rail-space: calc(var(--tab-overhang) * 2);
@@ -124,12 +243,6 @@
   }
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-kalam);
-}
-
 @layer components {
   /* Graphite text texture: subtle pencil-stroke jitter + grain for headings.
      Kept off body copy on purpose — a live SVG filter on lots of small text
@@ -146,7 +259,7 @@
     padding: 1.5rem 1.3rem 1.6rem calc(4.3rem * var(--tab-scale));
   }
 
-  @media (min-width: 883px) and (min-height: 634px) {
+  @media (min-width: 774px) and (min-height: 557px) {
     .leaf-padding {
       padding-right: 1.6rem;
     }
@@ -159,19 +272,77 @@
 
   /* --- Language toggle -------------------------------------------------- */
 
-  /* The loop is always in the DOM and is drawn by animating its dash offset,
-     so hovering an unselected language previews exactly the mark the selected
-     one wears. `pathLength="1"` makes the offset a 0-1 fraction of the path. */
-  .pencil-loop path {
-    stroke-dasharray: 1;
-    stroke-dashoffset: 1;
-    transition: stroke-dashoffset 420ms cubic-bezier(0.32, 0.14, 0.2, 1);
+  /* A small offcut of the table's wood with the two languages cut into it,
+     lying in the corner of the scene under the same sun as everything else. */
+  .lang-plank {
+    position: fixed;
+    top: 0.5rem;
+    right: 0.75rem;
+    z-index: 50;
+    display: flex;
+    align-items: center;
+    padding: 0.2rem 0.45rem;
+    border-radius: 0.3rem;
+    /* An offcut from one of the boards in the photograph, darkened with age
+       and handling so the pale cut letters and the painted one both read. */
+    background:
+      linear-gradient(rgba(28, 16, 7, 0.5), rgba(28, 16, 7, 0.5)),
+      var(--wood-photo) 62% 20% / 520px auto no-repeat,
+      var(--wood);
+    box-shadow:
+      inset 0 -2px 3px rgba(18, 9, 3, 0.35),
+      var(--sun-contact),
+      var(--sun-shadow-low);
   }
 
-  .pencil-loop-host.is-drawn .pencil-loop path,
-  .pencil-loop-host:hover .pencil-loop path,
-  .pencil-loop-host:focus-visible .pencil-loop path {
-    stroke-dashoffset: 0;
+  @media (min-width: 640px) {
+    .lang-plank {
+      top: 1rem;
+      right: 1.5rem;
+    }
+  }
+
+  /* Cut into the wood: dark in the groove with a lit lip under it. The one in
+     use is painted in with the sign's white. */
+  .lang-plank-option {
+    padding: 0.15rem 0.45rem;
+    border-radius: 0.2rem;
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    color: var(--lang-groove);
+    /* The groove's upper wall is in its own shadow. */
+    text-shadow: 0 -1px 0 rgba(20, 10, 3, 0.6);
+    cursor: pointer;
+    transition: color 160ms ease;
+  }
+
+  .lang-plank-option:hover {
+    color: var(--lang-groove-hover);
+  }
+
+  .lang-plank-option[aria-pressed='true'] {
+    color: var(--sign-paint);
+    text-shadow: 0 1px 1px rgba(20, 10, 3, 0.5);
+    cursor: default;
+  }
+
+  .lang-plank-option:focus-visible {
+    outline: 2px solid var(--sign-paint);
+    outline-offset: 2px;
+  }
+
+  /* A screw between the two, like the ones holding the sign. */
+  .lang-plank-screw {
+    width: 0.4rem;
+    height: 0.4rem;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle at 35% 30%,
+      var(--wood-screw-lit),
+      var(--wood-screw) 60%,
+      rgba(20, 12, 4, 0.8)
+    );
   }
 
   /* --- Sign ------------------------------------------------------------ */
@@ -179,6 +350,41 @@
   .sign-fit {
     aspect-ratio: 800 / 220;
     width: var(--sign-width);
+    filter: drop-shadow(var(--sun-contact)) drop-shadow(var(--sun-shadow));
+  }
+
+  /* The sign is cut from the table's own wood: one board from the same
+     photograph, sized so a single plank fills its height, with the board's
+     own grain, cracks and knots. The outline follows the plank path the
+     lettering is drawn against. */
+  .sign-wood {
+    position: absolute;
+    inset: 0;
+    clip-path: polygon(
+      1% 7.3%,
+      40% 5.6%,
+      75% 5%,
+      83% 5.9%,
+      98.75% 50%,
+      83% 94.1%,
+      75% 95%,
+      40% 94.2%,
+      1.25% 92.7%
+    );
+    /* One whole board: the photograph's boards lie between gaps at 55.7% and
+       70.8% of its height (measured from the image), so at 139% of the sign's
+       width that board is 15% deeper than the sign, and 65.3% puts its middle
+       on the sign's — the dark gaps either side stay off the sign. */
+    background:
+      var(--wood-photo) 30% 65.3% / 139% auto no-repeat,
+      var(--wood);
+    /* Sanded back to fresh wood before it was lettered: the raised fibres
+       and the weathered grey taken off, so the board reads smooth, flat and
+       warm — newer than the table it lies on. Contrast well down, the fresh
+       wood's honey warmth brought up, the fibres softened. The lettering's
+       damp halo (WoodenSign) is deepened to keep it reading on the paler
+       board. */
+    filter: sepia(0.7) saturate(1.35) contrast(0.55) brightness(0.9) blur(0.55px);
   }
 
   /* --- Scene ------------------------------------------------------------ */
@@ -217,7 +423,82 @@
   .meadow {
     position: absolute;
     inset: 0;
+    overflow: hidden;
     background-color: var(--green-deep);
+    /* The camera is focused on the table, well above the ground, so the grass
+       is a little soft. */
+    filter: blur(1.1px);
+  }
+
+  /* Wind over the grass: bands of sheen rolling across it, the way a gust
+     lays the blades over and turns their paler sides to the light. The layer
+     travels exactly one band spacing per loop — 500px across is one 353.55px
+     period along the 135deg bands — so the loop has no seam. MeadowLife sways
+     the flowers with the same period and speed. */
+  .meadow-gust {
+    position: absolute;
+    inset: 0 -600px;
+    pointer-events: none;
+    background: repeating-linear-gradient(
+      135deg,
+      transparent 0 150px,
+      var(--meadow-gust) 205px,
+      transparent 265px 353.55px
+    );
+    mix-blend-mode: soft-light;
+    animation: meadow-gust 9s linear infinite;
+  }
+
+  /* A second run of fainter bands at half the spacing, moving at its own
+     pace, so the two drift through each other and no gust looks like the
+     last. Half the spacing still divides the loop, so it too has no seam. */
+  .meadow-gust::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-linear-gradient(
+      135deg,
+      transparent 0 40px,
+      var(--meadow-gust-faint) 88px,
+      transparent 130px 176.775px
+    );
+    animation: meadow-gust 14s linear infinite;
+  }
+
+  @keyframes meadow-gust {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      transform: translate3d(500px, 0, 0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .meadow-gust,
+    .meadow-gust::after {
+      animation: none;
+    }
+  }
+
+  /* Flowers lie on the grass, under the table; insects fly, so over it. */
+  .meadow-life {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+  }
+
+  /* On the ground with the grass, so as soft as it. */
+  .meadow-life--ground {
+    z-index: 0;
+    filter: blur(0.9px);
+  }
+
+  .meadow-life--air {
+    z-index: 3;
   }
 
   .meadow-photo {
@@ -250,109 +531,177 @@
     }
   }
 
-  /* The table top: wide walnut planks laid side by side, each seam a dark gap
-     with a lit lip, grain running along the planks, the middle worn paler by
-     hands, and the whole top casting its shadow onto the grass. */
+  /* The table top: the photograph's boards, laid across. Covering the top,
+     it puts about four of them on a table this deep on a wide screen, and
+     more, narrower ones on a phone. The edge facing the sun catches it, the
+     far edge is in shade, and the whole top throws its shadow down and to
+     the right onto the grass. */
   .table-top {
-    --plank: calc(var(--table-height) / 6);
     position: relative;
     z-index: 1;
     width: var(--table-width);
     height: var(--table-height);
+    /* One gap between boards in the photograph shows the ground under that
+       floor — orange sand, at 55.1–56.35% of the photograph's height,
+       measured from the image — where a table standing above grass shows
+       only shadow. A dark strip lies over it. The photograph is exactly as
+       wide as the table, so its height is 1.5014 table-widths on every
+       screen; the strip is sized and placed in the same terms, so it stays
+       on the gap. */
     background:
-      radial-gradient(ellipse 42% 32% at 50% 58%, rgba(255, 228, 190, 0.1), transparent 70%),
-      repeating-linear-gradient(
-        180deg,
-        transparent 0,
-        transparent calc(var(--plank) - 3px),
-        rgba(18, 9, 3, 0.75) calc(var(--plank) - 3px),
-        rgba(18, 9, 3, 0.75) calc(var(--plank) - 1px),
-        rgba(255, 220, 180, 0.12) calc(var(--plank) - 1px),
-        rgba(255, 220, 180, 0.12) var(--plank)
-      ),
-      var(--table-grain),
-      linear-gradient(
-        170deg,
-        var(--table-wood-lit) 0%,
-        var(--table-wood) 45%,
-        var(--table-wood-deep) 100%
-      );
-    background-size:
-      auto,
-      auto,
-      640px 320px,
-      auto;
-    background-blend-mode: normal, normal, multiply, normal;
+      linear-gradient(180deg, transparent 54.9%, var(--wood-gap) 54.9% 56.6%, transparent 56.6%) 50%
+        30% / 100% calc(var(--table-width) * 1.5014) no-repeat,
+      var(--wood-photo) 50% 30% / 100% auto no-repeat,
+      var(--wood);
     box-shadow:
       inset 0 0 0 1px rgba(20, 10, 4, 0.6),
-      inset 0 0.25rem 0.5rem rgba(255, 220, 180, 0.1),
-      inset 0 0 3rem rgba(15, 7, 2, 0.45),
-      0 1.4rem 2.6rem rgba(8, 14, 4, 0.55),
-      0 0.3rem 0.6rem rgba(8, 14, 4, 0.4);
+      inset 0.25rem 0.25rem 0.35rem rgba(255, 232, 196, 0.06),
+      inset -0.35rem -0.4rem 0.7rem rgba(15, 7, 2, 0.4),
+      var(--table-cast);
   }
 
-  /* A few knots, where the book does not cover them. */
-  .table-knots {
+  /* The top is a board of real thickness standing well above the grass: its
+     front edge shows under it, in shade, since it faces away from the sun. */
+  .table-top::after {
+    content: '';
     position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background:
-      radial-gradient(
-        ellipse 2.4% 1.3% at 12% 20%,
-        rgba(18, 8, 2, 0.75) 0 35%,
-        rgba(60, 32, 16, 0.45) 36% 60%,
-        transparent 62%
-      ),
-      radial-gradient(
-        ellipse 1.8% 1% at 88% 86%,
-        rgba(18, 8, 2, 0.7) 0 35%,
-        rgba(60, 32, 16, 0.4) 36% 60%,
-        transparent 62%
-      ),
-      radial-gradient(
-        ellipse 1.5% 0.9% at 8% 80%,
-        rgba(18, 8, 2, 0.65) 0 35%,
-        rgba(60, 32, 16, 0.4) 36% 60%,
-        transparent 62%
-      );
-  }
-
-  /* The book sits below the band the sign lies in, centred across the table. */
-  .table-book {
-    position: absolute;
-    top: calc(var(--book-height) * 0.4);
+    top: 100%;
     right: 0;
     left: 0;
+    height: calc(var(--table-height) * 0.028);
+    pointer-events: none;
+    background:
+      repeating-linear-gradient(180deg, rgba(20, 10, 3, 0.2) 0 1px, transparent 1px 5px),
+      linear-gradient(180deg, var(--wood-deep), var(--wood-edge));
+    box-shadow: inset 0 1px 0 rgba(255, 232, 196, 0.12);
+  }
+
+  /* The book sits below the band the sign lies in, centred across the table.
+     With the book grown to fill the table, a third of a book-height is what
+     is left above it, and the sign and the tin are laid to fit that. */
+  .table-book {
+    position: absolute;
+    top: calc(var(--book-height) * 0.3);
+    right: 0;
+    left: 0;
+    z-index: 1;
     display: flex;
     justify-content: center;
   }
 
-  .table-sign {
+  /* The book casts the same shadow as everything else on the table. Only
+     while it is open: shut, it is one board wide and this box is two. */
+  .book-fit:not(.is-shut) .book-frame::before {
+    content: '';
     position: absolute;
-    top: calc(var(--book-height) * 0.07);
-    left: 50%;
-    z-index: 2;
-    translate: -50% 0;
+    inset: 0;
+    z-index: -1;
+    box-shadow: var(--sun-contact), var(--sun-shadow);
   }
 
-  /* The tin stands in the corner beside the sign, the pencil lies across the
-     margin below the book; both sit in room the book and its tabs never use. */
+  /* Dropped across the top-left corner of the table at a slant, its tail out
+     over the grass; under the book where the two meet, as a sign put down
+     first would be. The window keeps it on screen: sideways by its own edge,
+     and at the top by the table's distance from the top of the window less
+     what the slant lifts the sign's high end by (about 0.036 of the book). */
+  .table-sign {
+    position: absolute;
+    top: max(
+      calc(var(--book-width) * -0.015),
+      calc((var(--table-height) - 100dvh) / 2 + var(--book-width) * 0.036 + 0.25rem)
+    );
+    left: max(calc(var(--book-width) * -0.07), calc((var(--table-width) - 100vw) / 2 + 0.4rem));
+    rotate: -3deg;
+  }
+
+  /* The tin stands in the band above the book, between the sign and the
+     table's top-right corner — the corner itself is where the language
+     switch sits, over the scene. Held on screen at the top the same way as
+     the sign. The pencil lies along the margin below the book. Both lie low,
+     so their shadows are short. */
   .table-tin {
     position: absolute;
-    top: calc(var(--book-height) * 0.06);
-    right: calc(var(--book-width) * 0.05);
-    width: calc(var(--book-width) * 0.24);
+    top: max(
+      calc(var(--book-width) * -0.02),
+      calc((var(--table-height) - 100dvh) / 2 + var(--book-width) * 0.02 + 0.25rem)
+    );
+    right: calc(var(--book-width) * 0.22);
+    width: calc(var(--book-width) * 0.23);
     rotate: 8deg;
-    filter: drop-shadow(0 0.45rem 0.55rem rgba(20, 10, 4, 0.5));
+    filter: drop-shadow(var(--sun-contact-low)) drop-shadow(var(--sun-shadow-low));
+  }
+
+  /* The brush the sign was lettered with, put down to the right of the tin
+     and slanting down towards the table's right edge, its paint-white tip by
+     the tin. Placed by its middle — the table is 1.41 book-widths across and
+     the tin ends 0.22 in from the right — so it stays clear of the book, the
+     tabs down its right side, and the language switch in the corner. */
+  .table-brush {
+    --brush-width: calc(var(--book-width) * 0.26);
+    position: absolute;
+    top: calc(var(--book-width) * 0.19 - var(--brush-width) * 0.075);
+    left: calc(var(--book-width) * 1.29 - var(--brush-width) / 2);
+    z-index: 2;
+    width: var(--brush-width);
+    rotate: -120deg;
+    filter: drop-shadow(var(--sun-contact-low)) drop-shadow(var(--sun-shadow-low));
   }
 
   .table-pencil {
     position: absolute;
-    right: calc(var(--book-width) * 0.1);
-    bottom: calc(var(--book-height) * 0.07);
-    width: calc(var(--book-width) * 0.5);
-    rotate: -7deg;
-    filter: drop-shadow(0 0.3rem 0.35rem rgba(20, 10, 4, 0.5));
+    right: calc(var(--book-width) * 0.12);
+    bottom: calc(var(--book-height) * 0.02);
+    width: calc(var(--book-width) * 0.46);
+    rotate: -3deg;
+    filter: drop-shadow(var(--sun-contact-low)) drop-shadow(var(--sun-shadow-low));
+  }
+
+  /* One sun over the whole scene: warm where it comes in at the upper left,
+     a little cooler in the far corner. Blended in, so it lights what is there
+     rather than laying a tint over it. */
+  .sunlight {
+    position: absolute;
+    inset: 0;
+    z-index: 4;
+    pointer-events: none;
+    background:
+      radial-gradient(ellipse 80% 70% at 8% 4%, var(--sunlight), transparent 72%),
+      linear-gradient(135deg, transparent 50%, var(--sun-shade)),
+      radial-gradient(ellipse 130% 110% at 30% 25%, transparent 55%, var(--sun-vignette));
+    mix-blend-mode: soft-light;
+  }
+
+  /* Clouds going over: soft patches of shade drifting down-wind across the
+     meadow and the table alike. Every patch sits wholly inside its tile, and
+     the layer moves exactly one tile per loop, so the loop has no seam. */
+  .cloud-shadows {
+    position: absolute;
+    inset: -1200px 0 0 -1600px;
+    z-index: 4;
+    pointer-events: none;
+    background-image:
+      radial-gradient(ellipse 420px 260px at 560px 380px, var(--cloud-shadow), transparent),
+      radial-gradient(ellipse 340px 220px at 1180px 800px, var(--cloud-shadow), transparent),
+      radial-gradient(ellipse 240px 150px at 300px 980px, var(--cloud-shadow), transparent);
+    background-size: 1600px 1200px;
+    mix-blend-mode: multiply;
+    animation: cloud-shadows 150s linear infinite;
+  }
+
+  @keyframes cloud-shadows {
+    from {
+      transform: translate3d(0, 0, 0);
+    }
+
+    to {
+      transform: translate3d(1600px, 1200px, 0);
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .cloud-shadows {
+      animation: none;
+    }
   }
 
   /* The sketch at the foot of a leaf: it takes whatever height is left and
@@ -402,7 +751,7 @@
     padding-left: var(--tab-overhang);
   }
 
-  @media (min-width: 883px) and (min-height: 634px) {
+  @media (min-width: 774px) and (min-height: 557px) {
     .book-stage {
       padding-right: var(--tab-overhang);
     }
@@ -415,7 +764,7 @@
      so the open book is not left standing behind the closing board. */
   /* The tabs hang from the book's edge, so when the book narrows to one half
      the rail on the spine side comes in with it. */
-  @media (min-width: 883px) and (min-height: 634px) {
+  @media (min-width: 774px) and (min-height: 557px) {
     .book-fit.is-shut--front .tab-rail--left {
       left: calc(50% - var(--tab-overhang));
     }
@@ -667,8 +1016,14 @@
        turn into seven banners. */
     height: min(100%, calc(2.4rem * var(--tab-scale)));
     width: 100%;
-    font-size: clamp(0.44rem, 1.72cqh, 0.8rem);
+    /* Long names are set a little tighter (\`--tab-fit\`, from EdgeTab) so they
+       fit the strip of tab that shows past the pages instead of being cut. */
+    font-size: calc(clamp(0.44rem, 1.72cqh, 0.8rem) * var(--tab-fit, 1));
+    letter-spacing: -0.01em;
     line-height: 1;
+    /* Kalam sits a little high even in its taller label line (EdgeTab):
+       nudged down so it reads as centred. */
+    padding-top: 0.06em;
     /* drop-shadow rather than box-shadow: it follows the clipped pennant
        outline, so the half hanging off the book edge casts the right shape. */
     filter: drop-shadow(0 2px 3px rgba(46, 30, 14, 0.26));

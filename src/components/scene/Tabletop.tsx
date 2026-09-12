@@ -1,8 +1,8 @@
 'use client';
 
 import type { ReactNode } from 'react';
-import WoodenSign from '@/components/WoodenSign';
-import { PaintTin, Pencil } from './TableProps';
+import WoodenSign from './WoodenSign';
+import { PaintBrush, PaintTin, Pencil } from './TableProps';
 
 /**
  * A small wooden table out in the meadow, seen from straight above — only its
@@ -16,13 +16,12 @@ import { PaintTin, Pencil } from './TableProps';
 export default function Tabletop({ children }: { children: ReactNode }) {
   return (
     <div className="table-top">
-      <span aria-hidden="true" className="table-knots" />
-
       <div className="table-sign">
         <WoodenSign />
       </div>
 
       <PaintTin className="table-tin" />
+      <PaintBrush className="table-brush" />
 
       <div className="table-book">{children}</div>
 

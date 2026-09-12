@@ -5,7 +5,7 @@ import { useState } from 'react';
 import type { Language } from '@/context/SettingsContext';
 import type { SpeciesEntry } from '@/types';
 import { speciesImage } from '@/lib/images';
-import RoughBox from '@/components/RoughBox';
+import RoughBox from '@/components/ui/RoughBox';
 import { useStage } from '@/components/scene/Stage';
 
 const EMPTY_STATE_TEXT: Record<Language, string> = {

@@ -10,7 +10,7 @@ import { creditCount } from './images';
  * wanders over dozens of half-empty leaves is a worse read than a dense one.
  * The opening leaf gives up room to the heading.
  */
-export const CREDITS_PER_LEAF = 28;
+const CREDITS_PER_LEAF = 28;
 const CREDITS_FIRST_LEAF = 26;
 
 export type Leaf =
@@ -57,7 +57,7 @@ export type LeafAnchor = { sectionId: string; entryId?: string };
 type EntriesSection = Extract<Section, { kind: 'entries' }>;
 
 /** How a section's entries are dealt out over leaves: one array per leaf. */
-export type EntrySplit = (section: EntriesSection) => SpeciesEntry[][];
+type EntrySplit = (section: EntriesSection) => SpeciesEntry[][];
 
 /**
  * A fixed number to a leaf, the opening leaf one fewer for its heading. This is
@@ -65,7 +65,7 @@ export type EntrySplit = (section: EntriesSection) => SpeciesEntry[][];
  * pin; the book replaces it with `splitByHeight` as soon as it has a leaf to
  * measure against.
  */
-export function splitEvenly(perLeaf: number): EntrySplit {
+function splitEvenly(perLeaf: number): EntrySplit {
   return (section) => {
     const leaves: SpeciesEntry[][] = [];
     let cursor = 0;
@@ -210,7 +210,7 @@ export function buildLeaves(layout: number | EntrySplit): Leaf[] {
  * Tiers, outermost first: the book's two halves, the categories inside them,
  * and the groups inside those. A tab's tier is its width and its colour.
  */
-export type RailTier = 'chapter' | 'category' | 'sub';
+type RailTier = 'chapter' | 'category' | 'sub';
 
 const HOME_LABEL: Localized = { tr: 'Ana Sayfa', en: 'Home' };
 
@@ -310,7 +310,7 @@ export function sheetPartner(leafIndex: number): number {
  * hanging off the edge. The back shows only the point, because that is all
  * there is to see of a tab from the other side of the sheet.
  */
-export type TabFace = 'front' | 'back';
+type TabFace = 'front' | 'back';
 
 export type PlacedRailTab = RailTab & { slot: number; total: number; face: TabFace };
 

@@ -6,7 +6,7 @@ import { allCredits } from '@/lib/images';
 import { entryById, type Section, type SectionLink } from '@/lib/book';
 import { jitter } from '@/lib/jitter';
 import { sectionTone } from '@/lib/tones';
-import RoughBox from '@/components/RoughBox';
+import RoughBox from '@/components/ui/RoughBox';
 import SpeciesRow from './SpeciesRow';
 import LeafDoodle from './LeafDoodle';
 import StickyNote from './StickyNote';
@@ -135,7 +135,16 @@ export function EntriesHeader({
   );
 }
 
-export default function LeafContent({ leaf, language }: { leaf: Leaf; language: Language }) {
+export default function LeafContent({
+  leaf,
+  language,
+  index,
+}: {
+  leaf: Leaf;
+  language: Language;
+  /** The leaf's place in the book, which decides whether it gets a sketch. */
+  index: number;
+}) {
   switch (leaf.kind) {
     case 'chapter': {
       const { chapter } = leaf;
@@ -149,7 +158,7 @@ export default function LeafContent({ leaf, language }: { leaf: Leaf; language: 
             {chapter.intro[language]}
           </p>
           <SectionList items={chapter.links} size="1.15em" language={language} />
-          <LeafDoodle seed={leaf.key} sectionId={leaf.sectionId} />
+          <LeafDoodle index={index} seed={leaf.key} sectionId={leaf.sectionId} />
         </div>
       );
     }
@@ -167,7 +176,7 @@ export default function LeafContent({ leaf, language }: { leaf: Leaf; language: 
             <p className="text-[0.95em] leading-snug">{section.intro[language]}</p>
           </StickyNote>
           <SectionList items={section.links} size="1.05em" language={language} />
-          <LeafDoodle seed={leaf.key} sectionId={section.id} />
+          <LeafDoodle index={index} seed={leaf.key} sectionId={section.id} />
         </div>
       );
     }
@@ -189,7 +198,7 @@ export default function LeafContent({ leaf, language }: { leaf: Leaf; language: 
             entries.map((entry) => <SpeciesRow key={entry.id} entry={entry} language={language} />)
           )}
 
-          <LeafDoodle seed={leaf.key} sectionId={section.id} />
+          <LeafDoodle index={index} seed={leaf.key} sectionId={section.id} />
         </div>
       );
     }
@@ -226,7 +235,7 @@ export default function LeafContent({ leaf, language }: { leaf: Leaf; language: 
               ))
             )}
           </ul>
-          <LeafDoodle seed={leaf.key} sectionId="credits" />
+          <LeafDoodle index={index} seed={leaf.key} sectionId="credits" />
         </div>
       );
     }
@@ -238,7 +247,7 @@ export default function LeafContent({ leaf, language }: { leaf: Leaf; language: 
     case 'blank':
       return (
         <div className="flex h-full flex-col">
-          <LeafDoodle seed={leaf.key} sectionId={leaf.sectionId} />
+          <LeafDoodle index={index} seed={leaf.key} sectionId={leaf.sectionId} />
         </div>
       );
 

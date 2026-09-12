@@ -32,14 +32,14 @@ export function useMediaQuery(query: string): boolean {
  * `--book-width` in globals.css), so that one condition becomes two viewport
  * bounds:
  *
- *   width:  2 × 1.25rem gutter + 520 × 1.62 table width             ≥ 882.4px
- *   height: 2.5rem of grass + 520 × 1.62 table height / 1.42       ≥ 633.2px
+ *   width:  2 × 1.25rem gutter + 520 × 1.41 table width             ≥ 773.2px
+ *   height: 2.5rem of grass + 520 × 1.41 table height / 1.42       ≥ 556.4px
  *
  * The same query is written into globals.css; change the table's proportions,
  * the grass margin, the gutter or the minimum page width and both must be
  * recalculated.
  */
-export const SPREAD_QUERY = '(min-width: 883px) and (min-height: 634px)';
+const SPREAD_QUERY = '(min-width: 774px) and (min-height: 557px)';
 
 export function useIsSpread(): boolean {
   return useMediaQuery(SPREAD_QUERY);

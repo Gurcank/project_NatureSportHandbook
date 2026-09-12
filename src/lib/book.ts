@@ -13,7 +13,7 @@ import { sports } from '@/data/sports';
 import { stones } from '@/data/stones';
 import { fromAnimalEntry, fromFungus, fromPlantEntry, fromSport, fromStone } from './species';
 
-export type ChapterId = 'nature' | 'sport';
+type ChapterId = 'nature' | 'sport';
 
 export type SectionLink = {
   sectionId: string;
@@ -204,7 +204,7 @@ const plantSections: EntriesSection[] = [
     slug: '/nature/plants/bryophytes',
     chapter: 'nature',
     title: { tr: 'Kara Yosunları ve Ciğerotları', en: 'Mosses & Liverworts' },
-    shortTitle: { tr: 'Kara Yosunları', en: 'Mosses' },
+    shortTitle: { tr: 'Yosunlar', en: 'Mosses' },
     taxon: 'Bryophyta · Marchantiophyta · Anthocerotophyta',
     intro: {
       tr: 'Damarsız, köksüz ilk kara bitkileri. Su ve besini doğrudan yüzeyleriyle emerler.',
@@ -251,7 +251,7 @@ const plantSections: EntriesSection[] = [
     slug: '/nature/plants/flowering',
     chapter: 'nature',
     title: { tr: 'Çiçekli Bitkiler', en: 'Flowering Plants' },
-    shortTitle: { tr: 'Çiçekli Bitkiler', en: 'Flowering Plants' },
+    shortTitle: { tr: 'Çiçekliler', en: 'Flowering' },
     taxon: 'Magnoliophyta',
     intro: {
       tr: 'Çiçek açan ve tohumunu meyve içinde saklayan bitkiler. Bugün kara bitkilerinin büyük çoğunluğu bunlardır.',
@@ -271,6 +271,7 @@ const fungusSections: EntriesSection[] = [
     slug: '/nature/fungi/basidiomycota',
     chapter: 'nature',
     title: { tr: 'Bazidiyomisetler', en: 'Club Fungi' },
+    shortTitle: { tr: 'Şapkalılar', en: 'Club Fungi' },
     taxon: 'Basidiomycota',
     intro: {
       tr: 'Sporlarını şapkanın altındaki lamel ya da borucuklardan bırakan mantarlar. Şapkalı mantarların çoğu buradadır.',
@@ -333,7 +334,7 @@ const stoneSections: EntriesSection[] = [
     slug: '/nature/geology/sedimentary',
     chapter: 'nature',
     title: { tr: 'Tortul Kayaçlar', en: 'Sedimentary Rocks' },
-    shortTitle: { tr: 'Tortul Kayaçlar', en: 'Sedimentary' },
+    shortTitle: { tr: 'Tortul', en: 'Sedimentary' },
     taxon: 'Sedimentary',
     intro: {
       tr: 'Taşınan tanelerin ve canlı kalıntılarının katman katman birikip sıkışmasıyla oluşur. Fosiller yalnızca burada bulunur.',
@@ -509,6 +510,7 @@ export const sections: Section[] = [
     id: 'credits',
     slug: '/credits',
     title: { tr: 'Fotoğraf Künyesi', en: 'Photo Credits' },
+    shortTitle: { tr: 'Künye', en: 'Credits' },
   },
 ];
 
@@ -544,12 +546,6 @@ export const chapters: Chapter[] = [
   },
 ];
 
-/** Tabs shown down the book's left edge, per chapter. Home is prepended by the rail. */
-export const chapterTabs: Record<ChapterId, SectionLink[]> = {
-  nature: chapters[0].links,
-  sport: chapters[1].links,
-};
-
 const sectionsById = new Map(sections.map((section) => [section.id, section]));
 const sectionsBySlug = new Map(sections.map((section) => [section.slug, section]));
 
@@ -579,12 +575,6 @@ const TAB_PARENT: Record<string, string> = {
 
 export function tabSectionFor(sectionId: string): string {
   return TAB_PARENT[sectionId] ?? sectionId;
-}
-
-export function chapterFor(sectionId: string): ChapterId {
-  const section = sectionById(sectionId);
-  if (!section || section.kind === 'cover' || section.kind === 'credits') return 'nature';
-  return section.chapter;
 }
 
 export const HOME_TITLE: Localized = {

@@ -55,7 +55,7 @@ export function parseClipPolygon(value: string): Point[] | null {
   return merged.length >= 3 ? merged : null;
 }
 
-export function formatClipPolygon(points: Point[]): string {
+function formatClipPolygon(points: Point[]): string {
   return `polygon(${points.map((p) => `${round(p.x)}px ${round(p.y)}px`).join(', ')})`;
 }
 

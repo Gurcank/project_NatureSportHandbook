@@ -33,7 +33,7 @@ function compact(facts: (SpeciesFact | null)[]): SpeciesFact[] {
 }
 
 /** Namespaced so ids stay unique across the whole book, which the deep-link hash relies on. */
-export function speciesId(categoryId: string, rawId: string): string {
+function speciesId(categoryId: string, rawId: string): string {
   return `${categoryId}-${slugify(rawId)}`;
 }
 

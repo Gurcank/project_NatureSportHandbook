@@ -100,7 +100,7 @@ export default function BookLeaf({
         }`}
       >
         <div className="relative z-10 h-full">
-          {isNear ? <LeafContent leaf={leaf} language={language} /> : null}
+          {isNear ? <LeafContent leaf={leaf} language={language} index={index} /> : null}
         </div>
       </div>
     </div>

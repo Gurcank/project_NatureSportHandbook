@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Book from '@/components/book/Book';
 import Meadow from '@/components/scene/Meadow';
+import MeadowLife from '@/components/scene/MeadowLife';
 import Stage from '@/components/scene/Stage';
 import Tabletop from '@/components/scene/Tabletop';
 import { HOME_TITLE, sectionBySlug, sections } from '@/lib/book';
@@ -40,6 +41,7 @@ export default async function BookPage({ params }: PageProps) {
     <main className="stage-root">
       <Stage>
         <Meadow />
+        <MeadowLife />
         <Tabletop>
           {/* .book-stage keeps clear the strip either side that the index tabs
               hang into; without it they are pulled off the edge of the table. */}
@@ -47,6 +49,10 @@ export default async function BookPage({ params }: PageProps) {
             <Book initialSectionId={section.id} />
           </div>
         </Tabletop>
+        {/* Clouds crossing that sun, and the sun itself; see `.cloud-shadows`
+            and `.sunlight`. */}
+        <div aria-hidden="true" className="cloud-shadows" />
+        <div aria-hidden="true" className="sunlight" />
       </Stage>
     </main>
   );

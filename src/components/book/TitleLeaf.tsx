@@ -1,6 +1,6 @@
 'use client';
 
-import Handwritten from '@/components/Handwritten';
+import Handwritten from '@/components/ui/Handwritten';
 
 /**
  * The half-title: the book's name written across the first leaf and nothing
